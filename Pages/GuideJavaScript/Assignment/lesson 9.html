@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link
+            rel="stylesheet"
+            href="../../../CSS/GuideJavaScript/Assignment/Lesson9.css">
+        <link
+            rel="shortcut icon"
+            href="../../../Images/favicon.ico"
+            type="image/x-icon">
+        <title>Задание №9</title>
+    </head>
+    <body>
+        <header>
+            Шапка документа
+        </header>
+        <nav>
+            Верхнее меню
+        </nav>
+        <aside>
+            <a href="../../../index.html">На главную</a>
+            <a href="../../JavaScript.html">Обучение Java Script</a>
+        </aside>
+        <main>
+            <h1>9-ое задание в Курсах Михаила Русакова по Java Script</h1>
+            <p>В этом уроке речь шла про 3 метода класса Window</p>
+            <ul>
+                <li>alert</li>
+                <li>confirm</li>
+                <li>prompt</li>
+            </ul>
+            <p>В качестве домашнего задания требуется запросить у пользователя целое число
+                больше 0.</p>
+            <p>
+                Если это число меньше, либо равно 0, то через alert() сообщите об ошибке и
+                повторно запросите число. Делайте это до тех пор, пока пользователь не введёт
+                нормальное число.</p>
+            <p>Рассчитайте сумму чисел от 1 до введённого числа, то есть
+                1+2+3+4+…+введённое_число</p>
+<h2>Код задания</h2>
+<code>
+        &lt;script&gt;<br>
+                var res = prompt("Введите целое число");<br>
+                var result = 0;<br>
+                while ((Number(res) !== res) && (res % 1 !== 0)) <br>
+                {<br>
+                    alert("Вы ввели " + res + "Это не целое число, будьте внимательнее.");<br>
+                    res = prompt("Введите целое число");<br>
+                } <br>
+                for (i = 0; i <= res; i++) <br>   
+                    result += i; <br>
+                document.write("Сумма чисел от 0 до введенного вами " + res + " = " + result); <br>
+            &lt;/script&gt;
+</code>
+<h3>Результат</h3>
+
+            <script>
+                var res = prompt("Введите целое число");
+                var result = 0;
+                while ((Number(res) !== res) && (res % 1 !== 0)) 
+                {
+                    alert("Вы ввели " + res + "Это не целое число, будьте внимательнее.");
+                    res = prompt("Введите целое число");
+                }
+                for (i = 0; i <= res; i++) 
+                    result += i;
+                document.write("Сумма чисел от 0 до введенного вами " + res + " = " + result);
+            </script>
+
+        </main>
+        <footer>Все права защищены &copy; Ковчин Павел</footer>
+    </body>
+</html>

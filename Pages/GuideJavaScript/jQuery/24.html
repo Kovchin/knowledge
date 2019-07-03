@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/24.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/24.js" defer></script>
+    <title>Плавное отображение элементов</title>
+</head>
+
+<body>
+    <main>
+        <h1>Плавное отображение элементов</h1>
+        <h2>Задание</h2>
+        <ul>
+            <li>Создайте несколько блоков div с произвольным текстом (100-200 символов).</li>
+            <li>Разместите в правом верхнем углу блока крестик (например, просто буквой «х»).</li>
+            <li>При нажатии на крестик блок должен плавно исчезнуть (подберите оптимальную задержку самостоятельно).
+            </li>
+            <li>После исчезновения блока его нужно удалить.</li>
+            <li>И после удаления нужно через alert() вывести: «Блок удалён».</li>
+            <li>Сделайте упражнение из предыдущего урока, но вместо плавного исчезновения используйте плавное
+                сворачивание.</li>
+        </ul>
+        <h2>Реализация</h2>
+        <div id="example">
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, laudantium incidunt soluta pariatur
+                    cupiditate iusto nam fugit. Cum harum facere quam, temporibus autem similique dolorem numquam minus
+                    eaque! Aliquid sunt adipisci excepturi. Perferendis adipisci quod optio modi facere expedita. Illum
+                    ex vero temporibus nisi neque molestias provident? Impedit facilis, autem amet earum eveniet
+                    inventore asperiores ullam fugit voluptatibus animi alias nostrum nobis soluta magnam iure
+                    doloremque quae, ad accusantium cupiditate voluptate quasi quam eius neque quia! Aut reprehenderit
+                    praesentium dolore odio esse, sunt sapiente inventore nemo vero quaerat, non alias ipsam accusantium
+                    dignissimos porro quod, voluptates repellendus nisi a exercitationem!</p>
+                    <p class="close">x</p>
+            </div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias saepe, cum et odio quia nihil nostrum
+                    temporibus quis aliquam. Facilis debitis pariatur, aperiam, natus hic autem sapiente neque at esse
+                    sit necessitatibus praesentium modi distinctio libero illo numquam repudiandae, consectetur
+                    asperiores impedit delectus molestias error qui blanditiis quibusdam! Aut molestias distinctio
+                    doloremque nemo tempora voluptas, atque rerum sunt ex nulla explicabo, ratione quo laudantium,
+                    corrupti delectus eos quos fuga quam corporis eveniet. Incidunt placeat dolorum, officia
+                    necessitatibus cupiditate ipsam praesentium eaque cumque ex! Vitae exercitationem eum molestias
+                    officiis delectus, et, assumenda beatae deleniti culpa possimus eos animi, explicabo repudiandae
+                    sequi alias dolorum numquam nobis aspernatur sit fugit ea voluptates quisquam. Tenetur, minima. Vel
+                    sed ad assumenda ullam esse omnis quas iusto facilis obcaecati veniam natus corrupti, officia
+                    nostrum! Reiciendis voluptates eaque, non perferendis odio doloremque atque sequi reprehenderit ex,
+                    quisquam laborum rerum quas? Officiis veniam cupiditate maiores itaque nemo modi.</p>
+                    <p class="close">x</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit quia assumenda dolores
+                    corrupti doloremque laudantium inventore, id quas amet placeat at qui sunt nemo sequi nobis
+                    reiciendis modi nihil sed totam, delectus quaerat vero! Sed, quam assumenda. Soluta, cum saepe nam
+                    quam magni quo explicabo? Odio ex atque illo.</p>
+                    <p class="close">x</p>
+            </div>
+        </div>
+        <h2>Код</h2>
+        <div class="code">
+                $('.close').on('click', myClose); <br>
+                <br>
+                function myClose(event){ <br>
+                    $($(event.target).parent()).fadeOut(1000,function(){ <br>
+                        $($(event.target).parent()).remove(); <br>
+                        alert('Блок удален'); <br>
+                    }); <br>
+                }
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/6.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/6.js" defer></script>
+    <title>jQuery выбор элементов по классу</title>
+</head>
+
+<body>
+    <main>
+        <h1>Выбор элементов по классу</h1>
+        <p>В этом уроке обсуждался выбор элементов при помощи библиотеки jQuery по их классу</p>
+        <h2>Задание</h2>
+        <p>Создать 3 радиокнопки и рыбный текст по выбору radiobutton менять цвет текста</p>
+        <hr>
+        <p id="myp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam assumenda, totam aliquam in deleniti vitae
+            laudantium rerum suscipit nulla quibusdam neque modi? Aspernatur nisi est ab repudiandae quae vel fugiat
+            accusantium quasi. Totam similique veniam alias consequatur tempora saepe a exercitationem ut magni optio
+            doloremque porro quas quod, tenetur numquam quia officiis, deleniti dolorem in quam fugiat, provident
+            maiores iure. Molestias sit rerum blanditiis accusamus eius nam magnam nostrum aspernatur a perspiciatis
+            inventore sint quis fuga quidem, sed corporis saepe.</p>
+        <p><input class="radiocolor" type="radio" name="mycolor" id="" value="darkred">Красный</p>
+        <p><input class="radiocolor" type="radio" name="mycolor" id="" value="darkgreen">Зеленый</p>
+        <p><input class="radiocolor" type="radio" name="mycolor" id="" value="darkblue">Голубой</p>
+        <hr>
+        <div class="code">
+                //Получаем изменяемый параграф <br>
+                var elem = $('#myp'); <br>
+                //Накручиваем функцию изменяющую цвет параграфа на radio <br>
+                $('.radiocolor').on('change', changecolor); <br>
+                //Функция изменяющая цвет параграфа в зависимости от value выбранной radio <br>
+                function changecolor(event){ <br>
+                    var clr = $(this).val(); <br>
+                    elem[0].style.color = clr; <br>
+                }
+        </div>
+    </main>
+</body>
+
+</html>

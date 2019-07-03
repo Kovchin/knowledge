@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/25.css">
+	<link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+	<script src="../../../JS/GuideJavaScript/Lushenko/25.js" defer></script>
+	<title>Клавиши клавиатуры - onkeypress</title>
+</head>
+
+<body>
+	<header>header</header>
+	<nav>nav</nav>
+	<footer>Все права защищены &copy; Ковчин Павел</footer>
+	<aside>
+		<a href="../../../index.html">Вернуться на главную</a>
+		<a href="../../JavaScript.html">Обучение Java Script</a>
+	</aside>
+	<main>
+		<h1>Клавиши клавиатуры - onkeypress</h1>
+		<hr>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/UNQIal4B3j0?start=30" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<hr>
+		<h2>В данном уроке рассматривается событие <b>onkeypress</b> - это обработчик нажатия клавиш.</h2>
+		<p id=IB>Введенная клавиша</p>
+		<div class="code">
+				document.onkeypress = function(event){<br>
+					document.getElementById('IB').innerHTML = 'Вы нажали клавишу: ' + event.key; <br>
+				}
+		</div>
+	</main>
+</body>
+
+</html>

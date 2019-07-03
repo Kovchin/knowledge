@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    margin: 20px 30px;
+}
+
+li{
+    padding: 5px;
+}
+
+.red{
+    color: darkred;
+    font-weight: bold;
+}
+
+.code{
+    background-color: grey;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+    margin: 20px;
+    padding: 10px;
+    
+}

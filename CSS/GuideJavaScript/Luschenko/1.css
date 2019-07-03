@@ -1,0 +1,12 @@
+main ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+iframe{
+    padding: 20px;
+}
+
+.lesson li{
+    color: #00F;
+}

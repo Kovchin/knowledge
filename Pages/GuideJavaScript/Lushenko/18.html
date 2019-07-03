@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/18.css">
+	<link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+	<script src="../../../JS/GuideJavaScript/Lushenko/18.js" defer></script>
+	<title>Решаем задачи с ассоциативными массивами</title>
+</head>
+
+<body>
+	<nav>nav</nav>
+	<header>header</header>
+	<aside>
+		<a href="../../../index.html">Вернуться на главную</a>
+		<a href="../../JavaScript.html">Обучение Java Script</a>
+	</aside>
+	<footer>Все права защищены &copy; Ковчин П.В.</footer>
+	<main>
+		<h1>Решаем задачи с ассоциативными массивами</h1>
+		<hr>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/BI7gg4jwRZM?start=197" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<hr>
+		<h2>В данном уроке решаются задачи на закрепление навыков работы с ассоциативными массивами</h2>
+		<hr>
+		<p><b>Задание 1.</b> Создайте ассоциативный массив содержащий описание человека. Задайте поля: имя, возраст,
+			пол, индивидуальный номер. Заполните массив. Выведите его в консоли.</p>
+		<div class="code">
+			var m = { <br>
+			"Name" : "Pavel", <br>
+			"Age" : 38, <br>
+			"Sex" : "Man", <br>
+			"Id" : "1d" <br>
+			}; <br>
+			console.log(m);
+		</div>
+		<p> <b>Задание 2. </b> Создайте ассоциативный массив содержащий описание человека. Задайте поля: имя, возраст,
+			пол, индивидуальный номер. Заполните массив. Выведите его в консоли. Добавьте в массив метод, который будет
+			рассчитывать год рождения человека исходя из его возраста и возвращать его.</p>
+		<div class="code">
+			var m1 = { <br>
+			"Name" : "Pavel", <br>
+			"Age" : 38, <br>
+			"Sex" : "Man", <br>
+			"Id" : "1d", <br>
+			"Year" : function (){return 2019 - this.Age;}<br>
+			}; <br>
+			console.log(m1.Year);
+		</div>
+		<p><b>Задание 3.</b> Создайте ассоциативный массив свойство mas которое содержит массив чисел (любого
+			количества), добавьте метод, который выводит сумму чисел содержащихся в mas.</p>
+		<div class="code">
+			var SumRes = 0 ; <br>
+			var m2 = { <br>
+			"mas" : [5,6,34,12,45], <br>
+			"summ" : function(){ <br>
+			for (var i=0; i&lt;this.mas.length; i++) <br>
+			SumRes += this.mas[i]; <br>
+			return SumRes; <br>
+			} <br>
+			}; <br>
+
+			console.log(m2.summ());
+		</div>
+	</main>
+</body>
+
+</html>

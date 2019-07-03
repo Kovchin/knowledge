@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/23.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/23.js" defer></script>
+    <title>Анимация</title>
+</head>
+
+<body>
+    <main>
+        <h1>Анимация</h1>
+        <h2>Теория</h2>
+        <p>Есть 3 способа вызова функций <b>show, hide, fadeIn и fadeOut</b> (показывающих либо скрывающих элемент)</p>
+        <ul>
+            <li>show() - показывает элемент</li>
+            <li>show(1000) - Показывает элемент в течении 1000 миллисекунд</li>
+            <li>show(1000, myFunc) - Показывает элемент в течении 1000 миллисекунд и потом выполняет функцию myFunc</li>
+        </ul>
+        <hr>
+        <div id="lesson">
+            <a href="#" id="hide">Скрыть комментарии</a>
+            <a href="#" id="show">Показать комментарии</a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, molestias.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <h2>Код</h2>
+        <div class="code">
+            $("#show").hide(); <br>
+            <br>
+            $('#hide').on('click', hideComments); <br>
+            $('#show').on('click', showComments);<br>
+            <br>
+            function showComments(){ <br>
+            $('#lesson p').show(1000, function(){ <br>
+            $('#hide').show(); <br>
+            $('#show').hide(); <br>
+            }); <br>
+            } <br>
+            <br>
+            function hideComments(){ <br>
+            $('#lesson p').hide(1000, function(){ <br>
+            $('#hide').hide(); <br>
+            $('#show').show(); <br>
+            }); <br>
+            }
+        </div>
+        <h2>Задание</h2>
+        <ul>
+            <li>Создайте несколько блоков div с произвольным текстом (100-200 символов).</li>
+            <li>Разместите в правом верхнем углу блока крестик (например, просто буквой «х»).</li>
+            <li>При нажатии на крестик блок должен плавно исчезнуть (подберите оптимальную задержку самостоятельно).
+            </li>
+            <li>После исчезновения блока его нужно удалить.</li>
+            <li>И после удаления нужно через alert() вывести: «Блок удалён».</li>
+        </ul>
+        <h2>Реализация</h2>
+        <div id="example">
+            <div>
+                <p class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eos, assumenda aliquam excepturi
+                    architecto illum eveniet est placeat pariatur id error, amet voluptas iste. Voluptate consequuntur
+                    consequatur nesciunt tenetur reprehenderit harum sequi modi magni in reiciendis sapiente ut,
+                    praesentium
+                    veniam fugit. Dolores quaerat nobis eos alias recusandae! Ad odio repellendus eos fugit? Iure,
+                    sapiente
+                    dolores dignissimos amet fugit rerum quo tenetur nostrum perspiciatis cum, aspernatur ullam cumque
+                    sequi
+                    ut ea fuga voluptate. Aspernatur tempora quas, amet sint vel hic id nostrum veniam, ducimus officiis
+                    eum
+                    obcaecati natus repellat, necessitatibus iusto maiores autem quaerat? Nostrum suscipit, aperiam
+                    quibusdam aut in molestias.</p>
+                    <p class='close'>x</p>
+            </div>
+            <div>
+                <p class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quos animi, quasi, itaque doloribus
+                    beatae
+                    consequatur consequuntur eaque quidem facilis qui aliquam. Maiores beatae eius provident, facere
+                    voluptatem alias impedit adipisci, quibusdam reprehenderit odit accusamus, sapiente corrupti
+                    corporis ea
+                    neque soluta eligendi deserunt minima. Vero expedita consectetur commodi iusto aperiam maiores,
+                    dicta
+                    nemo ipsum dolor illum, molestiae atque excepturi reiciendis ipsam modi in? Quos iure natus quidem
+                    mollitia, beatae modi, aperiam temporibus, quo culpa numquam earum. Optio facilis consequatur
+                    deleniti
+                    doloribus eligendi error praesentium officia quam nihil sed mollitia corporis suscipit, laudantium
+                    quo
+                    culpa. Laboriosam est enim adipisci. Odio corporis odit eos doloremque quisquam. Illo odit iusto
+                    aspernatur iure veniam sunt, quasi facilis accusantium. Omnis itaque totam dicta dolorem obcaecati
+                    dolore, laudantium odio quasi ad saepe libero vitae culpa, ratione modi ex est iusto voluptatibus
+                    animi
+                    voluptatem aliquam. Tenetur obcaecati earum quis eos qui omnis nostrum consectetur esse explicabo
+                    sit
+                    doloribus a suscipit labore est quasi pariatur temporibus ea incidunt alias doloremque odio error,
+                    cupiditate sapiente porro. Sequi assumenda, suscipit harum nisi nobis qui consequatur, error magnam
+                    consequuntur sunt eligendi culpa et dicta repudiandae veniam doloribus rerum deleniti quasi! Nisi
+                    assumenda cum impedit iste? In, dignissimos atque. Ipsam, debitis consequatur.</p>
+                    <p class='close'>x</p>
+            </div>
+            <div>
+                <p class="exp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque doloribus iusto doloremque unde
+                    inventore? Error, deserunt itaque quae ratione beatae sapiente officia ullam dolor sit id deleniti
+                    ab,
+                    distinctio quisquam qui! Similique, dolorum tenetur. Eum neque ea dolores enim possimus unde
+                    adipisci
+                    ipsam earum labore non tempora id aperiam delectus vero sint, esse minus deserunt minima ex
+                    sapiente?
+                    Error, quam asperiores nemo vel voluptatem quas dignissimos atque, molestias ratione minus inventore
+                    ut
+                    aliquid qui, magni commodi itaque ullam. Voluptate hic voluptatem ipsam ab minima, provident ullam,
+                    quasi suscipit repellat nisi, pariatur reprehenderit? Voluptatum temporibus vero dicta sed
+                    perspiciatis
+                    at tempore facilis reprehenderit modi nesciunt dolorum, unde distinctio laborum, molestiae quis.
+                    Neque
+                    maxime autem nihil consequatur, quas dolorum consectetur inventore nulla itaque cum quia, blanditiis
+                    optio nostrum repudiandae reprehenderit molestias temporibus? Voluptate vero, quae hic ratione
+                    voluptas,
+                    fugiat perferendis sunt nulla iusto asperiores repudiandae cumque velit officiis nesciunt incidunt
+                    quas
+                    et.</p>
+                    <p class='close'>x</p>
+            </div>
+        </div>
+        <h2>Код</h2>
+        <div class="code">
+                $('.close').on('click', myClose); <br>
+                <br>
+                function myClose(event){ <br>
+                    $($(event.target).parent()).hide(1000, function(){ <br>
+                        $($(event.target).parent()).remove(); <br>
+                        alert('Блок удален'); <br>
+                    }); <br>
+                }
+        </div>
+    </main>
+
+</body>
+
+</html>

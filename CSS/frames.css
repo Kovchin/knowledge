@@ -1,0 +1,45 @@
+aside {
+    background: orange;
+    color: #fff;
+    height: 700px;
+    padding: 0;
+    margin: 0;
+    width: 75%;
+    float: left;
+}
+
+aside a {
+    color: blue;
+}
+
+body {
+    background: url("../Images/amarant_wood_02.jpg");
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer,
+header,
+nav {
+    border: 1px solid #000;
+    margin: 0;
+    text-align: center;
+}
+
+section {
+    background: url("../Images/venge.jpg");
+    color: #fff;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}

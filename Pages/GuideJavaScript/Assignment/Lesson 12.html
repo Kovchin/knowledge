@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link
+            rel="stylesheet"
+            href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+            <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/lesson 12.css">
+        <link
+            rel="shortcut icon"
+            href="../../../Images/favicon.ico"
+            type="image/x-icon">
+        <title>Document</title>
+    </head>
+    <body>
+        <header></header>
+        <nav></nav>
+        <aside>
+            <a href="../../../index.html">Вернуться на главную</a>
+            <a href="../../JavaScript.html">Обучение Java Script</a>
+        </aside>
+        <main>
+            <h1>Задание к урокам Михаила Русакова</h1>
+            <ul>
+                <li>
+                    Создайте функцию, принимающую двумерный массив и выводящую его в теге
+                    &lt;table&gt; на страницу, чтобы каждое число было в своей ячейке.
+                </li>
+                <h3>Код</h3>
+                    <code>
+                            function OutputArrayInTable(InputArr) { <br>
+                                if (typeof(InputArr) == "object") { <br>
+                                    document.write("&lt;table border=1"); <br>
+                                    for (i = 0; i &lt; InputArr.length; i++) { <br>
+                                        document.write("&lt;tr&gt;") <br>
+                                        for (j = 0; j &lt; InputArr[i].length; j++) { <br>
+                                            document.write("&lt;td&gt;" + InputArr[i][j] + "&lt;/td&gt;"); <br>
+                                        } <br>
+                                        document.write("&lt;/tr&gt;"); <br>
+                                    } <br>
+                                    document.write("&lt;/table&gt;"); <br>
+                                } else  <br>
+                                    document.write("Ошибка в форме передаваемых данных функции OutputArrayInTable"); <br>
+                                }                       
+                    </code>
+                <li>Создайте двумерный массив 3 на 3 и передайте его в функцию, убедившись, что
+                    она работает.</li>
+                    <h3>Код</h3>
+                    <code>
+                            arr1 = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9); <br>
+                            arr2 = new Array(4, 5, 6); <br>
+                            arr3 = new Array(7, 8, 9); <br>
+                            TestArr = new Array(arr1, arr2, arr3); <br>
+                            OutputArrayInTable(TestArr); 
+                    </code>
+                    <h3>Результат</h3>
+                    <script>
+                        arr1 = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+                        arr2 = new Array(4, 5, 6);
+                        arr3 = new Array(7, 8, 9);
+                        TestArr = new Array(arr1, arr2, arr3);
+                        function OutputArrayInTable(InputArr) {
+                            if (typeof(InputArr) == "object") {
+                                document.write("<table border=1");
+                                for (i = 0; i < InputArr.length; i++) {
+                                    document.write("<tr>")
+                                    for (j = 0; j < InputArr[i].length; j++) {
+                                        document.write("<td>" + InputArr[i][j] + "</td>");
+                                    }
+                                    document.write("</tr>");
+                                }
+                                document.write("</table>");
+                            } else 
+                                document.write("Ошибка в форме передаваемых данных функции OutputArrayInTable");
+                            }
+                        OutputArrayInTable(TestArr);
+                    </script>
+                <li>Создайте функцию, принимающую одномерный массив и возвращающую (именно
+                    возвращающую, а не выводящую) сумму всех элементов массива.</li>
+                    <h3>Код</h3>
+                    <code>
+                            &lt;script&gt; <br>
+                                    function SummArrayElements(InputArray){ <br>
+                                        var summ = 0; <br>
+                                        for(i=0; i&lt;InputArray.length;i++) <br>
+                                        summ =+ summ+InputArray[i]; <br>
+                                        return summ; <br>
+                                    } <br>
+                            &lt;/script&gt;
+                    </code>
+                <li>Создайте одномерный массив, затем вызовите функцию из 3-го пункта, а
+                    результат запишите в переменную.</li>
+                    <code>
+                            var arr5 = new Array(); <br>
+                            for (i=0; i&lt;50; i++) <br>
+                              arr5[i] = i; <br>
+                            summa = SummArrayElements(arr5);
+                    </code>
+                <li>
+                    Выведите эту переменную через document.write().</li>
+<h3>Код</h3>
+<code>
+        summa=SummArrayElements(arr5); <br>
+        document.write("Сумма элементов массива" + arr5 + "&lt;br&gt; Равна = " + summa);
+</code>
+<h3>Результат</h3>
+                    <script>
+                            function SummArrayElements(InputArray){
+                                var summ = 0;
+                                for(i=0; i<InputArray.length;i++)
+                                summ =+ summ+InputArray[i];
+                                return summ;
+                            }
+                            var arr5 = new Array();
+                            for (i=0; i<50; i++)
+                              arr5[i] = i;
+                            summa=SummArrayElements(arr5)
+                            document.write("Сумма элементов массива" + arr5 + "<br> Равна = " + summa);
+                        </script>
+            </ul>
+        </main>
+        <footer>Все права защищены &copy; Ковчин Павел</footer>
+    </body>
+</html>

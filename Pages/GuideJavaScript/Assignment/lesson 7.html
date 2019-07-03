@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <aside>
+            <a href="../../../index.html">Вернуться на главную</a>
+            <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <main>
+            <script>
+                    //Упражнение 7.
+                    document.write(
+                        "<h4>Упражнение 7</h4>Создайте булевскую переменную, в которой запишите ответ н" +
+                        "а утверждение: «Вы мужчина?» \. Если да, то поставьте true, если нет, то поста" +
+                        "вьте false \. <br> Запишите условие, в котором проверьте значение булевской пе" +
+                        "ременной, и если оно истинно, то выведите на страницу «Я мужчина», иначе вывед" +
+                        "ите на страницу «Я женщина» \."
+                    );
+                    var MW = "man";
+                    document.write("<br>");
+                    if (MW == "man") 
+                        document.write("<i>Я мужчина</i>")
+                    else 
+                        document.write("<i>Я женщина</i>")
+                    var mw = "man";
+                    document.write("<br> то же самое только через <b>switch / case</b> <br>");
+                    switch (mw) {
+                        case "man":
+                            document.write("Я Мужчина");
+                            break;
+                        case "woman":
+                            document.write("Я Женщина");
+                            break;
+                        default:
+                            document.write("Не внимательный или не определился");
+                    }
+                    document.write(
+                        "<br> Создайте переменную, в которой укажите Ваш возраст \.     Создайте скрипт" +
+                        ", который будет выводить словесную интерпретацию возраста \.<br> Если меньше 1" +
+                        "8, то выведите «У меня юный возраст», <br> если 18 и больше до 30, то «Я молод" +
+                        "ой», <br> если от 31 до 50 – «Я взрослый», <br> если от 51 до 80, то «Я зрелый" +
+                        "», <br> если больше 80, то «Я старый» \."
+                    );
+                    var edge = 37;
+                    document.write("<br>");
+                    if ((edge > 0) && (edge <= 18)) 
+                        document.write("У меня юный возраст");
+                    else if ((edge > 18) && (edge <= 30)) 
+                        document.write("Я молодой");
+                    else if ((edge > 30) && (edge <= 50)) 
+                        document.write("Я взрослый");
+                    else if ((edge > 50) && (edge <= 80)) 
+                        document.write("Я зрелый");
+                    else if (edge > 80) 
+                        document.write("Я старый");
+                </script>
+    </main>
+    <footer>Все права защищены &copy; Ковчин Павел</footer>
+</body>
+</html>

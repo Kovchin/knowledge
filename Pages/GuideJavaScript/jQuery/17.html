@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/17.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/17.js" defer></script>
+    <title>Добавление элементов</title>
+</head>
+
+<body>
+    <main>
+        <h1>Добавление элементов</h1>
+        <h2>Задание</h2>
+        <ul>
+            <li>Создайте 2 абзаца произвольного текста.</li>
+            <li>Добавьте в начало обоих абзацов через jQuery: Здравствуйте!</li>
+            <li>Добавьте к обоим абзацам через jQuery в конец абзаца: &lt;i&gt;С Уважением, Автор!&lt;/i&gt;</li>
+        </ul>
+        <h2>Теория</h2>
+        <ul>
+            <li>$('div').<span class="red">append</span>('&lt;p&gt;Привет мир!&lt;/p&gt;') - добавить ко всем блокам
+                <b>div</b> параграф <b>p</b> <i>в конец</i>.</li>
+            <li>$('img').<span class='red'>appendTo</span>('#images') - переносит все <b>img</b> со страницы в блок с
+                <b>ID='images'</b><i>в конец</i>.</li>
+            <li><span class='red'>prepend</span> - то же самое что и append только в начало блока</li>
+            <li><span class='red'>prependTo</span> - то же самое что и appendTo только в начало блока</li>
+            <li>$('a').<span class="red">wrap</span>('&lt;p class="link"&gt;&lt;/p&gt;') - оборачивает все теги <b>a</b>
+                в параграфы с классом link</li>
+        </ul>
+        <h2>Реализация</h2>
+        <div class="example">
+            <p class="insert">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil facere cum quod
+                necessitatibus vitae
+                dignissimos tempore reprehenderit quos explicabo illum ut neque aspernatur, nemo sit quae repellat omnis
+                aut quisquam soluta consequuntur molestias accusamus nobis et quibusdam? Id architecto, quas fugit sequi
+                dolor expedita ipsam, atque nisi, sapiente consequatur esse dicta. Ipsum iusto pariatur ipsa molestiae
+                voluptatibus quos totam quisquam sequi facilis fugit eveniet expedita voluptatum, culpa perspiciatis
+                quae, ratione velit quidem vel asperiores repudiandae sapiente earum deleniti? Reprehenderit, quis.</p>
+            <p class="insert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae error sequi
+                accusamus aspernatur id
+                voluptate suscipit unde molestiae assumenda obcaecati sed atque quod adipisci quisquam cupiditate! Magni
+                deserunt recusandae distinctio assumenda facere illo fugit enim quos aperiam totam! Dolorem, iusto
+                deserunt rerum non voluptatibus itaque tempora quae vero esse id dolore accusamus perspiciatis culpa
+                qui, quia magnam officiis consequatur.</p>
+        </div>
+        <h2>Код</h2>
+        <div class="code">
+            $('.example p').prepend('&lt;p&gt; Здравствуйте! &lt;/p&gt;'); <br>
+            $('.example p[class="insert"]').append('&lt;i&gt;С уважением автор.&lt;/i&gt;');
+        </div>
+    </main>
+</body>
+
+</html>

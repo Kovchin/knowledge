@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Селекторы</title>
+	<link rel="stylesheet" href="../CSS/selectors.css"/>
+	<link rel="icon" type="image/png" href="../Images/favicon.ico"/>
+</head>
+<body>
+	<h1>В этом разделе рассмотрим селекторы их виды и области применения.</h1>
+	<header>
+		<a href="../index.html">Вернуться на главную.</a>
+	</header>
+		<div>
+			<h2>Селектор элемента</h2>
+			<table>
+				<tr>
+					<td></td>
+					<td>HTML</td>
+					<td>CSS</td>
+				</tr>
+				<tr>
+					<td>Описание.</td>
+					<td colspan="2">Селектор элемента совпадает с названием тега. Применяется когда нужно во всем документе задать одинаковый вид всем тегам определенного класса.</td>
+				</tr>
+				<tr>
+					<td>Демонстрация</td>
+					<td colspan="2"><p style="color: red;">Какой то текст</p></td>
+				</tr>
+				<tr>
+					<td>Код</td>
+					<td><pre>&lt;p&gt;Какой то текст&lt;/p&gt;</pre></td>
+					<td style="text-align: left;"><code>p{<br>color: red;<br>}</code></td>				
+				</tr>
+			</table>
+		</div>	
+		<div>
+			<h2>Селектор класса</h2>
+			<p></p>
+			<table>
+				<tr>
+					<td></td>
+					<td>HTML</td>
+					<td>CSS</td>
+				</tr>
+				<tr>
+					<td>Описание</td>
+					<td colspan="2">Селектор класса создается в HTML документе (называется желательно со смысловой привязкой к конечному результату изменений верстки).</td>
+				</tr>
+				<tr>
+					<td>Демонстрация</td>
+					<td colspan="2"><p style="color: #F00;">Какой то текст</p></td>
+				</tr>
+				<tr>
+					<td>Код</td>
+					<td><pre>&lt;p class="red"&gt;Какой то текст&lt;/p&gt;</pre></td>
+					<td style="text-align: left;"><code>.red{<br>color: #f00;<br>}</code></td>				
+				</tr>
+			</table>
+		</div>			
+		<div>
+			<h2>Селектор ID</h2>
+			<p></p>
+			<table>
+				<tr>
+					<td></td>
+					<td>HTML</td>
+					<td>CSS</td>
+				</tr>
+				<tr>
+					<td>Описание</td>
+					<td colspan="2">Селектор ID. Уникален в документе. Используется если требуется сделать ссылку на элемент. Используется в Java скрипте для доступа к элементу. Проверить можно (index.html#red)</td>
+				</tr>
+				<tr>
+					<td>Демонстрация</td>
+					<td colspan="2"><p style="color: #0F0;">Какой то текст</p></td>
+				</tr>
+				<tr>
+					<td>Код</td>
+					<td><pre>&lt;p id="red"&gt;Какой то текст&lt;/p&gt;</pre></td>
+					<td style="text-align: left;"><code>#red{<br>color: #0F0;<br>}</code></td>				
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2>Контекстный селектор класса.</h2>
+			<p></p>
+			<table>
+				<tr>
+					<td></td>
+					<td>HTML</td>
+					<td>CSS</td>
+				</tr>
+				<tr>
+					<td>Описание</td>
+					<td colspan="2">Контекстный селектор класса. Используется когда нужно прикрутить какую то логику к стилю форматирования к примеру в когда в теге <b>P</b> мы встречаем тег <b>SPAN</b> и при этом условии применяем форматирование указанное в CSS.</td>
+				</tr>
+				<tr>
+					<td>Демонстрация</td>
+					<td colspan="2"><p>Какой <span>то</span> текст</p><br>Какой <span>то</span> текст</td>
+				</tr>
+				<tr>
+					<td>Код</td>
+					<td><code>&lt;p&gt;Какой &lt;span&gt;то&lt;/span&gt; текст&lt;/p&gt;
+					&lt;br&gt;Какой &lt;span&gt;то&lt;/span&gt; текст</code></td>
+					<td style="text-align: left;"><code>p span{<br>color: #00F;<br>}</code></td>				
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2>Селектор параметров.</h2>
+			<p></p>
+			<table>
+				<tr>
+					<td></td>
+					<td>HTML</td>
+					<td>CSS</td>
+				</tr>
+				<tr>
+					<td>Описание</td>
+					<td colspan="2">Селектор параметров используется когда нужно осуществить верстку в зависимости от параметров класса используемого тега.</td>
+				</tr>
+				<tr>
+					<td>Демонстрация</td>
+					<td colspan="2">
+						<form>
+							<div>
+								<p>Имя: </p>
+								<input type="text" name="name">
+							</div>
+							<div>
+								<input type="submit" name="name">
+							</div>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Код</td>
+					<td>
+						<xmp>
+<form>
+<div>
+	<p>Имя: </p>
+	<input type="text" name="name">
+</div>
+<div>
+	<input type="submit" name="name">
+</div>
+</form>
+						</xmp>
+					</td>
+					<td>
+<xmp>
+input[type="text"]{
+	height: 40px;
+	width: 400px;
+}
+input[type="submit"]{
+	cursor: pointer;
+	height: 50px;
+	width: 300px;
+	color: @0099dd;
+}
+input[type="text"]:focus{
+	border: 2px solid #c00;
+}
+</xmp>
+					</td>				
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2>Селектор отношений.</h2>
+			<p></p>
+			<table>
+				<tr>
+					<td></td>
+					<td>HTML</td>
+					<td>CSS</td>
+				</tr>
+				<tr>
+					<td>Описание</td>
+					<td colspan="2">Селектор тоношений. Используется когда нужно учитывать взаимное отношение тегов и в зависимости от этого осуществлять верстку.</td>
+				</tr>
+				<tr>
+					<td>Демонстрация</td>
+					<td colspan="2">
+						<h3><p>Параграф в заголовке 3-го уровня</p></h3>
+						<p>Просто параграф</p>
+					</td>
+				</tr>
+				<tr>
+					<td>Код</td>
+					<td>
+<xmp>
+<h3><p>Параграф в заголовке 3-го уровня</p></h3>
+<p>Просто параграф</p>
+</xmp>
+					</td>
+					<td>
+<xmp>	
+h3 > p {
+color: #FFFF00;
+}</xmp>
+					</td>				
+				</tr>
+			</table>
+		</div>
+<div>
+			<h2>Селектор псевдо классов</h2>
+			<table>
+				<tr>
+					<td></td>
+					<td>HTML</td>
+					<td>CSS</td>
+				</tr>
+				<tr>
+					<td>Описание.</td>
+					<td colspan="2">Селектор псевдо классов. Нужен для верстки страницы в зависимости от условий класса</td>
+				</tr>
+				<tr>
+					<td>Демонстрация</td>
+					<td colspan="2">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Код</td>
+					<td>
+<xmp>
+<ul>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+</xmp>
+					</td>
+					<td>
+<xmp>
+ul li:first-child{
+	color: #F00;
+}
+ul li:last-child{
+	color: #0F0;
+}
+ul li:nth-child(3){
+	color: #00F;
+}
+ul li:nth-child(2n){
+	color: #FF0;
+}
+ul li:hover{
+	color: #FFF;
+	cursor: pointer;
+	text-decoration: underline;
+}
+ul li:nth-child(1):hover{
+	color: #000;
+}
+</xmp>
+					</td>				
+				</tr>
+			</table>
+		</div>	
+	<footer>
+	</footer>
+</body>
+</html>

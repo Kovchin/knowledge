@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Оформление расстановки сетки страницы*/
+body{
+    display: grid;
+    grid-template-areas: "header nav" "aside main" "footer footer";
+    grid-template-rows: 50px 5fr 50px;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+}
+
+header{
+    top: 0px;
+    left: 0px;
+    background: #2c3e50;
+    color: #f6f7f8;
+    grid-area: header;
+}
+
+nav{
+    top: 0px;
+    left: 0px;
+    color: #f6f7f8;
+    background: #2c3e50;
+/*===========================================*/    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside{
+    top: 0px;
+    left: 0px;
+    background: #476e9e;
+    grid-area: aside;
+}
+
+aside a, nav a{
+    text-decoration: none;
+    color: #f6f7f8;
+}
+
+main{
+    top: 0px;
+    left: 0px;
+    background: #16a085;
+    grid-area: main;
+}
+
+footer{
+    background: #2c3e50;
+    color: #f6f7f8;
+    grid-area: footer;
+}
+
+ol{
+    margin: 20px 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+.code{
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px black;
+    background-color: grey;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 20px;
+}

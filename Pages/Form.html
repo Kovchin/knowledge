@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Справочник HTML</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Уроки Михаила Русакова" />
+	<meta name="keywords" content="Уроки Михаила Русакова, Справочник html" />	
+</head>
+<body>
+<h1>Формы</h1>
+	<form name="form" action="script.php" method="get" enctype="multipart/form-data">
+		<fieldset>
+		<legend>Основные данные</legend>
+			<div>
+				<label for="firstname">Ваше имя:</label>
+				<input id="firstname" type="text" name="firstname" value="стартовое значение">
+			</div>
+			<div>
+				<label for="surname">Ваша фамилия:</label>
+				<input id="surname" type="text" name="surname" placeholder="введите фамилию">
+			</div>		
+			<div>
+				<label for="password">Ваша пароль:</label>
+				<input id="password" type="password" name="password" placeholder="введите пароль">
+			</div>
+		</fieldset>
+		<fieldset>
+			<div>
+				<label for="email">Ваша почта:</label>
+				<input id="email" type="email" name="email" placeholder="введите email">
+			</div>	
+			<div>
+				<label for="phone">Ваш телефон:</label>
+				<input id="phone" type="tel" name="phone">
+			</div>		
+			<div>
+				<label for="site">Ваш сайт:</label>
+				<input id="site" type="url" name="site">
+			</div>	
+		</fieldset>
+		<fieldset>
+			<div>
+				<label>Ваш любимый цвет:</label>	
+				<input type="radio" name="color" value="1"/>Зеленый
+				<input type="radio" name="color" value="2"/>Красный
+				<input type="radio" name="color" value="3"/>Синий
+			</div>
+			<div>
+				<label>Ваше любимое блюдо:</label>	
+				<input type="radio" name="food" value="1"/>Мясо
+				<input type="radio" name="food" value="2"/>Рыба
+				<input type="radio" name="food" value="3"/>Птица
+			</div>
+			<div>
+				<label>Что Вам принести:</label>	
+				<input type="checkbox" name="order" value="1"/>Мясо
+				<input type="checkbox" name="order" value="2"/>Рыба
+				<input type="checkbox" name="order" value="3"/>Птица
+			</div>
+		</fieldset>
+		<fieldset>
+			<div>
+				<label for="news">Подписаться на новости:</label>	
+				<input id="news" type="checkbox" name="news" value="1" checked="checked"/>
+			</div>
+			<div>
+				<label for="search">Ваш любимый поисковик:</label>
+				<input id="search" type="text" name="search" list="search_list">
+				<datalist id="search_list">
+					<option value="Google"></option>
+					<option value="Яндекс"></option>
+				</datalist>
+			</div>
+			<div>
+				<label for="file">Файл:</label>
+				<input id="file" type="file" name="file"">
+			</div>	
+			<div>
+				<label for="count">Количество копий:</label>
+				<input id="count" type="number" name="count" min="0" max="10"/>
+			</div>	
+			<div>
+				<label for="range">Диапазон:</label>
+				<input id="range" type="range" name="range" min="0" max="10" step="2"/>
+			</div>		
+			<div>
+				<label for="color">Цвет:</label>
+				<input id="color" type="color" name="color"/>
+			</div>		
+			<div>
+				<label for="date">Дата:</label>
+				<input id="date" type="date" name="date"/>
+			</div>		
+			<div>
+				<label for="message">Сообщение:</label>
+				<textarea id="message" name="message">Мое сообщение</textarea>
+			</div>	
+			<div>
+				<label for="city">Город:</label>
+				<select id="city" name="sity">
+					<option value="1">Москва</option>
+					<option value="2">Санкт-Петербург</option>
+					<option value="3">Омск</option>
+					<option value="4">Новосибирск</option>
+					<option value="5" selected="selected">Красноярск</option>
+					<option value="6">Краснодар</option>
+					<option value="7">Владивосток</option>
+				</select>
+			</div>
+			<div>
+				<label for="city2">Город 2.0:</label>
+				<select id="city2" name="sity2">
+					<optgroup label="Крупнейшие">
+						<option value="1">Москва</option>
+						<option value="2">Санкт-Петербург</option>
+					</optgroup>
+					<optgroup label="Сибирь">
+						<option value="3">Омск</option>
+						<option value="4">Новосибирск</option>
+						<option value="5" selected="selected">Красноярск</option>
+						<option value="6">Краснодар</option>
+					</optgroup>
+					<optgroup label="Дальний восток">
+						<option value="7">Владивосток</option>
+					</optgroup>
+				</select>
+			</div>
+		</fieldset>
+		<div>
+			<input type="hidden" name="article_id" value="100"/><!--Невидимый элемент нужен для программирования(получения данных со страницы)-->
+			<input type="reset" value="Сбросить"/>
+			<input type="submit" name="submit" value="Отправить"/>
+		</div>	
+	</form>
+</body>
+</html>

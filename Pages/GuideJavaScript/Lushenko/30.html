@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/30.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/GuideJavaScript/Lushenko/30.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <footer>Все права защищены &copy; Ковчин П.В.</footer>
+    <aside>
+        <a href="../../../index.html">Вернуться на главную</a>
+        <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <main>
+        <h1>Название урока</h1>
+        <hr>
+        <h2>В этом уроке мы создадим игру угадай число от 1 до 10.</h2>
+        <hr>
+        <p>Введите число от 1 до 10:</p>
+        <input type="text" id="text">
+        <p>Количество попыток: <span id="chants"></span></p>
+        <p>Подсказка: введенное Вами число <span id="help">...</span></p>
+        <button id="check">Проверить</button>
+        <hr>
+        <h2>Код</h2>
+        <div class="code">
+            var questNumber = Math.floor(10 * Math.random() + 1); <br>
+            var inputNumber; <br>
+            var chants = 5; <br>
+            <br>
+            //вывод количества попыток <br>
+            document.getElementById('chants').innerHTML = chants; <br>
+            <br>
+            //функция проверки введенного числа <br>
+            document.getElementById('check').onclick = function () { <br>
+            //Присваиваем переменной inputNumber введенное нами число <br>
+            inputNumber = parseInt(document.getElementById('text').value); <br>
+            <br>
+            if (chants &gt; 0) { <br>
+            <br>
+            if (questNumber &gt; inputNumber) { <br>
+            document.getElementById('help').innerHTML = 'меньше загаданного программой'; <br>
+            chants--; <br>
+            } <br>
+            else if (questNumber &lt; inputNumber) { <br>
+            document.getElementById('help').innerHTML='больше загаданного программой' ; <br>
+            chants--; <br>
+        } <br>
+            else { <br>
+            document.getElementById('help').innerHTML='совпало с загаданным.'; <br>
+            alert('УРА Вы выиграли!!!'); <br>
+            location.reload(); <br>
+        } <br> 
+        document.getElementById('chants').innerHTML=chants; <br>
+            } <br>
+            else { <br>
+            alert('Вы проиграли. :-('); <br>
+             location.reload(); <br>
+            } <br>
+            } </div> <br>
+    </main>
+</body>
+
+</html>

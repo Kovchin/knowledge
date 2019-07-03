@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/22.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/22.js" defer></script>
+    <title>Пример использования событий</title>
+</head>
+
+<body>
+    <main>
+        <h1>Пример использования событий</h1>
+        <h2>Теория</h2>
+        <h2>Задание</h2>
+        <ul>
+            <li>Создайте текстовую область.</li>
+            <li>Создайте 3 абзаца произвольного текста.</li>
+            <li>При двойном клике мыши на абзаце текст из него должен быть скопирован и вставлен в текстовую область.
+            </li>
+        </ul>
+        <h2>Реализация</h2>
+        <div id="example">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ducimus.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eum quos provident, nobis earum doloribus.
+            </p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <h2>Код</h2>
+        <div class="code">
+                $('#example p').on('dblclick', insertText); <br>
+<br>
+                function insertText(event){ <br>
+                    $('#example textarea').html($('#example textarea').html() + '\n' + $(event.target).html()); <br>
+                }
+        </div>
+    </main>
+</body>
+
+</html>

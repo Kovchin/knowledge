@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="..//CSS/JavaScript.css">
+	<script src="../JS/GuideJavaScript/Lushenko/17.js" defer></script>
+	<title>JavaScript</title>
+</head>
+
+<body>
+	<!--todo-- https://learn.javascript.ru/introduction-browser-events
+        https://learn.javascript.ru/custom-events -->
+	<header></header>
+	<nav class="NavMenu">
+		<ul>
+			<li>
+				<a href="#">Справочник</a>
+			</li>
+			<li>
+				<a href="#">Примеры</a>
+			</li>
+			<li>
+				<a href="#">Алекс Лущенко</a>
+				<ul class="SubMenu1">
+					<li><a href="../Pages/GuideJavaScript/Lushenko/1.html">Первые шаги.</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/2.html">Текстовые поля в Javascript</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/4.html">Калькулятор на JavaScript</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/5.html">Javascript вывод на страницу</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/6.html">Ветвление в Javascript.</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/7.html">Игра угадай число на JavaScript</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/8.html">Цикл for в JavaScript</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/9.html">Цикл While JavaScript</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/10.html">Знакомство с массивами</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/11.html">Создание простейшего слайдера</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/12.html">Создание слайдера по таймингу</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/14.html">Работаем с элементами и классами</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/15.html">RadioButton</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/16.html">Пишем сервис CSS generator</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/17.html">Ассоциативные массивы</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/18.html">Решаем задачи с ассоциативными массивами</a>
+					</li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/19.html">Выводим товар на страницу</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/20.html">Функции и работа с ними</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/21.html">События мыши</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/22.html">Кошка гоняется за мышкой</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/23.html">Классный эффект переключения между фото</a>
+					</li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/24.html">Таймеры и интервалы</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/25.html">Клавиши клавиатуры - onkeypress</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/26.html">Поле ввода пароля</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/27.html">Двигаем блок стрелками</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/28.html">Прокрутка колеса мыши</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/29.html">Плавная прокрутка страницы</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/30.html">Угадай число</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/31.html">Крести нолики</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/32.html">Local storage</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/33.html">ToDo лист</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/34.html">Адаптивное меню</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/35.html">Часы со стрелками</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/36.html">Вкладки</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/37.html">Колонки одинаковой высоты</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/38.html">Проверка Desktop / Mobile</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/39.html">Прокрутка страницами</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/40.html">Работа с DOM</a></li>
+					<li><a href="../Pages/GuideJavaScript/Lushenko/41.html">Навигация по DOM</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Задания javascript.ru</a>
+				<ul class="SubMenu1">
+					<li>
+						<a href="#">Часть 1
+							<ul class="SubMenu2">
+								<li><a href="#">Введение</a></li>
+								<li><a href="#">Основы JavaScript</a></li>
+								<li><a href="#">Качество кода</a></li>
+								<li><a href="#">Структуры данных</a></li>
+								<li><a href="#">Замыкания, область видимости</a></li>
+								<li><a href="#">Методы объектов и контекст вызова</a></li>
+								<li><a href="#">Некоторые другие возможности</a></li>
+								<li><a href="#">ООП в функциональном стиле</a></li>
+								<li><a href="#">ООП в прототипном стиле</a></li>
+								<li><a href="#">Современные возможности ES-2015</a></li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">Часть 2</a>
+					</li>
+					<li>
+						<a href="#">Часть 3</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Русаков</a>
+				<ul class="SubMenu1">
+					<li></li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/Lesson 1-5.html" info="Задания 1-5">Задания 1-5</a>
+					</li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/lesson 6.html" info="Задание 6">Задание 6</a>
+					</li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/lesson 7.html" info="Задание 7">Задание 7</a>
+					</li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/lesson 8.html" info="Задание 8">Задание 8</a>
+					</li>
+					<li>
+						<a href="..//Pages/GuideJavaScript/Assignment/lesson 9.html" info="Задание 9">Задание 9</a>
+					</li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/Lesson 10.html" info="Задание 10">Задание 10</a>
+					</li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/Lesson 11.html" info="Задание 11">Задание 11</a>
+					</li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/Lesson 12.html" info="Задание 12">Задание 12</a>
+					</li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/Lesson 13.html" info="Задание 13">Задание 13</a>
+					</li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/Lesson 14.html" info="Задание 14">Задание 14</a>
+					</li>
+					<li>
+						<a href="../Pages/GuideJavaScript/Assignment/Lesson 15.html" info="Задание 15">Задание 15</a>
+					</li>
+					<li></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">jQuery</a>
+				<ul class="SubMenu1">
+					<li><a href="../Pages/GuideJavaScript/jQuery/1.html" info="Задание 4">Подключение jQuary</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/5.html" info="Задание 5">Обращение к элементу по ID</a>
+					</li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/6.html" info="Задание 6">Обращение к элементу по
+							классу</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/7.html" info="Задание 7">Обращение к элементу по
+							тегу</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/8.html" info="Задание 8">Обращение к элементу по
+							иерархии</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/9.html" info="Задание 9">Отбор элементов по
+							взаимоотношениям</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/10.html" info="Задание 10">Дополнительные селекторы
+							jQuery</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/11.html" info="Задание 11">!!!Манипулирования с набором
+							элементов</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/12.html" info="Задание 12">Манипулирование
+							атрибутами</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/13.html" info="Задание 13">Манипулирование классами</a>
+					</li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/14.html" info="Задание 14">Манипулирование стилями
+							CSS</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/15.html" info="Задание 15">Методы HTML и Text</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/16.html" info="Задание 16">Метод Clone</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/17.html" info="Задание 17">Добавление элементов</a>
+					</li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/18.html" info="Задание 18">Удаление элементов</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/19.html" info="Задание 19">Создание новых элементов</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/20.html" info="Задание 20">Функция val()</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/21.html" info="Задание 21">Установка обработчика событий</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/22.html" info="Задание 22">Пример использования событий</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/23.html" info="Задание 23">Анимация</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/24.html" info="Задание 24">Плавное отображение элементов</a></li>
+					<li><a href="../Pages/GuideJavaScript/jQuery/25.html" info="Задание 25">Пользовательская анимация</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<aside>
+		<a href="../index.html" title="Вернуться на главную">Вернуться на главную</a>
+		<a href="#up">Подняться вверх страницы</a>
+		<a href="#variable">Переменные</a>
+		<a href="#MathOperation">Математические операции</a>
+		<a href="#LogicalOperation">Логические операции</a>
+		<a href="#IfCase">Условные операторы</a>
+		<a href="#cycle">Циклы</a>
+		<a href="#MetodsWindow">3 Метода класса Window</a>
+		<a href="#LArray">Массивы</a>
+		<a href="#AArray">Ассоциативные массивы</a>
+		<a href="#Functions">Функции</a>
+		<a href="#VariableVisibility">Видимость переменных</a>
+		<a href="#events">События</a>
+		<a href="#regular">Регулярные выражения</a>
+	</aside>
+	<main>
+		<h1 id="up">Это накопительная страница по JavaScript</h1>
+		<h2>Вводное слово.</h2>
+		Для идентификации JavaScript в коде HTML страницы используется парный тег
+		<code>
+                &lt; script &gt; &lt; /script &gt;</code>
+		<p>Текст объектов методов и функций Java Script можно хранить в отдельных файлах с расширением js и подключать
+			их в теге &lt;header&gt;
+		</p>
+		<p>
+			<code>
+                    &lt;script src="1.js" defer&gt;&lt;/script&gt;
+                </code>
+		</p>
+		<p><i>defer</i> - нужен что бы библиотеки кода написанные на JS подключались только после полной загрузки Web
+			страницы</p>
+		<p>Все что будет заключено в эти теги будет восприниматься как фрагмент кода
+			Java Script.</p>
+		<p>В языке JS - так далее по тексту будет обозначаться Java Script, очень важен
+			регистр в котором вводятся переменные, свойства и методы.</p>
+		<p>К примеру возьмем простейшую программу "Hello World". Что бы вывести в
+			<b>Body</b>
+			текст "Hello World" достаточно ввести код
+			<br>
+			<code>&lt;script&gt; document.write('Hello World'); &lt;/script&gt;</code>
+			<p>Ниже приведен пример выполнения этого кода:</p>
+		</p>
+		<script>
+			document.write('Hello World');
+		</script>
+		<h2 id="variable">Переменные.</h2>
+		<p>Для объявления переменной используется
+			<b>var</b>
+		</p>
+		<p>В языке Java Script есть 6 типов данных:</p>
+		<ul>
+			<li>var TestNumberValue = 45; - "number" число.</li>
+			<li>var TestStringValue = "Текстовая строка"; - "string" строковая переменная.</li>
+			<li>var TestBooleanValue = true; - "boolean" - буленовская переменная принимает
+				значение true/false;</li>
+			<li>var TestNullValue = Null; - Значение null не относится ни к одному из типов
+				выше, а образует свой отдельный тип, состоящий из единственного значения null</li>
+			<li>var TestUndefinedValue = undefined Значение undefined, как и null, образует
+				свой собственный тип, состоящий из одного этого значения. Оно имеет смысл
+				«значение не присвоено».</li>
+			<li>var TestObjectValue = {name: "Вася", edge: 5, surname: "Петров"} - Первые 5
+				типов называют «примитивными». Особняком стоит шестой тип: «объекты». Он
+				используется для коллекций данных и для объявления более сложных сущностей.
+			</li>
+		</ul>
+		<p>Для проверки типа переменной можно воспользоваться методом
+			<b>typeof x;</b>
+		</p>
+		<hr>
+		<b>parseInt(x)</b> где <b>x</b> - текст что будет преобразован в число 'если среди текста есть цифры'
+		</p>
+		<p>
+			x=<b>Number</b>(x); - так же будет пытаться преобразовывать переменную x - в число.
+		</p>
+		<hr>
+		<h4>Для приведения к желаемому типу необходимо воспользоваться следующей
+			конструкцией</h4>
+		<h4>Код</h4>
+		<code>
+                &lt;script&gt;
+                <br>
+                var StrToBool = "test";<br>
+                document.write(typeof(StrToBool) + "&lt;br&gt;");
+                <br>
+                StrToBool = Boolean(StrToBool);
+                <br>
+                document.write(typeof(StrToBool) + "&lt;br&gt;");
+                <br>
+                document.write("====Пример приведения строковой переменной в тип Number====" +
+                "&lt;br&gt;");
+                <br>
+                var x = "5";
+                <br>
+                document.write(typeof(x)+"&lt;br&gt;");
+                <br>
+                x=Number(x);
+                <br>
+                document.write(typeof(x));
+                <br>
+                &lt;/script&gt;
+            </code>
+		<h4>Результат выполнения</h4>
+		<script>
+			var StrToBool = "test";
+			document.write(typeof (StrToBool) + "<br>");
+			StrToBool = Boolean(StrToBool);
+			document.write(typeof (StrToBool) + "<br>");
+			document.write(
+				"====Пример приведения строковой переменной в тип Number====<br>"
+			);
+			var x = "5";
+			document.write(typeof (x) + "<br>");
+			x = Number(x);
+			document.write(typeof (x));
+		</script>
+		<h2 id="MathOperation">Математические операции</h2>
+		<h3>Простейшие арифметические операции</h3>
+		<ul>
+			<li>Сложение
+				<b>+</b>
+			</li>
+			<li>Вычитание
+				<b>-</b>
+			</li>
+			<li>Умножение
+				<b>*</b>
+			</li>
+			<li>Деление
+				<b>/</b>
+			</li>
+			<li>Остаток от деления
+				<b>%</b>
+			</li>
+		</ul>
+		<h3>Сокращенная запись ряда операций</h3>
+		<ul>
+			<li>Инкремент x++ - увеличить на 1</li>
+			<li>Декремент x-- - уменьшить на 1</li>
+			<li>Увеличить на x += 5 - увеличивает значение x на 5
+			</li>
+			<li>Уменьшить на x -= 5 - уменьшает значение x на 5</li>
+		</ul>
+		<h4>Код</h4>
+		<code>
+                &lt;script&gt; var x = 10;
+                <br>
+                var y = 7;
+                <br>
+                document.write("x + y = " + (x + y) + "&lt;br&gt;");
+                <br>
+                document.write("x - y = " + (x - y) + "&lt;br&gt;");
+                <br>
+                document.write("x * y = " + (x * y) + "&lt;br&gt;");
+                <br>
+                document.write("x / y = " + (x / y) + "&lt;br&gt;");
+                <br>
+                document.write("x % y = " + (x % y) + "&lt;br&gt;");
+                <br>
+                &lt;/script&gt;
+            </code>
+		<h4>Результат выполнения</h4>
+		<script>
+			;
+			var x = 10;
+			var y = 7;
+			document.write("x + y = " + (
+				x + y
+			) + "<br>");
+			document.write("x - y = " + (
+				x - y
+			) + "<br>");
+			document.write("x * y = " + (
+				x * y
+			) + "<br>");
+			document.write("x / y = " + (
+				x / y
+			) + "<br>");
+			document.write("x % y = " + (
+				x % y
+			) + "<br>");
+		</script>
+
+		<h2 id="LogicalOperation">Логические операции</h2>
+		<p>Логические операции результатом своего действия возвращают буленовскую
+			переменную True или False</p>
+		<ul>
+			<li>Не равно &lt;&gt; или !=</li>
+			<li>Больше или равно >=
+			</li>
+			<li>Меньше или равно &lt;=</li>
+			<li>Равно ==</li>
+			<li>Тождественно === - то же самое что и равно, но с учетом типа переменных</li>
+			<li>Логическое "И" -
+				<b>&&</b>
+			</li>
+			<li>Логическое "ИЛИ" -
+				<b>||</b>
+			</li>
+			<li>Логическое "Не" -
+				<b>!</b>
+			</li>
+			<li>Исключающее "ИЛИ" -
+				<b>^</b>
+			</li>
+		</ul>
+		<h4>Код</h4>
+		&lt;script&gt;<br>
+		var x = 5;<br>
+		var y = 3;<br>
+		var b = x == y;<br>
+		document.write(x + " = " + y + " --> " + b);<br>
+		&lt;/script&gt
+		<h4>Результат выполнения</h4>
+		<script>
+			var x = 5;
+			var y = 3;
+			var b = x == y;
+			document.write(x + " = " + y + " --> " + b);
+		</script>
+		<p>Таблица демонстрирующая логические операции</p>
+		<script>
+			var a = true;
+			var b = true;
+			document.write(
+				"<table border='1' width='600px'><tr><td>Переменная <b>a</b></td><td>Переменная" +
+				" <b>b</b></td><td>НЕ <b>(!a)</b></td><td>И <b>(a&&b)</b></td><td>ИЛИ <b>(a||b)" +
+				"</b></td><td>Исключающее ИЛИ <b>(a^b)</b></td></tr>"
+			);
+			document.write("<tr><td>" + a + "</td><td>" + b + "</td><td>" + (
+				!a
+			) + "</td><td>" + (
+					a && b
+				) + "</td><td>" + (
+					a || b
+				) + "</td><td>" + (
+					a ^ b
+				) + "</td></tr>");
+			var a = false;
+			var b = true;
+			document.write("<tr><td>" + a + "</td><td>" + b + "</td><td>" + (
+				!a
+			) + "</td><td>" + (
+					a && b
+				) + "</td><td>" + (
+					a || b
+				) + "</td><td>" + (
+					a ^ b
+				) + "</td></tr>");
+			var a = true;
+			var b = false;
+			document.write("<tr><td>" + a + "</td><td>" + b + "</td><td>" + (
+				!a
+			) + "</td><td>" + (
+					a && b
+				) + "</td><td>" + (
+					a || b
+				) + "</td><td>" + (
+					a ^ b
+				) + "</td></tr>");
+			var a = false;
+			var b = false;
+			document.write("<tr><td>" + a + "</td><td>" + b + "</td><td>" + (
+				!a
+			) + "</td><td>" + (
+					a && b
+				) + "</td><td>" + (
+					a || b
+				) + "</td><td>" + (
+					a ^ b
+				) + "</td></tr>");
+			document.write("</table>");
+		</script>
+		<h2 id="IfCase">Условные операторы</h2>
+		<p>Условные операторы предназначены для проверки условий и в зависимости от
+			результат выполнения тех или иных действий</p>
+		<p>В Java Script используется 2 вида конструкций условных операторов</p>
+		<ul>
+			<li>if - Условный оператор реализует выполнение определённых команд при условии,
+				что некоторое логическое выражение (условие) принимает значение «истина» true.
+			</li>
+			<li>case - Оператор многозначного выбора</li>
+		</ul>
+		<h3>Конструкция оператора IF</h3>
+		<code>
+                if (условие)
+                <br>
+				{блок выполняемых операций если условие true}
+				<br>
+				else if (условие 2)
+				<br>
+				{Блок выполняется при положительном условии 2}
+                <br>
+                else
+                <br>
+                {блок выполняемых операций если условие false}
+                <br>
+            </code>
+		<h3>Конструкция оператора CASE</h3>
+		<code>switch (условие)<br>
+                {<br>
+                case 0: {блок выполняемых операций в случае корректности (условие = 0)}
+                <br>
+                break;
+                <br>
+                case 1: {блок выполняемых операций в случае корректности (условие = 1)}
+                <br>
+                break;
+                <br>
+                case 2: {блок выполняемых операций в случае корректности (условие = 3)}
+                <br>
+                break;
+                <br>
+                default: {блок выполняемых операций во всех случаях кроме указанных явно (выше)}
+                <br>
+                }
+            </code>
+		<h2 id="cycle">Циклы</h2>
+		<p>В Java Script есть 3 вида циклов.</p>
+		<ul>
+			<li>for</li>
+			<li>while</li>
+			<li>do</li>
+		</ul>
+		<p>While отличается от do тем что в тело первого цикла входят только после
+			проверки и положительного условия, а в do сначала входят в тело цикла, а потом
+			проверяется условие выполнения.</p>
+		<h3>Конструкция FOR</h3>
+		<code>
+                for(var i=0; i&lt;10; i++)
+                <br>
+                document.write("Hello World" + i);
+            </code>
+		<h3>Результат</h3>
+		<script>
+			for (var i = 0; i < 10; i++) {
+				document.write(" Hello World " + i);
+			}
+		</script>
+		<h3>Конструкция WHILE</h3>
+		<code>
+                var i = 0;<br>
+                var sum = 0;<br>
+                while (i&lt;100)
+                <br>
+                {
+                <br>
+                sum +=i;<br>
+                i++<br>
+                }<br>
+                document.write("Сумма числе от 0 до 99 равна "+sum);<br>
+            </code>
+		<h3>Результат</h3>
+		<script>
+			var i = 0;
+			var sum = 0;
+			while (i < 100) {
+				sum += i;
+				i++;
+			}
+			document.write("Сумма числе от 0 до 99 равна " + sum);
+		</script>
+		<h3>Конструкция DO</h3>
+		<code>
+                var i = 0;<br>
+                var sum = 0;
+                <br>do<br>{<br>
+                sum =+ i;<br>
+                i++;<br>
+                }<br>
+                while(i<100);<br></100>
+            document.write("Сумма числе от 0 до 99 равна "+sum);
+        </code>
+		<h3>Результат</h3>
+		<script>
+			var i = 0;
+			var sum = 0;
+			do {
+				sum += i;
+				i++;
+			} while (i < 100);
+			document.write("Сумма числе от 0 до 99 равна " + sum);
+		</script>
+		<h2 id="MetodsWindow">3 Метода класса Window</h2>
+		<p>В курсе Михаила Русакова в 9-ом уроке освещается 3 метода класса Window.
+			Естественно методов у этого класса гораздо больше и подробнее с ними можно
+			познакомиться
+			<a href="https://developer.mozilla.org/ru/docs/Web/API/Window" target="_blank"
+				title="Методы класса Window">здесь</a>
+		</p>
+		<p>Но мы пойдем согласно намеченному плану</p>
+		<ul>
+			<li>alert - Отображает предупреждающее диалоговое окно.</li>
+			<li>confirm - Отображает диалог с сообщением, на которое пользователь должен
+				ответить.</li>
+			<li>prompt - Возвращает текст, введенный пользователем в диалоге подсказки.</li>
+		</ul>
+		<p>
+			<i>window.alert(message);</i>
+			- Этот диалог следует использовать для сообщений, которые не требуют никакого
+			ответа от пользователя, кроме подтверждения самого сообщения.</p>
+		<p>Окна сообщений - модальные, они препятствуют получению пользователем доступа
+			к другим частям страницы до тех пор, пока окно не будет закрыто. По этой
+			причине, вам не следует злоупотреблять этой функцией.</p>
+		<p>
+			<i>result = window.confirm(message);</i>
+			- message опциональная (необязательная) строка, которая будет отображена в
+			диалоговом окне.</p>
+		<p>result булево значение, указывающее на нажатую кнопку OK или Cancel (true
+			означает OK).</p>
+		<p>
+			<i>result = window.prompt(message, default);</i>
+			- result — это строка, содержащая текст, поступивший от пользователя или null.</p>
+		<p>message — это строка текста, которая показывается пользователю. Этот параметр
+			является необязательным и может быть пропущен если в окне prompt ничего не
+			показывать.</p>
+		<p>default — это строка, содержащая значение по умолчанию, отображаемое в поле
+			ввода текста. Это необязательный параметр. Обратите внимание, что в Internet
+			Explorer 7 и 8, если вы не укажете этот параметр, строка "undefined" будет
+			значением по умолчанию.</p>
+		<h2 id="LArray">Массивы</h2>
+		<p>Как в большинстве языков программирования в Java Script есть массивы</p>
+		<h4>Объявление массива</h4>
+		<p>Есть несколько способов задать массив</p>
+		<hr>
+		<p class="p_bbb">Создаем пустой массив.</p>
+		<hr>
+		<code>
+            var NameArray = new Array ();
+		</code>
+		<p>или так</p>
+		<code>
+			var NameArray = [];
+		</code>
+		<hr>
+		<p class="p_bbb">Можно в момент создания массива определить его элементы</p>
+		<hr>
+		<code>
+            var NewArray = new Array(5, 5.5, 7, "HelloWorld", true);
+		</code>
+		<p>или так</p>
+		<code>
+			var NameArray = [1,2,3,'Hello', true]
+		</code>
+		<hr>
+		<p class="p_bbb">Можно явно задавать члены массива</p>
+		<hr>
+		<code>
+            var NameArray = new Array();
+            <br>
+            NameArray[3] = 10;
+            <br>
+            NameArray[2] = "Test";
+            <br>
+		</code>
+		<hr>
+		<h4>Объявление 2-х мерного массива</h4>
+		<h5>Код</h5>
+		<code>
+            &lt;script&gt;
+            <br>
+            var arr1 = new Array(1,2,3),
+            <br>
+            arr2 = new Array(4,5,6),
+            <br>
+            arr3 = new Array(7,8,9),
+            <br>
+            arr = new Array(arr1,arr2,arr3);
+            <br>
+            for (i=0; i&lt;arr.length; i++){
+            <br>
+            for (j=0; j&lt;arr[i].length; j++)
+            <br>
+            document.write(arr[i][j] + " ");
+            <br>
+            document.write("&lt;br&gt;")}
+            <br>
+            &lt;/script&gt;
+        </code>
+		<h5>Результат</h5>
+		<script>
+			var arr1 = new Array(1, 2, 3),
+				arr2 = new Array(4, 5, 6),
+				arr3 = new Array(7, 8, 9),
+				arr = new Array(arr1, arr2, arr3);
+			for (i = 0; i < arr.length; i++) {
+				for (j = 0; j < arr[i].length; j++)
+					document.write(arr[i][j] + " ");
+				document.write("<br>")
+			}
+		</script>
+		<p>У массивов есть свойство NewArray.length - это свойство выводит номер
+			последнего члена массива + 1.</p>
+		<p>Несмотря на то что в последнем массиве мы задали всего 2 значения параметр
+			<i>NameArray.length</i>
+			выдаст значение
+			<i>4</i>
+		</p>
+		<h3>Методы push, pop, shift, unshift</h3>
+		<ul>
+			<li>
+				<p><b>Push</b> - добавляет элемент в конец массива</p>
+			</li>
+			<li>
+				<p><b>Pop</b> - удаляет элемент в конце массива (того же эффекта можно добиться сократив свойство
+					<i>length</i>)</p>
+			</li>
+			<li>
+				<p><b>Shift</b> - Удаляет из массива первый элемент и возвращает его</p>
+			</li>
+			<li>
+				<p><b>Unshift</b> - Добавляет элемент в начало массива</p>
+			</li>
+		</ul>
+		<p>Методы <i>push</i> и <i>unshift</i> могут добавлять сразу по несколько элементов</p>
+
+
+		<h3>Вывод массива для анализа данных</h3>
+		<code>
+            for (i=0; i&lt;TestArray.length; i++)
+            <br>
+            document.write(TestArray[i]);
+		</code>
+		<h2 id="AArray">Ассоциативные массивы</h2>
+		<hr>
+		<h3>Инициализация</h3>
+		<div class="code">
+			<p><code>var m = {};</code> - в данном примере задается пустой массив m</p>
+		</div>
+		<div class="code">
+			<code>
+				<p>var n = {   - Здесь задается массив с уже предопределенными связками ключ - значение</p>
+					"one" : 12,<br>
+					"Hello" : "World",<br>
+					"Prom" : 2000,<br>
+					"Double key" : 777<br>
+				} 
+			</code>
+		</div>
+		<h3>Доступ к элементам массива</h3>
+		<div class="code">
+			console.log(<b>n['one']</b>); - Выведет в качестве результата <b>12</b>
+		</div>
+		<div class="code">
+			console.log(<b>n.one</b>); - Так же выведет в качестве результата <b>12</b>
+		</div>
+		<h4 class="alarm">Внимательно!!! Различия при обращении к ключам ассоциативного массива</h4> <br>
+		<h4>1</h4>
+		<div class="code">
+			console.log(<b>n['Double key']</b>); - Выведет в качестве результата <b>777</b> <br>
+			console.log(<b>n.Double key</b>); - Выведет в качестве результата ошибка так как в данном случае нельзя в
+			имени ключа использовать пробел
+		</div>
+		<h4>2</h4>
+		<div class="code">
+			<b>var x="one";</b> <br>
+			console.log(<b>n.x</b>); - выдаст ошибку так как нет ключа <b>x</b> <br>
+			console.log(<b>n[x]</b>); - выдаст в качестве результата <b>12</b>
+		</div>
+		<h3>Вывод на экран ассоциативного массива</h3>
+		<h4>HTML</h4>
+		<div class="code">
+			&lt;p id="out"&gt;&lt;/p&gt;
+		</div>
+		<h4>JS</h4>
+		<div class="code">
+			var m = {}; <br>
+			for (var i=0; i&lt;10; i++){ <br>
+			var name = 'name' + i; <br>
+			m[name] = i; <br>
+			} <br>
+			<br>
+			var out = document.getElementById('out'); <br>
+			for (var key in m){ <br>
+			out.innerHTML += key + '----' + m[key]+ '&lt;br&gt;'; <br>
+			}
+		</div>
+		<h3>Результат</h3>
+		<p id="out"></p>
+		<h2 id="Functions">Функции</h2>
+		<h3>Конструкция для инициализации функции на примере сумматора 3-ех элементов
+			введенных в качестве аргументов функции</h3>
+		<code>
+            <b>function sum</b>
+            (element1, element2, element3)
+            <br>
+            {
+            <br>
+            var result = element1 + element2 + element3;
+            <br>
+            <b>return</b>
+            result;
+            <br>
+            }
+        </code>
+		<h3>Вызов функции</h3>
+		<code>
+            <b>sum</b>(4,6,3);
+        </code>
+		</code>
+		<h2 id="VariableVisibility">Видимость переменных</h2>
+		<p>В JavaScript есть понятие видимости переменных.</p>
+		<p>Каждую переменную включая счетчики циклов стоит объявлять через
+			<b>var</b>
+		</p>
+		<p>Переменные объявленные за телом функции считаются глобальными.</p>
+		<p>При написании кода нужно стараться минимизировать количество глобальных
+			переменных.</p>
+		<p>Для функций в функции область глобальных переменных смещается в сторону
+			вызывающей функции.</p>
+		<h3>Код</h3>
+		<code>
+        &lt;script&gt;
+        <br>
+        var test=1;
+        <br>
+        document.write("Глобальная переменная заданная в начале скрипта = " + test +
+        "&lt;br&gt;");
+        <br>
+        function WriteTestFunction(){
+        <br>
+        document.write("Локальная переменная test в теле функции до объявления = " +
+        test + "&lt;br&gt;");
+        <br>
+        var test=1;
+        <br>
+        document.write("Локальная переменная test в теле функции после объявления = " +
+        test + "&lt;br&gt;");
+        <br>
+        test = test+1;
+        <br>
+        document.write("К локальной переменной test добавили 1 результат = " + test +
+        "&lt;br&gt;");
+        <br>
+        }
+        <br>
+        WriteTestFunction();
+        <br>
+        document.write("Глобальная переменная после исполнения функции WriteTestFunction
+        = " + test);
+        <br>
+        &lt;/script&gt;
+        <br>
+    </code>
+		<h3>Результат</h3>
+		<script>
+			var test = 1;
+			document.write(
+				"Глобальная переменная заданная в начале скрипта = " + test + "<br>"
+			);
+			function WriteTestFunction() {
+				document.write(
+					"Локальная переменная test в теле функции до объявления = " + test + "<br>"
+				);
+				var test = 1;
+				document.write(
+					"Локальная переменная test в теле функции после объявления = " + test +
+					"<br>"
+				);
+				test = test + 1;
+				document.write(
+					"К локальной переменной test добавили 1 результат = " + test + "<br>"
+				);
+			}
+			WriteTestFunction();
+			document.write(
+				"Глобальная переменная после исполнения функции WriteTestFunction = " + test
+			);
+		</script>
+		<h2 id="events">События</h2>
+		<p><a href="https://msiter.ru/references/html-reference/events" target="_blank">Справочник возможных событий</a>
+		</p>
+		<p>Для реакции на действия посетителя и внутреннего взаимодействия скриптов
+			существуют
+			<i>события</i>.</p>
+		<p>
+			<i>Событие</i>
+			– это сигнал от браузера о том, что что-то произошло. Существует много видов
+			событий. Посмотрим список самых часто используемых:</p>
+		<h3>События мыши:</h3>
+		<ul>
+			<li>onclick - клик мышью</li>
+			<li>ondblclick - двойной клик мышью</li>
+			<li>oncontextmenu - клик правой кнопкой мыши. (нужно перехватывать и запрещать вывод контекстного меню
+				<b>return false;</b>)</li>
+			<li>onmouseenter - когда мышь входит в границы элемента</li>
+			<li>onmouseleave - когда мышь покидает границы элемента</li>
+			<li>onmousemove - при движении мышью в пределах объекта</li>
+			<li>onmousedown - при нажатии на объект любой кнопки мыши (если в функцию передать <b>event</b> то можно
+				поймать какую кнопку нажали. (event.button))</li>
+			<li>onmouseup - при отпускании кнопки мыши в пределах элемента</li>
+		</ul>
+		<h3>События на элементах управления:</h3>
+		<ul>
+			<li>
+				<i>submit</i> – посетитель отправил форму &lt;form&gt;</li>
+			<li>
+				<i>focus</i> – посетитель фокусируется на элементе, например нажимает на &lt;input&gt;</li>
+		</ul>
+		<h3>Клавиатурные события:</h3>
+		<ul>
+			<li>
+				<i>keydown</i> – когда посетитель нажимает клавишу</li>
+			<li>
+				<i>keyup</i> – когда посетитель отпускает клавишу</li>
+		</ul>
+		<h3>События документа:</h3>
+		<ul>
+			<li>
+				<i>DOMContentLoaded</i> – когда HTML загружен и обработан, DOM документа полностью построен и доступен.
+			</li>
+		</ul>
+		<h3>События CSS:</h3>
+		<ul>
+			<li>
+				<i>transitioned</i> – когда CSS-анимация завершена.</li>
+		</ul>
+		<h2>Назначение обработчиков событий</h2>
+		<p>Событию можно назначить обработчик, то есть функцию, которая сработает, как
+			только событие произошло.
+			<p>Именно благодаря обработчикам JavaScript-код может реагировать на действия
+				посетителя.</p>
+			<p>Есть несколько способов назначить событию обработчик. Сейчас мы их
+				рассмотрим, начиная от самого простого.</p>
+			<ul class="events">
+				<li>Использование атрибута HTML</li>
+				<p>Обработчик может быть назначен прямо в разметке, в атрибуте, который
+					называется on&lt;событие&gt;.</p>
+				<p>Например, чтобы прикрепить click-событие к input кнопке, можно присвоить
+					обработчик onclick, вот так:</p>
+				<h4>Код</h4>
+				<code>
+                &lt;input value="Нажми меня" onclick="alert('Клик!')" type="button"&gt;
+            </code>
+				<h4>Результат</h4>
+				<input value="Нажми меня" onclick="alert('Клик!')" type="button">
+				<p>
+					Обратите внимание, для содержимого атрибута onclick используются одинарные
+					кавычки, так как сам атрибут находится в двойных.
+				</p>
+				<p>
+					Частая ошибка новичков в том, что они забывают, что код находится внутри
+					атрибута. Запись вида onclick="alert("Клик!")", с двойными кавычками внутри, не
+					будет работать. Если вам действительно нужно использовать именно двойные
+					кавычки, то это можно сделать, заменив их на &quot;, то есть так:
+					onclick="alert(&quot;Клик!&quot;)".
+				</p>
+		</p>
+		<li>Однако, обычно этого не требуется, так как прямо в разметке пишутся только
+			очень простые обработчики. Если нужно сделать что-то сложное, то имеет смысл
+			описать это в функции, и в обработчике вызвать уже её.</li>
+		<h4>Код</h4>
+		<code>
+            &lt;script&gt;
+            <br>
+            function countRabbits() {
+            <br>
+            for (var i = 1; i &lt;= 3; i++) {
+            <br>
+            alert("Кролик номер " + i);
+            <br>
+            }
+            <br>
+            } &lt;/script&gt; &lt;input type="button" onclick="countRabbits()"
+            value="Считать кроликов!"/&gt;
+        </code>
+		<h4>Результат</h4>
+		<script>
+			function countRabbits() {
+				for (var i = 1; i <= 3; i++) {
+					alert("Кролик номер " + i);
+				}
+			}
+		</script>
+		<input type="button" onclick="countRabbits()" value="Считать кроликов!" />
+		<li>Использование свойства DOM-объекта</li>
+		<p>Можно назначать обработчик, используя свойство DOM-элемента on&lt;событие&gt;.</p>
+		<p>Пример установки обработчика click:</p>
+		<h4>Код</h4>
+		<code>
+            &lt;input type="button" id="elem" onclick="alert('До')" value="Нажми меня" /&gt;
+            <br>
+            &lt;script&gt;
+            <br>
+            elem.onclick = function() { // перезапишет существующий обработчик
+            <br>
+            alert( 'После' ); // выведется только это
+            <br>
+            };
+            <br>
+            &lt;/script&gt;
+            <br>
+        </code>
+		<h4>Результат</h4>
+		<input type="button" id="elem" onclick="alert('До')" value="Нажми меня" />
+		<script>
+			elem.onclick = function () { // перезапишет существующий обработчик
+				alert('После'); // выведется только это
+			};
+		</script>
+		<p>Так как DOM-свойство onclick, в итоге, одно, то назначить более одного
+			обработчика так нельзя.</p>
+		<p>В примере ниже назначение через JavaScript перезапишет обработчик из атрибута:</p>
+		<p>Если обработчик задан через атрибут, то браузер читает HTML-разметку, создаёт
+			новую функцию из содержимого атрибута и записывает в свойство
+			<code>onclick</code>.</p>
+		<h4>Код</h4>
+		<code>
+            &lt;input id="elem" type="button" value="Нажми меня" /&gt;
+            <br>
+            &lt;script&gt;
+            <br>
+            elem.onclick = function() {
+            <br>
+            alert( 'Спасибо' );
+            <br>
+            };
+            <br>
+            &lt;/script&gt;
+        </code>
+		<h4>Результат</h4>
+		<input id="elem1" type="button" value="Нажми меня" />
+		<script>
+			elem1.onclick = function () {
+				alert('Спасибо');
+			};
+		</script>
+
+		<p>Если обработчик надоел – его всегда можно убрать назначением elem.onclick =
+			null.</p>
+		<li>Доступ к элементу через this</li>
+		<p>Внутри обработчика события this ссылается на текущий элемент, то есть на тот,
+			на котором он сработал.</p>
+		<p>Это можно использовать, чтобы получить свойства или изменить элемент.</p>
+		<p>В коде ниже button выводит свое содержимое, используя this.innerHTML:</p>
+		<h4>Код</h4>
+		<code>
+            &lt;button onclick="alert(this.innerHTML)">Нажми меня&lt;/button&gt;
+        </code>
+		<h4>Результат</h4>
+		<button onclick="alert(this.innerHTML)">Нажми меня</button>
+		<li>addEventListener и removeEventListener</li>
+		<p>
+			Методы
+			<i>addEventListener</i>
+			и
+			<i>removeEventListener</i>
+			являются современным способом назначить или удалить обработчик, и при этом
+			позволяют использовать сколько угодно любых обработчиков.</p>
+		<p>Назначение обработчика осуществляется вызовом
+			<i>addEventListener</i>
+			с тремя аргументами:</p>
+		<code>element.addEventListener(event, handler[, phase]);</code>
+		<p>
+			<b>event</b>
+			- Имя события, например
+			<i>click</i>
+		</p>
+		<p>
+			<b>handler</b>
+			- Ссылка на функцию, которую надо поставить обработчиком.</p>
+		<p>
+			<b>phase</b>
+			- Необязательный аргумент, «фаза», на которой обработчик должен сработать. Этот
+			аргумент редко нужен, мы его рассмотрим позже.</p>
+		<p>Удаление обработчика осуществляется вызовом
+			<i>removeEventListener:</i>
+		</p>
+		<p>
+			Метод addEventListener позволяет добавлять несколько обработчиков на одно
+			событие одного элемента, например:
+		</p>
+		<h4>Код</h4>
+		<code>
+            &lt;input id="elem" type="button" value="Нажми меня"/&gt;
+            <br>
+            &lt;script&gt;
+            <br>
+            function handler1() {
+            <br>
+            alert('Спасибо!');
+            <br>
+            };
+            <br>
+            function handler2() {
+            <br>
+            alert('Спасибо
+            <br>
+            ещё раз!');
+            <br>
+            }
+            <br>
+            elem.onclick = function() {
+            <br>
+            alert("Привет");
+            <br>
+            };
+            <br>
+            elem.addEventListener("click", handler1); // Спасибо!
+            <br>
+            elem.addEventListener("click", handler2); // Спасибо ещё раз! &lt;/script&gt;
+        </code>
+		<h4>Результат</h4>
+		<input id="elem3" type="button" value="Нажми меня" />
+
+		<script>
+			function handler1() {
+				alert('Спасибо!');
+			};
+
+			function handler2() {
+				alert('Спасибо ещё раз!');
+			}
+
+			elem3.onclick = function () {
+				alert("Привет");
+			};
+			elem3.addEventListener("click", handler1); // Спасибо!
+			elem3.addEventListener("click", handler2); // Спасибо ещё раз!
+		</script>
+		<p>Как видно из примера выше, можно одновременно назначать обработчики и через
+			DOM-свойство и через addEventListener. Однако, во избежание путаницы,
+			рекомендуется выбрать один способ.</p>
+		<h4>Есть 6 основных методов поиска элементов DOM:</h4>
+		<ul>
+			<li><i>getElementById</i> - Ищет элемент по ID</li>
+			<li><i>getElementsByName</i> - Ищет элемент по name</li>
+			<li><i>getElementsByTagName</i> - Ищет элемент по тегу</li>
+			<li><i>getElementsByClassName</i> - Ищет элемент по классу</li>
+			<li><i>querySelector</i> - Ищет элемент по CSS селектор</li>
+			<li><i>querySelectorAll</i> - Ищет элемент по CSS селектор</li>
+		</ul>
+
+		<p><i>this</i> - обращение именно к этому тегу.</p>
+		<h3>Доступ и информации между парными тегами</h3>
+		<p><i>innerHTML</i> - то что введено между парными тегами.</p>
+		<p><i>innerText</i> - то же что и <i>innerHTML</i> только теги не обрабатываются.</p>
+		<img src="../Images/innerHTML.png" alt="">
+		<p><i>insertAdjacentHTML(<b>'position'</b>,<b>'information'</b>)</i> - добавляет <b>information</b> в указанную
+			<b>position</b></p>
+		<p><b>position</b> - позиция куда вставляется <b>information</b></p>
+		<img src="../Images/innerHTML Methods.png" alt="">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<p><a href="https://learn.javascript.ru/introduction-browser-events#ispolzovanie-atributa-html" title="Источник"
+				target="_blank">Источник</a></p>
+		</ul>
+		</p>
+		<h2 id='regular'>Регулярные выражения</h2>
+		<hr>
+		<a href="https://regexone.com" target="_blank">Хороший тест на закрепление регулярных выражений</a>
+		<hr>
+		<h3>
+			Спецсимволы:
+		</h3>
+		<ul>
+			<li>
+				\d - любая цифра;
+			</li>
+			<li>
+				\D - любой символ не цифра (можно и пробел);
+			</li>
+			<li>
+				\w - любая буква, или цифра (не пробел);
+			</li>
+			<li>
+				\W - Ни буква, ни цифра (пробел подходит);
+			</li>
+			<li>
+				\s - все пробельные символы (табуляция, возврат коретки, пробел);
+			</li>
+			<li>
+				\S - любой непробельный символ;
+			</li>
+		</ul>
+
+		<h3>
+			Метасимволы:
+		</h3>
+
+		<ul>
+			<li>
+				Экранирование метасимволов \;
+			</li>
+			<li>
+				. - один любой символ;
+			</li>
+			<li>
+				^ - начало строки;
+			</li>
+			<li>
+				$ - конец строки;
+			</li>
+			<li>
+				[] - интервал, к примеру [a-z], [0-5];
+			</li>
+			<li>
+				[^a-z] - не символ из диапазона. Например [^1-5]. [^a-r];
+			</li>
+		</ul>
+
+		<h3>
+			Паттерны, карманы, группирующие скобки:
+		</h3>
+		<ul>
+			<li>
+				() - позволяют группировать метасимволы;
+			</li>
+			<li>
+				(?:регулярное выражение) - для игнорирования карманов
+			</li>
+		</ul>
+
+		<h3>
+			Квантификаторы (пишутся после выражения, или после скобок):
+		</h3>
+		<ul>
+			<li>
+				* - повторяется от 0 до бесконечности;
+			</li>
+			<li>
+				+ - повторяется от 1 до бесконечности;
+			</li>
+			<li>
+				? - повторяется от 0 до 1 раза;
+			</li>
+			<li>
+				{x} - строго повторяется x раз. К примеру {5}, {6};
+			</li>
+			<li>
+				{x,} - повторяется от x и более раз;
+			</li>
+			<li>
+				{x,y} - повторяется от x до y раз;
+			</li>
+		</ul>
+
+		<p>
+			? - ставится после квантификатора. Делает его не жадным.
+		</p>
+
+		<h3>
+			Модификаторы (пишутся после закрывающего элемента регулярного выражения):
+		</h3>
+		<ul>
+			<li>
+				i - игнорировать регистр;
+			</li>
+			<li>
+				x - игнорировать пробелы в регулярном выражении;
+			</li>
+			<li>
+				m - для конца строки($) воспринимать символ перехода строки
+			</li>
+			<li>
+				u - обрабатывать шаблон, как строки UTF-8
+			</li>
+			<li>
+				U - делает квантификатор по умолчанию не жадным. Жадность включается ?.
+			</li>
+		</ul>
+		<hr>
+		<h3>методы для работы с регулярными выражениями</h3>
+		<hr>
+		<p>Есть 2 объекта для работы с регулярными выражениями.</p>
+		<ul>
+			<li>
+				<h4>string</h4>
+				<ul>
+					<li><b>Search</b>(<i>регулярное выражение</i>) - Ищет первое совпадение в строке. Возвращает позицию
+						в строке или (-1) если элемент не найден</li>
+					<li><b>Replace</b>(<i>регулярное выражение</i>, <i>На что меняем</i>) - Производит замену по
+						заданному шаблону. Возвращает </li>
+					<li><b>Match</b>(<i>регулярное выражение</i>) - Ищет совпадение во все строке (если стоит
+						модификатор <b>/b</b>) - и возвращает массив</li>
+					<li><b>Split</b>(<i>разделитель</i>,{необязательный параметр указывающий максимальное число
+						элементов что нужно найти}) - Разбивает строку на массив подстрок, используя аргумент в качестве
+						разделителя</li>
+				</ul>
+			</li>
+			<li>
+				<h4><a href="../Pages/JavaScript/Spravochnick/Class/RegExp.html">RegExp(шаблон, атрибуты)</a></h4>
+				<ul>
+					<li>Свойства
+						<ul>
+							<li>global - Признаки присутствия в регулярном выражении атрибута "g".</li>
+							<li>ignoreCase - Признак присутствия в регулярном выражении атрибута "i".</li>
+							<li>lastIndex - Позиция символа при последнем обнаружении соответствия, используется в
+								строке для поиска нескольких соответствий.</li>
+							<li>multiline - Признак присутствия в регулярном выражении атрибута "m"</li>
+							<li>source - Исходный текст регулярного выражения.</li>
+						</ul>
+					</li>
+					<li>методы
+						<ul>
+							<li>exec(строка в которой выполняется поиск) - мощный инструмент поиска по шаблону
+								возвращает массив или null если ничего не нашел</li>
+							<li>test() - Проверяет содержит ли строка данный шаблон</li>
+						</ul>
+					</li>
+				</ul>
+		</ul>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/VCgAvj9meHg?start=1364" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<hr>
+		<div class="regular">
+			<a href="https://myrusakov.ru/php-regexp-meta.html">Мета символы в регулярных выражений</a>
+			<a href="https://myrusakov.ru/php-regexp-quantifier.html">Квантификаторы в регулярных выражений</a>
+			<a href="https://myrusakov.ru/php-regexp-symbol.html">Спецсимволы в регулярных выражений</a>
+			<a href="https://myrusakov.ru/php-regexp-mod.html">Модификаторы в регулярных выражениях</a>
+		</div>
+	</main>
+	<footer>Все права защищены &copy; Ковчин Павел</footer>
+</body>
+
+</html>

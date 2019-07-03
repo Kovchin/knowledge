@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul{
+	margin: 20px;
+}
+
+li{
+	padding: 10px;
+}
+
+.example{
+	border: 10px ridge darkred;
+	box-shadow: 10px 10px 10px darkblue;
+	width: 340px;
+	margin: 10px;
+	background-color: darkgreen;
+}
+
+.inp{
+	margin: 20px;
+}
+
+.inp p{
+	padding: 5px;
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+}
+
+.but{
+	display: flex;
+	justify-content: center;
+	width: 300px;
+	margin: 20px;
+}
+
+.code{
+	border: 1 solid darkred;
+	background-color: grey;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+#ex{
+	display: flex;
+}
+
+.todo{
+	color: darkred;
+	font-size: 20px;
+}

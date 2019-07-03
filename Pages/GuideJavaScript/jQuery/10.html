@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+	<link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/10.css">
+	<link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+	<script src="../../../JS/jquery-3.4.1.min.js"></script>
+	<script src="../../../JS/jQuery/body.js" defer></script>
+	<script src="../../../JS/jQuery/10.js" defer></script>
+	<title>Дополнительные селекторы jQuery</title>
+</head>
+
+<body>
+	<main>
+		<h1>Дополнительные селекторы jQuery</h1>
+		<hr>
+		<h2>В качестве задания предлагается найти все скрытые элементы на странице и из отобразить, а остальные скрыть и
+			наоборот.</h2>
+		<hr>
+		<div class="primer">
+			<p>Параграф 1</p>
+			<p>Параграф 2</p>
+			<p hidden>Параграф 3</p>
+			<p>Параграф 4</p>
+			<p hidden>Параграф 5</p>
+		</div>
+		<hr>
+		<h2>Код JS</h2>
+		<hr>
+		<div class="code">
+			var hp = vp = null; <br>
+			<br>
+			function changeview() { <br>
+			hp = $('.primer p:hidden'); <br>
+			vp = $('.primer p:visible'); <br>
+			hp.show(); <br>
+			vp.hide(); <br>
+			} <br>
+			<br>
+			setInterval(changeview, 1000);
+		</div>
+	</main>
+</body>
+
+</html>

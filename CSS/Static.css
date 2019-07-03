@@ -1,0 +1,29 @@
+.main{
+	height: 500px;
+	width: 500px;
+	background: #777;
+}
+
+.static1{
+	height: 50px;
+	width: 50px;
+	background: #0FF;
+}
+
+.static2{
+	height: 50px;
+	width: 50px;
+	background: #F0F;
+}
+
+.static3{
+	height: 50px;
+	width: 50px;
+	background: #FF0;
+}
+
+.static4{
+	height: 50px;
+	width: 50px;
+	background: #F00;
+}

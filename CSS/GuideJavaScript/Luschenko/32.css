@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr auto 1fr;
+    grid-template-areas: "header header" "aside nav" "aside main" "footer footer"
+}
+
+header{
+    grid-area: header;
+    background: #2c3e50;
+    color: #f6f7f8;
+}
+
+nav{
+    grid-area: nav;
+    background: #2c3e50;
+    color: #f6f7f8;
+}
+
+footer{
+    grid-area: footer;
+    background: #2c3e50;
+    color: #f6f7f8;
+    display: flex;
+    justify-content: end;
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    background: #476e9e;
+}
+
+aside>a{
+    text-decoration: none;
+    color: #f6f7f8;
+}
+
+main{
+    grid-area: main;
+    background: #16a085;
+}
+
+ul{
+    margin: 20px;
+}
+
+.changedBlock{
+    height: 300px;
+    width: 100 vh;
+    background: orange;
+
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    color: #f6f7f8;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px;
+    box-shadow: 10px 10px 10px black;
+}
+
+#red{
+    background: red;
+}
+
+#blue   {
+    background: blue;
+}
+
+#orange{
+    background: orange;
+}
+
+.code{
+background: #777;
+border-radius: 10px;
+border: 1px solid red;
+margin: 20px;
+padding: 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+	<link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/20.css">
+	<script src="../../../JS/GuideJavaScript/Lushenko/20.js" defer></script>
+	<title>Функции и работа с ними</title>
+</head>
+
+<body>
+	<nav>nav</nav>
+	<header>header</header>
+	<aside>
+			<a href="../../../index.html">Вернуться на главную</a>
+			<a href="../../JavaScript.html">Обучение Java Script</a>
+	</aside>
+	<main>
+		<h1>Функции и работа с ними</h1>
+		<hr>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/g4F2DLtPVv4?start=1010" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<hr>
+		<h2>В уроке рассматривается теория использования функций</h2>
+		<h3>Создание простейшей функции без входящих данных и без вывода результата</h3>
+		<div class="code">
+			function test(){ <br>
+				alert('Hello'); <br>
+			};
+		</div>
+		<h3>Создание функции с входными данными</h3>
+		<div class="code">
+			function test(a, b){ <br>
+				console.log(a+b); <br>
+			};			
+		</div>
+		<h3>Созадние функции с входными данными и выводом результата</h3>
+		<div class="code">
+			function test(a, b){ <br>
+				var c=a+b; <br>
+				return c; <br>
+			};						
+		</div>
+		<h3>Назначение обработчику событий функции с параметрами (вызов через анонимную функцию)</h3>
+		<div class="code">
+			function test(a, b){ <br>
+				console.log(a+b); <br>
+			};	<br>
+			document.getElementById('name').onclick = function(){ <br>
+				 test(12, 6); <br>
+				}
+		</div>
+	</main>
+	<footer>Все права защищены &copy; Ковчин П.В.</footer>
+</body>
+
+</html>

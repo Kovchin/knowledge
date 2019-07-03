@@ -1,0 +1,22 @@
+.numbers{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 500px;
+}
+
+.numbers input{
+height: 50px;
+}
+
+.enter input{
+	height: 50px;
+	width: 500px;
+}
+
+
+.enter input{
+	color: grey;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+

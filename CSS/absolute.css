@@ -1,0 +1,37 @@
+.main{
+	height: 700px;
+	width: 700px;
+	background: #777;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+
+}
+
+.absolute1{
+	height: 200px;
+	width: 200px;
+	background: #00ffff;
+}
+
+.absolute2{
+	height: 200px;
+	width: 200px;
+	background: #ff00ff;
+}
+
+.absolute3{
+	height: 200px;
+	width: 200px;
+	background: #ffff00;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+
+}
+
+.absolute4{
+	height: 200px;
+	width: 200px;
+	background: #0000ff;
+}

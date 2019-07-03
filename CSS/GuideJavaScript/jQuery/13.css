@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    margin: 20px;
+}
+
+.code{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid darkred;
+    border-radius: 20px;
+    background-color: darkgrey;
+    box-shadow: 10px 10px 10px darkred;
+    font-family: 'Tahoma';
+}
+
+.test{
+    border: 3px solid #f00;
+}
+
+.c_1{
+    color: red;
+}
+
+.c_2{
+    color: blue;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+	<link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/10.css">
+	<link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+	<script src="../../../JS/GuideJavaScript/Lushenko/10.js" defer></script>
+	<title>Знакомство с массивами</title>
+</head>
+<body>
+	<header>Шапка</header>
+	<nav>Навигационное меню</nav>
+	<aside>
+		<a href="../../../index.html">Вернуться на главную</a>
+		<a href="../../JavaScript.html">Обучение Java Script</a>
+	</aside>
+	<main>
+		<h1>Знакомство с массивами</h1>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/2FrjdRSwf7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<hr>
+		<h2>В данном видео уроке рассматривается создание массивов и немного свойств работы с этим типом данных</h2>
+		<hr>
+		<h3>Инициализация массивов</h3>
+		<hr>
+		<h4>Пустой массив</h4>
+		<code>
+			var mas = [];
+		</code>
+		<h4>Инициализация массива с данными</h4>
+		<code>
+			var mas = mas [1, 'test', true, [1,2], NaN];
+		</code>
+		<hr>
+		<h3>Методы массива</h3>
+		<ul>
+			<li><i>push</i> - вставить элемент/несколько в конец массива</li>
+				<code>
+					array.push('value');
+				</code>
+			<li><i>pop</i> - удалить элемент с конца массива равносильно уменьшению длинны массива сокращением <i>length</i></li>
+				<code>
+					array.pop();
+				</code>
+			<li><i>shift</i> - удалить элемент с начала массива и сдвинуть все элементы на одну позицию</li>
+				<code>
+					array.shift()
+				</code>
+			<li><i>unshift</i> - добавить элемент/несколько в начало массива и сдвинуть все элементы на необходимое число позиций вправо</li>
+				<code>
+					array.unshift('value1', 'value2')
+				</code>
+		</ul>
+		<hr>
+		<h2>Задание</h2>
+		<hr>
+		<p>Создать форму для демонстрации свойств массива push, pop, shift, unshift.</p>
+		<hr>
+		<input type="text" name="" id="InputText">
+		<hr>
+		<button onclick="PushArray(mas)">Push</button>
+		<button onclick="PopArray(mas)">Pop</button>
+		<button onclick='ShiftArray(mas)'>Shift</button>
+		<button onclick='UnShift(mas)'>Unshift</button>
+		<hr>
+		<p>Вывод массива:</p>
+		<hr>
+		<p id="Out"></p>
+	</main>
+	<footer>Все права защищены &copy; Ковчин П.В.</footer>
+</body>
+</html>

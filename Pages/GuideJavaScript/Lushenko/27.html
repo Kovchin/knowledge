@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/27.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/GuideJavaScript/Lushenko/27.js" defer></script>
+    <title>Двигаем блок стрелками</title>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <footer>Все права защищены &copy; Ковчин П.В.</footer>
+    <aside>
+        <a href="../../../index.html">Вернуться на главную</a>
+        <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <main>
+        <h1>Двигаем блок стрелками</h1>
+        <hr>
+        <hr>
+        <h2>В этом уроке ...</h2>
+        <hr>
+        <div class="pole">
+        <div id="block"></div>
+    </div>
+        <hr>
+        <h3>Код JS</h3>
+        <div class="code">
+            //Присваиваем перемещаемому блоку имя block <br>
+var block = document.getElementById('block'); <br>
+//Координаты X и Y перемещаемого блока <br>
+var posX = 0; <br>
+var posY = 0;<br>
+//Садим на любое нажатие клавиши в документе обработчик move <br>
+document.getElementsByTagName('body')[0].onkeydown = move; <br>
+<br>
+//Проверяет нажатую клавишу и присваивает координаты X и Y перемещаемому блоку <br>
+function move(event){ <br>
+    <br>
+    checkPressButtons(); <br>
+    <br>
+    block.style.top = posY + 'px'; <br>
+    block.style.left = posX + 'px'; <br>
+} <br>
+<br>
+//Проверяет нажатую клавишу и если нажаты стрелки то соответственно меняет координаты блока <br>
+function checkPressButtons(){ <br>
+    switch (event.key){ <br>
+        case 'ArrowRight': <br>
+        posX++; <br>
+        break; <br>
+        case 'ArrowLeft': <br>
+        posX--; <br>
+        break; <br>
+        case 'ArrowUp': <br>
+        posY--; <br>
+        break; <br>
+        case 'ArrowDown': <br>
+        posY++; <br>
+        break; <br>
+    } <br>
+}
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/33.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/GuideJavaScript/Lushenko/33.js" defer></script>
+    <title>ToDo list</title>
+</head>
+
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <footer>Все права защищены &copy; Ковчин П.В.</footer>
+    <aside>
+        <a href="../../../index.html">Вернуться на главную</a>
+        <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <main>
+        <h1>ToDo List</h1>
+        <h3>В уроке рассматривается новый объект JSON он имеет 2 метода</h3>
+        <ul>
+            <li>JSON.parse() - с помощью этого метода можно в массив передать данные из localStorage <span
+                    class="code">todolist = JSON.parse(localStorage.getItem('todo'));</span></li>
+            <li>JSON.stringify() - с помощью этого метода можно в localStorage положить ассоциативный массив
+                <span class="code">localStorage.setItem('todo', JSON.stringify(todolist))</span>
+            </li>
+        </ul>
+
+        <p>todolist - ассоциативный массив</p>
+        <p>todo - ключ по которому данные кладутся/достаются из localStorage</p>
+
+        <hr>
+        <hr>
+        <h2>Практическое применение localStorage</h2>
+        <input type="text" name="" id="in">
+        <button id="add">Добавить задачу</button>
+        <hr>
+        <div id="out"></div>
+        <div class="code">
+                var todolist = []; <br>
+                <br>
+                if(localStorage.getItem('todo')!= undefined){ <br>
+                    todolist = JSON.parse(localStorage.getItem('todo')); <br>
+                    out(); <br>
+                } <br>
+                <br>                
+                document.getElementById('add').onclick = function(){ <br>
+                    var d = document.getElementById('in').value;  <br>
+                    var temp = {}; <br>
+                    temp.todo = d; <br>
+                    temp.check = false; <br>
+                    var i = todolist.length; <br>
+                    todolist[i] = temp; <br>
+                    console.log(todolist); <br>
+                    out(); <br>
+                    localStorage.setItem('todo', JSON.stringify(todolist)) <br>
+                } <br>
+                <br>
+                function out(){ <br>
+                    var out = ''; <br>
+                    for (var key in todolist){ <br>
+                        if (todolist[key].check == true){ <br>
+                            out += '&lt;input type="checkbox" checked&gt; '; <br>
+                        } <br>
+                        else <br>
+                        out += '&lt;input type="checkbox"&gt; '; <br>
+                        out += todolist[key].todo + '&lt;br&gt;'; <br>
+                    } <br>
+                    document.getElementById('out').innerHTML = out; <br>
+                }
+        </div>
+    </main>
+</body>
+
+</html>

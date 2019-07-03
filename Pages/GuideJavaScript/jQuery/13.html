@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/13.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/13.js" defer></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <title>Манипулирование Class</title>
+</head>
+
+<body>
+    <main>
+        <h1>Манипулирование Class</h1>
+        <hr>
+        <h2>Рассматривалось в уроке</h2>
+        <hr>
+        <div class="lesson">
+            <div class="hello">
+                Блок
+            </div>
+        </div>
+        <h3>Код</h3>
+        <div class="code">
+            var c = prompt("1 или 2?"); <br>
+            $(".hello").attr('class', "c_"+c);
+        </div>
+        <h2>Задание</h2>
+        <ul>
+            <li>Прочитайте в справочнике про метод addClass().</li>
+            <li>Создайте класс, в котором укажите border: 5px solid #f00;</li>
+            <li>Создайте 3 блока с текстом.</li>
+            <li>Добавьте ко всем блокам класс из 2-го пункта с помощью метода из 1-го пункта.</li>
+            <li>Убедитесь, что у всех блоков появилась рамка.</li>
+        </ul>
+        <div class="example">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <h3>Код</h3>
+        <div class="code">
+            $('.example div').addClass("test");
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/24.css">
+    <link rel="shortcut icon" href="../../../Pages/GuideJavaScript/Lushenko/24.html" type="image/x-icon">
+    <script src="../../../JS/GuideJavaScript/Lushenko/24.js" defer></script>
+    <title>Таймеры и интервалы</title>
+</head>
+
+<body>
+    <nav>nav</nav>
+    <header>header</header>
+    <aside>
+        <a href="../../../index.html">Вернуться на главную</a>
+        <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <footer>Все права защищены &copy; Ковчин П.В.</footer>
+    <main>
+        <h1>Таймеры и интервалы</h1>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/puxkpNbCh0w" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+        <h2>В данном уроке рассматриваются таймеры и интервалы</h2>
+        <h3>Таймер позволяющий запускать действие раз в указанный период времени <span>setInterval</span></h3>
+        <div class="example">
+            <div class="code">
+                <p>Инициализация таймера с присвоением ему имени timer (что бы потом можно ыло к нему обратиться)</p>
+                var timer = <b>setInterval</b>(Название функции , интервал запуска в миллисекундах);
+                <p>Сброс действия по таймеру</p>
+                <b>clearInterval</b>(timer);
+            </div>
+            <div id="test"></div>
+        </div>
+        <div class="buttons">
+            <button id='buttonStop'>stop</button>
+            <button id='buttonStart'>start</button>
+        </div>
+        <h3>Однократное, отложенное исполнение функции <span>setTimeout</span></h3>
+        <div class="example">
+            <div class="code">
+                <p>Данная функция однократно исполняет указанную функцию с задержкой исполнения</p>
+                var timer = <b>setTimeout</b>(Название функции , интервал запуска в миллисекундах);
+                <p>Отличается от предыдущей тем что первая однозначно запустится в указанный промежуток времени без
+                    учета
+                    времени исполнения самой функции</p>
+                <p>Эта же запускается однократно, ее можно внести в бесконечный цикл, но даже в этом случае таймер будет
+                    отсчитываться от момента вызова, то есть будет учтено время исполнения вызывающей функции.</p>
+            </div>
+            <div id="test2"></div>
+        </div>
+        <h3>Пример зацикливания команды <span>setTimtout</span></h3>
+        <div class="example">
+            <div class="code">
+                    var sdvig3 = 0; //-позиция 3-го блока <br>
+                    var test3 = document.getElementById('test3');//-блок который будет перемещаться <br>
+                    var timer3 = setTimeout(move3, 30);//-запускается таймер для однократного перемещения блока test3 <br>
+                    function move3(){ <br>
+                        //Функция движения блока вызываемая с помощью команды setTimeout <br>
+                          test3.style.marginLeft = sdvig3 + 'px'; <br>
+                          if (sdvig3 &gt;=100) <br>
+                          sdvig3=0; <br>
+                          else <br>
+                          sdvig3++; <br>
+                          setTimeout(move3, 30); <br>
+                        }
+            </div>
+            <div id="test3"></div>
+        </div>
+        <div class="buttons">
+                <button id='buttonStop3'>stop</button>
+                <button id='buttonStart3'>start</button>            
+        </div>
+            <div class="code">
+                    var MaxTimer4 = 10;//задается максимальное значение таймера обратного отчета. <br>
+                    var timer4 = setInterval(move4, 1000);//-первый запуск таймера обратного отчета <br>
+                    function move4(){ <br>
+                        MaxTimer4 --; <br>
+                        if (MaxTimer4 &lt; 0){ <br>
+                         test4.innerHTML = 'Таймер остановлен!'; <br>
+                         clearInterval(timer4); <br>
+                        } <br>
+                         else <br>
+                         test4.innerHTML = MaxTimer4; <br>
+                      }
+                      
+            </div>
+            <p id="test4"></p>
+    </main>
+</body>
+</html>

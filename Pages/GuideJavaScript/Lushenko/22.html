@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/22.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/GuideJavaScript/Lushenko/22.js" defer></script>
+    <title>Кошка гоняется за мышкой</title>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <footer>Все права защищены &copy; Ковчин П.В.</footer>
+    <aside>
+        <a href="../../../index.html">Вернуться на главную</a>
+        <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <main>
+        <h1>Кошка гоняется за мышкой</h1>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jcwHHbw5Hl8?start=98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+        <h2>В этом уроке используем практическое применение событий мыши.</h2>
+        <hr>
+        <div class="code">
+                document.onmousemove = function(){<br>
+                    document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeEnd', '&lt;img src="../../../Images/cat.png" id="cat"&gt;'); <br>
+                    var cat = document.getElementById('cat'); <br>
+                    cat.style.position = 'fixed'; <br>
+                <br>
+                    document.onmousemove = function (event){ <br>
+                        cat.style.left = event.clientX + 20 + 'px'; <br>
+                        cat.style.top = event.clientY + 20 + 'px'; <br>
+                    } <br>
+                } 
+        </div>
+    </main>
+</body>
+</html>

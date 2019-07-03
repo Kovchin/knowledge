@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/40.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/GuideJavaScript/Lushenko/40.js" defer></script>
+    <title>DOM</title>
+</head>
+
+<body>
+    <main>
+        <h1>Работа с DOM</h1>
+        <hr>
+        <p>В данном уроке обсуждалась концепция построения и работы с DOM деревом</p>
+        <p>Навигация по DOM происходит посредством следующих методов</p>
+        <ul>
+            <li>document.getElementById('Имя ID тега') - возвращает элемент по его идентификатору</li>
+            <li>document.getElementsByClassName('Имя класса') - возвращает массив со всеми элементами по Имени класса
+            </li>
+            <li>document.getElementsByName('Имя элемента') - возвращает массив элементов по имени</li>
+            <li>document.getElementsByTagName('Тег') - Возвращает массив со всеми запрашиваемыми тегами</li>
+            <li>document.getElementsByTagNameNS - Х.З. пока не пользовался, а на даче нет нормального интернета что бы
+                прочитать... :-(</li>
+        </ul>
+        <p>Так же есть схожий механизм поиска по DOM только с применением классов CSS</p>
+        <ul>
+            <li>document.querySelector('.класс') - возвращает первый элемент "класса" (здесь же может быть ссылка на
+                #класс короче все многообразие выбора в CSS)</li>
+            <li>document.querySelectorAll('p') - возвращает массив элементов запрашиваемого класса либо определенные тег
+                (к примеру запрос всех параграфов в документе)</li>
+        </ul>
+        <h2>Так же речь шла про возможность добавления и дальнейшего манипулирования элементами из JS</h2>
+        <p>Для добавления элемента используется метод createElement класса document</p>
+        <ul>
+            <li>var uzel = document.createElement('p'); - В частности этой строкой создается тег &lt;p&gt;&lt;/p&gt;
+            </li>
+        </ul>
+        <p>А теперь для его вывода необходимо создать узел в DOM</p>
+        <ul>
+            <li>document.body.appendChild(uzel);</li>
+            <li>ParentElement.insertBefore(NewElement, OporniyElement);</li>
+
+        </ul>
+
+        <h3>Для демонстрации создадим параграф в который раз в 1 сек будет генерироваться случайное число</h3>
+        <div class="code">
+            var timer = document.createElement('header'); <br>
+            document.body.appendChild(timer); <br>
+            <br>
+            function checkTime(){ <br>
+            timer.innerHTML = Math.random(); <br>
+            } <br>
+            <br>
+            setInterval(checkTime,1000);
+        </div>
+        <h3>Рассмотрим создание узла DOM после уже имеющегося на странице тега h1</h3>
+        <div class="code">
+            var <span class = "red">NEW</span> = <span class="green">OLD</span> = <span class="blue">ParentNode</span> = null; <br>
+            <br>
+            <span class="green">OLD</span> = document.querySelector('h1'); <br>
+            <span class = "red">NEW</span> = document.createElement('div'); <br>
+            <span class = "red">NEW</span>.innerHTML = '&lt;h2&gt; Hello world!!! &lt;/h2&gt;'; <br>
+            <span class="blue">ParentNode</span> = <span class="green">OLD</span>.<b>parentNode</b>; <br>
+            <span class="blue">ParentNode</span>.<b>insertBefore</b>(<span class = "red">NEW</span>, <span class="green">OLD</span>.<b>nextSibling</b>); <br>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/14.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/14.js" defer></script>
+    <title>Манипулирование стилями CSS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Манипулирование стилями CSS</h1>
+        <h2>Урок</h2>
+        <div class="lesson">
+            <div>Блок с текстом</div>
+        </div>
+        <h3>Код</h3>
+        <div class="code">
+            $('.lesson div').css('background-color', 'darkred'); <br>
+            $('.lesson div').css('width', '200px'); <br>
+            $('.lesson div').css('height', function () { <br>
+            alert('Ширина ' + $(this).width() + '\n' + <br>
+            'Высота ' + $(this).height()); <br>
+            return $(this).width(); <br>
+            });
+        </div>
+        <h2>Задание</h2>
+        <ul>
+            <li>Создайте абзац произвольного текста.</li>
+            <li>Сделайте 2 ссылки: «Крупнее» и «Мельче».</li>
+            <li>При клике по ссылке «Крупнее» текст в абзаце должен стать крупнее (например, на 1pt).</li>
+            <li>При клике по ссылке «Мельче» текст в абзаце должен стать мельче (например, на 1pt).</li>
+        </ul>
+        <h3>Реализация</h3>
+        <div class="box">
+            <p class="test">Произвольный текст</p>
+        </div>
+        <div class="buttons">
+            <p id="more">Больше</p>
+            <p id="less">Меньше</p>
+        </div>
+        <h3>Код</h3>
+        <div class="code">
+            $('#more').on('click', moreclick); <br>
+            $('#less').on('click', lessclick); <br>
+            <br>
+            function moreclick(){ <br>
+                $('.test').css('font-size', parseInt($('.test').css('font-size')) + 1 + 'px'); <br>
+            } <br>
+            <br>
+            function lessclick(){ <br>
+                $('.test').css('font-size', parseInt($('.test').css('font-size')) - 1 + 'px'); <br>
+            }
+        </div>
+    </main>
+</body>
+
+</html>

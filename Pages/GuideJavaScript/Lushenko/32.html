@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/32.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/GuideJavaScript/Lushenko/32.js" defer></script>
+    <title>Local storage</title>
+</head>
+
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <footer>Все права защищены &copy; Ковчин П.В.</footer>
+    <aside>
+        <a href="../../../index.html">Вернуться на главную</a>
+        <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <main>
+        <h1>В этом уроке рассматривается работа с локальной базой данных страницы <b>LocalStorage</b></h1>
+        <hr>
+        <hr>
+        <h2>LocalStorage - локальная база данных страницы. Она позволяет запоминать данные на стороне клиента для того
+            что бы использовать их при следующих запусках браузера</h2>
+            <h3>localStorage</h3>
+            <p>Это массив (ключ, значение)</p>
+            <ul>
+                <li>localStorage.setItem('ключ' , 'значение') - Записать в localStorage </li>
+                <li>localStorage.getItem('ключ' , 'значение') - Прочитать из localStorage </li>
+            </ul>
+            <hr>
+            <div class="changedBlock">
+
+            </div>
+            <hr>
+            <button id='red'>Red</button>
+            <button id='blue'>Blue</button>
+            <button id='orange'>Default</button>
+<h3>Код</h3>
+<div class="code">
+    window.onload = function(){ <br>
+        document.getElementsByClassName('changedBlock')[0].style.background = localStorage.getItem('bgcolor'); <br>
+    } <br>
+    <br>
+    document.getElementById('red').onclick = function(){ <br>
+        document.getElementsByClassName('changedBlock')[0].style.background = 'red'; <br>
+        localStorage.setItem('bgcolor', 'red'); <br>
+    } <br>
+    <br>
+    document.getElementById('blue').onclick = function(){ <br>
+        document.getElementsByClassName('changedBlock')[0].style.background = 'blue'; <br>
+        localStorage.setItem('bgcolor', 'blue'); <br>
+    } <br>
+    <br>
+    document.getElementById('orange').onclick = function(){ <br>
+        document.getElementsByClassName('changedBlock')[0].style.background = 'orange'; <br>
+        localStorage.setItem('bgcolor', 'orange'); <br>
+    }
+</div> 
+    </main>
+</body>
+
+</html>

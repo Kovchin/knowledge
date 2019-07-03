@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+/*    box-sizing: border-box;*/
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "header nav" "aside main" "footer footer"
+}
+
+nav{
+    grid-area: nav;
+    text-align: start;
+    background: #2c3e50;
+    color: #f6f7f8;
+}
+
+header{
+    grid-area: header;
+    background: #2c3e50;
+    color: #f6f7f8;
+}
+
+footer{
+    grid-area: footer;
+    text-align: end;
+    background: #2c3e50;
+    color: #f6f7f8;
+}
+
+aside{
+    grid-area: aside;
+    background: #476e9e;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    grid-area: main;
+    background: #16a085;
+}
+
+h1{
+    text-align: center;
+}
+
+.slider{
+	margin: 20px 0px;
+    display: flex;
+    align-items: center;
+	flex-direction: column;
+}
+
+.polosa{
+	display: flex;
+    margin: 20px 0px;
+    border: 5px solid black;
+    width: 384px;
+	height: 128px;
+	overflow: hidden;
+	transition: all ease 1s;
+}
+
+.polosa img{
+	float: left;
+}
+
+.MyCode{
+    border: 1px solid black;
+    box-sizing: border-box;
+    background: grey;
+    width: 600px;
+    height: 500px;
+    position: relative;
+}
+
+.navCode{
+    box-sizing: border-box;
+    border: 3px solid black;
+    background: #2c3e50;
+    width: 100%;
+    height: 10%;
+}
+
+.HTMLCode, .JSCode, .CSSCode{
+    box-sizing: border-box;    
+    border: 3px solid black;
+    background: #f6f7f8;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}

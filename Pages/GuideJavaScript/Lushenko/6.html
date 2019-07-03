@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/6.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/GuideJavaScript/Lushenko/6.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>Шапка</header>
+    <nav>Навигация</nav>
+    <aside>		
+        <a href="../../../index.html">Вернуться на главную</a>
+        <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <main>
+        <h1>Операторы ветвления</h1>
+        <hr>
+    		<iframe width="560" height="315" src="https://www.youtube.com/embed/E3s5jdRG9Rk?start=449" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+        <h2>В данном уроке речь идет про операторы ветвления</h2>
+        <p><b>If</b> и <b>Switch</b> :</p>
+        <ul>
+            <li>
+                <code>
+                    <b>if</b>('условие 1') <br>
+                    {Выполняется если условие 1 = true}; <br>
+                    <b>else if</b> ('условие 2') <br>
+                    {Выполняется если условие 2 = true}; <br>
+                    <b>else if</b> ('условие 3') <br>
+                    {Выполняется если условие 3 = true}; <br>
+                    <b>else</b> <br>
+                    {Выполняется если все предыдущие условия не выполнились};
+                </code>
+            </li>
+            <li>
+                <b>parseInt(x)</b> <br>
+                x-текст что будет преобразован в число 'если среди текста есть цифры'
+            </li>
+            <li>
+                <code>
+                    <b>switch</b>(x){<br>
+                    <b>case</b> 'value1': <br>
+                        {Выполняется если условие x = value1} <br>
+                    <b>break</b>; <br>
+                    <b>case</b> 'value2': <br>
+                        {Выполняется если условие x = value2} <br>
+                    <b>break</b>; <br>
+                    <b>case</b> 'value3': <br>
+                        {Выполняется если условие x = value3} <br>
+                    <b>break</b>; <br>
+                    <b>default</b>: <br>
+                        {Выполняется если ни один из case не верно} <br>
+                    <b>break</b>;<br>
+                    }
+                </code>
+            </li>
+        </ul>
+        <h2>В качестве примера можно создать поле ввода и угадывать число выводя подсказки в тег <b>&lt;P&gt;</b></h2>
+        <hr>
+        <h3>Пример</h3>
+        <hr>
+        <p>Введите число от 1 до 10: <input type="number" name="" id="IN"></p>
+        <hr>
+        <button onclick="checkNumber()">Проверить</button>
+        <hr>
+        <p id="OutP">Подсказка: </p>
+    </main>
+    <footer>Все права защищены &copy; Ковчин Павел</footer>
+</body>
+</html>

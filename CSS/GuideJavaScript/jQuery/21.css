@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.black{
+    background-color: black;
+}
+
+.green{
+    background-color: darkgreen;
+}
+
+.blue{
+    background-color: darkblue;
+}
+
+#lesson div{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    border: 1px solid red;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 10px;
+}
+
+ul{
+    margin: 20px;
+}
+
+.example div{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.example>div:nth-child(1){
+    background-color: darkred;
+}
+
+.example>div:nth-child(2){
+    background-color: orangered;
+}
+
+#bigDiv{
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+}
+
+.code{
+    margin: 20px;
+    padding: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    border: 3px solid darkred;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    background-color: grey;
+}

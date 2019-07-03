@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link
+            rel="stylesheet"
+            href="../../../CSS/GuideJavaScript/Assignment/Lesson 10.css">
+        <link
+            rel="shortcut icon"
+            href="../../../Images/favicon.ico"
+            type="image/x-icon">
+        <title>Задание №10</title>
+    </head>
+    <body>
+        <header>Шапка</header>
+        <nav>Верхнее навигационное меню</nav>
+        <aside>
+            <ul>
+                <li>
+                    <a href="../../../index.html">Вернуться на главную</a>
+                </li>
+                <li>
+                    <a href="../../JavaScript.html">Java Script</a>
+                </li>
+            </ul>
+
+        </aside>
+
+        <main>
+            <h1>10a-ое задание в Курсах Михаила Русакова по Java Script</h1>
+            <p>В 10-ом уроке говорилось о массивах</p>
+            <p>Затрагивались вопросы создания массивов, доступа к его ячейкам упомянули
+                свойство length отвечающее за номер последнего инициализированного элемента в
+                массиве и продемонстрировали вывод ячеек массива циклом с помощью
+                document.write()</p>
+            <h2>Домашнее задание</h2>
+            <ul>
+                <li>Создайте массив из 10 любых чисел.</li>
+                <h4>Код</h4>
+                <code>
+                    &lt;script&gt;<br>
+                    var NewArray = new Array(1,2,3,4,5,6,7,8,9,10);<br>
+                    &lt;/script&gt;
+                </code>
+                <li>Выведите массив через цикл.</li>
+                <h4>Код</h4>
+                <code>
+                    &lt;script&gt;<br>
+                    var NewArray = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);<br>
+                    for (var i = 0; i < NewArray.length; i++)
+                    <br>
+                    document.write(NewArray[i] + " ");
+                    <br>
+                    &lt;/script&gt;<br>
+                </code>
+                <h4>Результат</h4>
+                <script>
+                    var NewArray = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+                    for (var i = 0; i < NewArray.length; i++) 
+                        document.write(NewArray[i] + " ");
+                </script>
+                <li>Поменяйте все элементы в массиве местами, то есть тот, что был 10-м,
+                    сделайте 1-м. Тот, что был 9-м, сделайте 2-м и так далее.</li>
+                <li>Выведите через цикл получившийся массив (на следующей строке) и посмотрите,
+                    всё ли правильно сделано.</li>
+                    <h4>Код</h4>
+                    <code>
+                            &lt;script&gt;<br>
+                                    var NewArray = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); <br>
+                                    var ResArray = new Array(); <br>
+                                    for (var i = 0; i < NewArray.length; i++)  <br>
+                                        ResArray[10 - i - 1] = NewArray[i]; <br>
+                                    document.write("Вывод первого массива &lt;br&gt;"); <br>
+                                    for (i = 0; i < NewArray.length; i++) <br>
+                                        document.write("NewArray[" + i + "] = " + NewArray[i] + "&lt;br&gt;"); <br>
+                                    document.write("Вывод второго массива &lt;br&gt;"); <br>
+                                    for (i = 0; i < ResArray.length; i++) <br>
+                                        document.write("ResArray[" + i + "] = " + ResArray[i] + "&lt;br&gt;"); <br>
+                                </script> 
+                    </code>
+                    <h4>Результат</h4>
+                <script>
+                    var NewArray = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+                    var ResArray = new Array();
+                    for (var i = 0; i < NewArray.length; i++) 
+                        ResArray[10 - i - 1] = NewArray[i];
+                    document.write("Вывод первого массива <br>");
+                    for (i = 0; i < NewArray.length; i++) 
+                        document.write("NewArray[" + i + "] = " + NewArray[i] + "<br>");
+                    document.write("Вывод второго массива <br>");
+                    for (i = 0; i < ResArray.length; i++) 
+                        document.write("ResArray[" + i + "] = " + ResArray[i] + "<br>");
+                </script>
+
+            </ul>
+
+        </main>
+        <footer>Все права защищены &copy; Ковчин Павел</footer>
+    </body>
+</html>

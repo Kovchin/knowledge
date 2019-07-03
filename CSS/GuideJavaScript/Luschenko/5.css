@@ -1,0 +1,17 @@
+h1, h2{
+	text-align: center;
+	padding: 20px;
+}
+
+.lessonQuestion li{
+	color: #00F;
+	margin-left: 20px;
+}
+
+.SecondLevelUL li{
+	margin-left: 40px;
+}
+
+h3{
+	padding: 10px 40px;
+}

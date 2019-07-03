@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/20.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/20.js" defer></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <title>Функция val()</title>
+</head>
+
+<body>
+    <main>
+        <h1>Функция val()</h1>
+        <h2>Теория</h2>
+        <h2>Задание</h2>
+        <ul>
+            <li>Создайте форму с двумя радиокнопками (например, пол «Мужской» и «Женский»), с элементом checkbox и
+                текстовой областью, а также кнопкой «Проверить».</li>
+            <li>Получите все данные из формы после нажатия на кнопку «Проверить» и выведите их на страницу в отдельный
+                блок div (который создайте через тот же jQuery).</li>
+        </ul>
+        <h2>Реализация</h2>
+        <div id="example">
+            <p>Ваш пол:</p>
+            <p>Мужской <input type="radio" name="sex" value="male"></p>
+            <p>Женский <input type="radio" name="sex" value="female"></p>
+            <p>Данные<input type="text" name="" id=""></p>
+            <button>Вывести данные</button>
+        </div>
+        <h2>Код</h2>
+        <div class="code">
+            $('#example>button').on('click', output); <br>
+            <br>
+            function output(){<br>
+            var sex = $('#example input[name="sex"]:checked').val();<br>
+            var textarea = $('#example input[type="text"]').val();<br>
+            var myDiv = $('&lt;div&gt;&lt;/div&gt;');<br>
+            $(myDiv).attr('id', 'result');<br>
+            $('#example').append(myDiv);<br>
+            $("#result").append('Ваш пол: ' + sex + '&lt;br&gt;');<br>
+            $('#result').append('Комментарий: ' + textarea);<br>
+            }
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/5.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/5.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Обращение к элементам по ID</h1>
+        <hr>
+        <p id="pp1">Первый параграф</p>
+        <p id="pp2">Второй параграф</p>
+        <h2>В этом уроке мы разбирали доступ к элементам по их ID</h2>
+        <p>Не очень понял чем этот урок отличается от пердыдущего так как кроме новго свойства <b>$('p1').html()</b> -
+            который по своей сути повторяет вывод тега innerText не сказали</p>
+        <h3>Ниже приведен код обращения к элементам с помощью библиотеки jQuery и классическим способом</h3>
+        <div class="code">
+            var elem1 = $('#p1').html(); <br>
+            var elem2 = document.getElementById('p2').innerHTML; <br>
+            console.log(elem1); <br>
+            console.log(elem2); <br>
+        </div>
+        <h2>А вот задания к урокам как оказалось уже интереснее.</h2>
+        <h3>вывести на экран 3 параграфа и кнопку по нажатии на которую будет выводиться текст выбранный случайным
+            образом из одного из этих параграфов</h3>
+        <div class="example">
+            <p id="p0">Первый параграф</p>
+            <p id="p1">Второй параграф</p>
+            <p id="p2">Третий параграф</p>
+            <button id="button">Вывести случайный параграф</button>
+        </div>
+        <div class="code">
+                $('button').on('click', clickp);<br>
+<br>
+                function clickp() {<br>
+                    var rand = Math.round(2 * (Math.random()));<br>
+                    if (rand == 0) {<br>
+                        console.log($('#p0').html());<br>
+                    } <br>
+                    else if (rand == 1) { <br>
+                        console.log($('#p1').html()); <br>
+                    } <br>
+                    else <br>
+                        console.log($('#p2').html()); <br>
+                }
+        </div>
+    </main>
+</body>
+
+</html>

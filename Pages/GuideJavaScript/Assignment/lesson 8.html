@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <nav></nav>
+    <header></header>
+    <aside>
+            <a href="../../../index.html">Вернуться на главную</a>
+            <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <main>
+            <h4>Упражнение 8</h4>
+            <p>
+                Используя тег &lt;table&gt; и цикл for выведите таблицу умножения.</p>
+            <p>
+                Сделайте задачу из пункта 1, но с использованием цикла while.</p>
+
+            <p>
+                Примечание: Вам потребуется двойной цикл, то есть цикл в цикле:</p>
+            <code>
+                for (var i = 1; i < 10; i++) {<br>
+                for (var j = 1; j < 10; j++) {<br>
+                var result = i * j;<br>
+                } }</code>
+            <h4>Реализация задачи с помощью
+                <b>for</b>
+            </h4>
+            <script>
+
+                document.write("<table border=1>");
+                end = 10;
+                for (i = 1; i <= end; i++) {
+                    document.write("<tr>");
+
+                    for (j = 1; j <= end; j++) 
+                        document.write("<td>" + (
+                            i * j
+                        ) + "</td>");
+                    
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+            </script>
+            <h4>Та же самая задача, но с использованием оператора
+                <b>while</b>
+            </h4>
+            <script>
+                i = 1;
+                j = 1;
+                document.write("<table border=1>");
+                while (i <= 10) {
+                    document.write("<tr>");
+                    while (j <= 10) {
+                        document.write("<td>" + (
+                            i * j
+                        ) + "</td>");
+                        j++;
+                    }
+                    i++;
+                    j = 1;
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+            </script>
+    </main>
+    <footer>Все права защищены &copy; Ковчин Павел</footer>
+</body>
+</html>

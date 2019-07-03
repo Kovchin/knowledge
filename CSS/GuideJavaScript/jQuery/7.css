@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 50px;
+}
+
+.code{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    border: 1px solid darkred;
+    background: grey;
+}

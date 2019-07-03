@@ -1,0 +1,36 @@
+.main{
+	height: 700px;
+	width: 700px;
+	background: #777;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+.fixed1{
+	width: 200px;
+	height: 200px;
+	background: #00ffff;
+}
+
+.fixed2{
+	width: 400px;
+	height: 400px;
+	background: #FF00ff;
+	position: fixed;
+	top: 150px;
+	left: 150px;
+	z-index: 1000;
+}
+
+.fixed3{
+	width: 200px;
+	height: 200px;
+	background: #FFff00;
+}
+
+.fixed4{
+	width: 200px;
+	height: 200px;
+	background: #00ff00;
+}

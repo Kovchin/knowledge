@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jlehmann{
+    border: 3px solid black;
+    height: 500px;
+    width: 300px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.red{
+    background: red;
+    z-index: 50;
+}
+
+.green{
+    background: green;
+    z-index: 49;
+}
+
+.blue{
+    background: blue;
+    z-index: 48;
+}

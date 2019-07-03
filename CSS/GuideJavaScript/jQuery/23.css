@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.code{
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    background-color: grey;
+    margin: 20px;
+    padding: 10px;
+    font-family: verdana;
+    font-weight: 20px;
+}
+
+#example div{
+    border: 1px solid red;
+    background-color: darkgrey;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#exp{
+    position: absolute;
+}
+
+.close{
+    position: absolute;
+    color:red;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.close:hover{
+    background-color: grey;
+    cursor: pointer;
+}

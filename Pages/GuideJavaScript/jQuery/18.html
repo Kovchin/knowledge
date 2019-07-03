@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/18.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/18.js" defer></script>
+    <title>Удаление элементов</title>
+</head>
+
+<body>
+    <main>
+        <h1>Удаление элементов</h1>
+        <h2>Теория</h2>
+        <p>Есть 2 метода для удаления/очистки элементов в jQuery</p>
+        <ul>
+            <li>$('img').remove() - Удаляет указанные в селекторе элементы</li>
+            <li>$('p').empty() - Очищает содержимое парных тегов при этом сам тег остается в DOM дереве</li>
+        </ul>
+        <h2>Задание</h2>
+        <ul>
+            <li>Выведите 3 изображения на страницу.</li>
+            <li>Под каждым изображением поместите ссылку «Удалить».</li>
+            <li>При нажатии на ссылку «Удалить» должны исчезнуть: изображение, соответствующее этой ссылке, и сама
+                ссылка «Удалить».</li>
+        </ul>
+        <h2>Реализация</h2>
+        <div id='example'>
+            <div class="block">
+                <img src="../../../Images/HyundaiTucson.jpg" class='one' alt="Машина">
+                <a href="#" class='one'>Убрать первую картинку</a>
+            </div>
+            <div class="block">
+                <img src="../../../Images/Slider/iconfinder_Ironman_Hand_73383.png" class="too" alt="Железная рука">
+                <a href="#" class="too">Убрать вторую картинку</a>
+            </div>
+            <div class="block">
+                <img src="../../../Images/Slider/iconfinder_Kitty!_73388.png"  class='three' alt="Котенок">
+                <a href="#" class='three'>Убрать третью картинку</a>
+            </div>
+        </div>
+        <h2>Код</h2>
+        <div class="code">
+                var a = $('#example a'); <br>
+                <br>
+                function removeEmpty(){ <br>
+                    var target = this.className; <br>
+                    $('img.'+target).remove(); <br>
+                    $('a.'+target).empty(); <br>
+                } <br>
+                <br>
+                for(var i = 0 ; i&lt;a.length; i++){ <br>
+                    a[i].addEventListener('click',removeEmpty); <br>
+                }
+        </div>
+    </main>
+</body>
+
+</html>

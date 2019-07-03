@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.example{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.example a{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "verdana";
+    text-decoration: none;
+    color: darkgray;
+}
+
+.code{
+    border: 1px solid darkred;
+    background-color: darkgray;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px darkred;
+    margin: 20px;
+    padding: 20px; 
+}

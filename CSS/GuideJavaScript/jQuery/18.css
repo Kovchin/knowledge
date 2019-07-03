@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+border: 3px solid orange;
+background: grey;
+margin: 50px;
+height: 300px;
+width: 300px;
+}
+
+#example{
+    display: flex;
+    flex-direction: column;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    margin: 20px;
+    padding: 10px;
+}
+
+li{
+    padding: 5px;
+}
+
+.code{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    background-color: grey;
+}

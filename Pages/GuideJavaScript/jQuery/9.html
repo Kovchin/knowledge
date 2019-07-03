@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/9.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/9.js" defer></script>
+    <title>Отбор элементов по взаимоотношениям</title>
+</head>
+
+<body>
+    <main>
+        <h1>Отбор элементов по взаимоотношениям.</h1>
+        <hr>
+        <h2>В качестве задания предлагается создать пару параграфов и достать из первого параграфа первую букву.</h2>
+        <hr>
+        <p>Первый параграф</p>
+        <p>Второй параграф</p>
+        <h3>Реализация</h3>
+        <div class="code">
+            var myp = $('p:first'); <br>
+            console.log(myp[0].innerHTML);
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Оформление расстановки сетки страницы*/
+body {
+    display: grid;
+    grid-template-areas: "header nav" "aside main" "footer footer";
+    grid-template-rows: 50px 5fr 50px;
+    grid-template-columns: 250px 5fr;
+    height: 100vh;
+    background: #476e9e;
+}
+
+header {
+    top: 0;
+    left: 0;
+    background: #2c3e50;
+    color: #f6f7f8;
+    grid-area: header;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    color: #f6f7f8;
+    background: #2c3e50;
+    grid-area: nav;
+}
+
+aside {
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: #476e9e;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 230px;
+    margin-top: 50px;
+}
+
+aside a,
+nav a {
+    text-decoration: none;
+    color: #f6f7f8;
+}
+
+main {
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: #16a085;
+    grid-area: main;
+}
+
+footer {
+    padding: 10px;
+    background: #2c3e50;
+    color: #f6f7f8;
+    grid-area: footer;
+    /*=================================*/
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/*Настройка работы верхнего меню*/
+
+.NavMenu a{
+display:flex;
+list-style: none;
+}
+
+.NavMenu ul{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+
+}
+
+.NavMenu li{
+    position: relative;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.SubMenu1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+}
+
+.SubMenu1 li{
+    position: relative;
+}
+
+.SubMenu2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    height: 100px;
+    top: 200px;
+}
+
+.SubMenu2 li{
+    padding: 1px;
+}
+
+.NavMenu :hover .SubMenu1{
+    display: block;
+}
+
+.SubMenu2 li a{
+    display: none;
+    background: #2c3e50;
+}
+
+.SubMenu1 li:hover .SubMenu2 li a{
+    display: block;
+}
+
+
+
+.SubMenu1 li{
+    display: none;
+}
+
+.NavMenu li:hover .SubMenu1 li{
+    display: block;
+}
+
+/*Стилизация верхнего меню*/
+
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    align-items: center;
+    height: 50px;
+}
+
+.SubMenu1 {
+    background: #2c3e50;
+    width: 100%;
+}
+
+/*Стилизация блока main*/
+
+main ul{
+    padding-left: 40px;
+}
+
+.events li{
+	color: #00F;
+	font-weight: 900;
+}
+
+.p_bbb{
+	color: #00F;
+	font-weight: 700;
+}
+
+.regular{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.code{
+    border: black 1px solid;
+    margin: 10px;
+    background: #777;
+}
+
+.alarm{
+    color: red;
+}

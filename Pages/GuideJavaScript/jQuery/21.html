@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/21.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/21.js" defer></script>
+    <title>Установка обработчика событий</title>
+</head>
+
+<body>
+    <main>
+        <h1>Установка обработчика событий</h1>
+        <h2>Теория</h2>
+        <p>$(document).ready(function(){исполняемый код}); - эта конструкция исполнится только после загрузки документа.
+        </p>
+        <p>$('селектор').bind('обработчик событий', исполняемая функция)</p>
+        <p>$('селектор').bind('обработчик событий', исполняемая функция)</p>
+        <p>$('селектор').on('обработчик событий', исполняемая функция)</p>
+        <h2>Урок</h2>
+        <div id="lesson">
+            <div class="black"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+            <p>Параграф</p>
+        </div>
+        <h2>Задание</h2>
+        <ul>
+            <li>Создайте 2 любых изображения на странице с шириной 100px.</li>
+            <li>При клике на любое из них оно должно увеличиться до 500px и оказаться в центре экрана (миниатюра должна
+                остаться на том же месте, то есть как бы должно появиться второе изображение).</li>
+            <li>При повторном клике по появившемуся большому изображению, оно должно исчезнуть.</li>
+        </ul>
+        <p>Примечание: Размеры и положение задаются через свойства CSS, а указывать их нужно в jQuery.</p>
+        <h2>Реализация</h2>
+        <div class="example">
+            <div></div>
+            <div></div>
+        </div>
+        <h2>Код</h2>
+        <div class="code">
+                $('.example div').on('click', createDiv); <br>
+                <br>
+                function createDiv(event){ <br>
+                    var NewDiv = $(event.target).clone(); <br>
+                    $(NewDiv).attr('id','bigDiv'); <br>
+                    $(NewDiv).css('background-color',$(event.target).css('background-color')); <br>
+                    $(NewDiv).bind('click',removeDiv); <br>
+                    $('.example').append(NewDiv); <br>
+                } <br>
+                <br>
+                function removeDiv(event){ <br>
+                    $(event.target).remove(); <br>
+                }
+        </div>
+    </main>
+</body>
+
+</html>

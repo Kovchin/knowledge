@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link
+            rel="stylesheet"
+            href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+        <link
+            rel="shortcut icon"
+            href="../../../Images/favicon.ico"
+            type="image/x-icon">
+        <link
+            rel="stylesheet"
+            href="../../../CSS/GuideJavaScript/Assignment/Lesson 13.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header></header>
+        <nav></nav>
+        <aside>
+            <a href="../../../index.html">Вернуться на главную</a>
+            <a href="../../JavaScript.html">Обучение Java Script</a>
+        </aside>
+        <main>
+            <h1>Задание к урокам Михаила Русакова</h1>
+            <ul>
+                <li>Создайте переменную counter, которая изначально должна быть равна 0.</li>
+                <p>
+                    <h3>Код</h3>
+                    <code>
+                        &lt;script&gt;
+                        <br>
+                        var counter = 0;
+                        <br>
+                        document.write("Изначально заданная переменная counter = " + counter);
+                        <br>
+                        &lt;/script&gt;
+                    </code>
+                    <h3>Результат</h3>
+                    <script>
+                        var counter = 0;
+                        document.write("Изначально заданная переменная counter = " + counter);
+                    </script>
+                </p>
+                <li>Создайте функцию, которая увеличивает переменную counter на 1 при каждом её
+                    вызове.</li>
+                <h3>Код</h3>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    function <b>Plus</b>() {
+                    <br>
+                    counter = counter++;
+                    <br>
+                    return counter;
+                    <br>
+                    }
+                    <br>
+                    &lt;/script&gt;
+                </code>
+                <script>
+                    function Plus() {
+                        counter += 1;
+                    }
+                </script>
+                <li>Создайте функцию, которая через alert() выводит значение переменной counter.</li>
+                <h3>Код</h3>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    function <b>Show</b>() {
+                    <br>
+                    alert();
+                    <br>
+                    }
+                    <br>
+                    &lt;/script&gt;
+                </code>
+
+                <script>
+                    function Show() {
+                        alert(counter);
+                    }
+                </script>
+                <li>Вызовите 5 раз функцию из 2-го пункта.</li>
+                <h3>Код</h3>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    var i;
+                    <br>
+                    for (i = 0; i &lt; 5; i++)
+                    <br>
+                    <b>Plus</b>();
+                    <br>
+                    &lt;/script&gt;
+                </code>
+
+                <li>Вызовите функцию из 3-го пункта и убедитесь, что она вызовет alert() и
+                    выведет там значение 5.</li>
+                <h3>Код</h3>
+                <code>
+                &lt;script&gt; <br>
+            <b>Show</b>();<br>
+                &lt;/script&gt; <br>
+            </code>
+                <h3>Результат выполнения последних пунктов вы видели когда нажимали OK при
+                    входе/обновлении данной страницы</h3>
+                <script>
+                    var i;
+                    for (i = 0; i < 5; i++) 
+                        Plus();
+                    Show();
+                </script>
+            </ul>
+        </main>
+        <footer>Все права защищены &copy; Ковчин Павел</footer>
+    </body>
+</html>

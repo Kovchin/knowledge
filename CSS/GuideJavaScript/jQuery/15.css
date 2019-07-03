@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.example{
+    height: 100px;
+    width: 200px;
+    background-color: brown;
+    border: 3 solid darkred;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    padding: 10px;
+    margin: 20px;
+}
+
+input{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+
+button{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}

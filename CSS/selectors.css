@@ -1,0 +1,73 @@
+body {
+	background: #555;
+	color: #FFF;
+}
+
+table {
+	border: 2px solid #000;
+	text-align: center;
+	width: 100%;
+}
+
+td {
+	border: 1px solid #000;
+	width: 20%;
+}
+
+tr:nth-child(2n) {
+	background: #666;
+}
+
+p span {
+	color: #00F;
+}
+
+tr:nth-child(4) {
+	text-align: left;
+}
+
+input[type="text"] {
+	height: 40px;
+	width: 400px;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	height: 50px;
+	width: 300px;
+	color: @0099dd;
+}
+
+input[type="text"]:focus {
+	border: 2px solid #c00;
+}
+
+h3>p {
+	color: #FFFF00;
+}
+
+ul li:first-child {
+	color: #F00;
+}
+
+ul li:last-child {
+	color: #0F0;
+}
+
+ul li:nth-child(3) {
+	color: #00F;
+}
+
+ul li:nth-child(2n) {
+	color: #FF0;
+}
+
+ul li:hover {
+	color: #FFF;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+ul li:nth-child(1):hover {
+	color: #000;
+}

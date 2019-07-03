@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: #000;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.thecard{
+    height: 500px;
+    width: 300px;
+    position: relative;
+    perspective: 1000px;
+}
+/*Вращение карточки*/
+.thecard:hover .thefront{
+    transform: rotateY(180deg);
+}
+
+.thecard:hover .theback{
+    transform: rotateY(360deg);
+}
+
+
+.thefront, .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.thefront{
+    background: #9b59b6;
+}
+
+.theback{
+    background: #8e44ad;
+    transform: rotateY(180deg);
+}
+
+

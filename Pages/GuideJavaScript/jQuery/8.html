@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/8.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/8.js" defer></script>
+    <title>Выбор элементов по иерархии</title>
+</head>
+
+<body>
+    <main>
+        <h1>Выбор элементов по иерархии</h1>
+        <h2>Задание вывести 5 параграфов и циклически менять им цвета</h2>
+        <div class="block">
+            <p>Параграф 1</p>
+            <p>Параграф 2</p>
+            <p>Параграф 3</p>
+            <p>Параграф 4</p>
+            <p>Параграф 5</p>
+        </div>
+        <h3>Реализация</h3>
+        <div class="code">
+            //получаем все параграфы в классе block <br>
+            var myp = $('.block p'); <br>
+            //создаем переменную в которую кладем название одного из 2-ух цветов <br>
+            var mycolor = 'darkred'; <br>
+            //функция смены цвета с синего на красный и наоборот <br>
+            function changecolor() { <br>
+            myp.css('color', mycolor); <br>
+            <br>
+            if (mycolor == 'darkred') <br>
+            mycolor = 'darkblue'; <br>
+            else <br>
+            mycolor = 'darkred'; <br>
+            } <br>
+            //циклический запуск функции выше <br>
+            setInterval(changecolor, 1000);
+        </div>
+    </main>
+</body>
+
+</html>

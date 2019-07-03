@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#example{
+    margin: 20px;
+}
+
+#example p{
+    padding: 5px;
+}
+
+ul{
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.code{
+    background-color: grey;
+    border-radius: 10px;
+    border: 1px solid darkred;
+    box-shadow: 10px 10px 10px black;
+    margin: 20px;
+    padding: 10px;
+    font-family: verdana;
+    font-size: 20px;
+}

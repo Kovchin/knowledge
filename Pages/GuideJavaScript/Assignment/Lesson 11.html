@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link
+            rel="stylesheet"
+            href="../../../CSS/GuideJavaScript/Assignment/Lesson 11.css">
+        <link
+            rel="shortcut icon"
+            href="../../../Images/favicon.ico"
+            type="image/x-icon">
+        <title>Задание №11</title>
+    </head>
+    <body>
+        <header>Шапка</header>
+        <nav>Верхнее меню</nav>
+        <aside>
+            <a href="../../../index.html">Вернуться на главную</a>
+            <a href="../../JavaScript.html">Обучение Java Script</a>
+        </aside>
+        <main>
+            <h1>11-ое задание в Курсах Михаила Русакова по Java Script</h1>
+            <p>В уроке шла речь про многомерные массивы</p>
+            <h2>Задания</h2>
+            <ul>
+                <li>
+                    Создайте двумерный массив 3 на 3 с любыми числами.</li>
+                <h3>Код</h3>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    var arr1 = new Array(1, 2, 3);
+                    <br>
+                    var arr2 = new Array(4, 5, 6);
+                    <br>
+                    var arr3 = new Array(7, 8, 9);
+                    <br>
+                    var arr = new Array(arr1, arr2, arr3);
+                    <br>
+                    for (i=0; i&lt;arr.length;i++){
+                    <br>
+                    for (j=0; j&lt;arr[i].length; j++)
+                    <br>
+                    document.write(arr[i][j]+ " ");
+                    <br>
+                    document.write("&lt;br&gt;");}
+                    <br>
+                    &lt;/script&gt;
+                </code>
+                <h3>Результат</h3>
+                <script>
+                    var arr1 = new Array(1, 2, 3);
+                    var arr2 = new Array(4, 5, 6);
+                    var arr3 = new Array(7, 8, 9);
+                    var arr = new Array(arr1, arr2, arr3);
+                    for (i = 0; i < arr.length; i++) {
+                        for (j = 0; j < arr[i].length; j++) 
+                            document.write(arr[i][j] + " ");
+                        document.write("<br>");
+                    }
+                </script>
+                <li>Выведите этот массив в теге &lt;table&gt;, чтобы каждое число было в своей
+                    ячейке.</li>
+                <h3>Код</h3>
+                <code>
+                    &lt;script&gt;<br>
+                    var arr1,
+                    <br>
+                    arr2,
+                    <br>
+                    arr3 = new Array(),
+                    <br>
+                    arr = new Array(arr1, arr2, arr3),
+                    <br>
+                    k = 0;
+                    <br>
+                    document.write("&lt;table border=1&gt;");
+                    <br>
+                    for (i = 0; i &lt; 3; i++) {
+                    <br>
+                    document.write("&lt;tr&gt;")
+                    <br>
+                    for (j = 0; j &lt; 3; j++) {
+                    <br>
+                    k++;
+                    <br>
+                    arr[i][j] = k;
+                    <br>
+                    document.write("&lt;td&gt;" + arr[i][j] + "&lt;/td&gt;");
+                    <br>
+                    }
+                    <br>
+                    document.write("&lt;/tr&gt;");
+                    <br>
+                    }
+                    <br>
+                    document.write("&lt;/table&gt;");
+                    <br>
+                    &lt;/script&gt;
+                    <br>
+                </code>
+                <h3>Результат</h3>
+                <script>
+                    var arr1,
+                        arr2,
+                        arr3 = new Array(),
+                        arr = new Array(arr1, arr2, arr3),
+                        k = 0;
+                    document.write("<table border=1>");
+                    for (i = 0; i < 3; i++) {
+                        document.write("<tr>")
+                        for (j = 0; j < 3; j++) {
+                            k++;
+                            arr[i][j] = k;
+                            document.write("<td>" + arr[i][j] + "</td>");
+                        }
+                        document.write("</tr>");
+                    }
+                    document.write("</table>");
+                </script>
+                <li>Напишите скрипт, который диагональные элементы сделает равными 1, а
+                    остальные 0. То есть элементы[0][0], [1][1], [2][2] – 1, а остальные 0. Сделайте
+                    это без цикла.</li>
+                <h3>Код</h3>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    var arr1 = new Array(1, 0, 0);
+                    <br>
+                    var arr2 = new Array(0, 1, 0);
+                    <br>
+                    var arr3 = new Array(0, 0, 1);
+                    <br>
+                    var arr = new Array(arr1, arr2, arr3);
+                    <br>
+                    document.write(arr);
+                    <br>
+                    &lt;/script&gt;
+                </code>
+                <h3>Результат</h3>
+                <script>
+                    //Инициализация массива
+                    var arr1 = new Array(1, 0, 0);
+                    var arr2 = new Array(0, 1, 0);
+                    var arr3 = new Array(0, 0, 1);
+                    var arr = new Array(arr1, arr2, arr3);
+                    //Вывод массива
+                    document.write(arr);
+                </script>
+                <li>Выведите через &lt;table&gt; получившийся массив.</li>
+                <h3>Код</h3>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    document.write("&lt;table border=1")
+                    <br>
+                    for (i=0;i&lt;arr.length; i++){
+                    <br>
+                    document.write("&lt;tr&gt;")
+                    <br>
+                    for (j=0; j&lt;arr[i].length; j++)
+                    <br>
+                    document.write("&lt;td&gt;" + arr[i][j] + "&lt;/td&gt;")
+                    <br>
+                    document.write("&lt;/tr&gt;")
+                    <br>
+                    }
+                    <br>
+                    document.write("&lt;/table&gt;")
+                    <br>
+                    &lt;/script&gt;
+                    <br>
+                </code>
+                <h3>Результат</h3>
+                <script>
+                    document.write("<table border=1")
+                    for (i = 0; i < arr.length; i++) {
+                        document.write("<tr>")
+                        for (j = 0; j < arr[i].length; j++) 
+                            document.write("<td>" + arr[i][j] + "</td>")
+                        document.write("</tr>")
+                    }
+                    document.write("</table>")
+                </script>
+                <li>Сделайте задачу из 3-го пункта с использованием циклов и, выведя массив на
+                    страницу, убедитесь, что результат тот же.</li>
+                <h3>Код</h3>
+                <code>
+                    &lt;script&gt; <br>
+                        var arr1, <br>
+                            arr2, <br>
+                            arr3 = new Array(), <br>
+                            arr = new Array(arr1, arr2, arr3); <br>
+                        for (i = 0; i &lt; arr.length; i++) <br>
+                            for (j = 0; j &lt; 3; j++) <br>
+                                if (i == j) <br>
+                                    arr[i][j] = 1; <br>
+                                else <br>
+                                    arr[i][j] = 0; <br>
+                    document.write("&lt;table border=1&gt;"); <br>
+                        for (i = 0; i &lt; arr.length; i++) { <br>
+                            document.write("&lt;tr&gt;"); <br>
+                            for (j = 0; j &lt; arr[i].length; j++) <br>
+                                document.write("&lt;td&gt;" + arr[i][j] + "&lt;/td&gt;"); <br>
+                            document.write("&lt;/tr&gt;"); <br>
+                        } <br>
+                        document.write("&lt;/table &gt;"); <br>
+                    &lt;/script&gt; <br>
+                </code>
+                <h3>Результат</h3>
+                <script>
+                    var arr1,
+                        arr2,
+                        arr3 = new Array(),
+                        arr = new Array(arr1, arr2, arr3);
+                    for (i = 0; i < arr.length; i++) 
+                        for (j = 0; j < 3; j++) 
+                            if (i == j) 
+                                arr[i][j] = 1;
+                            else 
+                                arr[i][j] = 0;
+                document.write("<table border=1>");
+                    for (i = 0; i < arr.length; i++) {
+                        document.write("<tr>");
+                        for (j = 0; j < arr[i].length; j++) 
+                            document.write("<td>" + arr[i][j] + "</td>");
+                        document.write("</tr>");
+                    }
+                    document.write("</table>");
+                </script>
+            </ul>
+        </main>
+        <footer>Все права защищены &copy; Ковчин Павел</footer>
+    </body>
+</html>

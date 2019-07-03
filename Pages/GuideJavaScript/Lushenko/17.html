@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/17.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/GuideJavaScript/Lushenko/17.js" defer></script>
+    <title>Ассоциативные массивы</title>
+</head>
+
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <main>
+        <h1>Ассоциативные массивы</h1>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fjJHtyHYsyI?start=62" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+        <h2>Ассоциативные массивы</h2>
+        <hr>
+        <h3>Создать и вывести на экран ассоциативный массив</h3>
+        <h4>HTML</h4>
+        <div class="code">
+                &lt;p id="out"&gt;&lt;/p&gt;
+        </div>
+        <h4>JS</h4>
+        <div class="code">
+                var m = {}; <br>
+                for (var i=0; i&lt;10; i++){ <br>
+                    var name = 'name' + i; <br>
+                    m[name] = i; <br>
+                } <br>
+                <br>
+                var out = document.getElementById('out'); <br>
+                for (var key in m){ <br>
+                    out.innerHTML += key + '----' + m[key]+ '&lt;br&gt;'; <br>
+                }
+            </div>
+        <h3>Результат</h3>
+        <p id="out"></p>
+    </main>
+    <aside>
+        <a href="../../../index.html">Вернуться на главную</a>
+        <a href="../../JavaScript.html">Обучение Java Script</a>
+    </aside>
+    <footer>Все права защищены &copy; Ковчин П.В.</footer>
+</body>
+
+</html>

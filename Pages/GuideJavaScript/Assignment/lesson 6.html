@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header></header>
+        <nav></nav>
+        <aside>
+            <a href="../../../index.html">Вернуться на главную</a>
+            <a href="../../JavaScript.html">Обучение Java Script</a>
+        </aside>
+        <main>
+                <script>
+                        document.write(
+                            "<h4>Упражнение 6</h4>Выведите значение рассчитанное в JS (5 + 7) / ((12 – 5.5)" +
+                            " * (5 – 8 * 12)) и потом то же самое только используя переменные <br>"
+                        );
+                        document.write((5 + 7) / (12 - 5.5) * ((5 - 8 * 12)));
+                        document.write("<br>");
+                        var a = 5;
+                        var b = 7;
+                        var c = 12;
+                        var d = 5.5;
+                        var e = 8;
+                        document.write(((a + b) / (c - d) * (a - e * c)));
+                        document.write(
+                            "<br>Создайте две строковые переменные со значениями \"17\" и \"-5\" сложите их" +
+                            ", выведите результат, потом то же самое только после преобразования в числа"
+                        );
+                        var a = "17";
+                        var b = "-5";
+                        document.write("<br>" + (
+                            a + b
+                        ));
+                        document.write("<br>" + (
+                            Number(a) + Number(b)
+                        ));
+                        </script>
+        </main>
+        <footer>Все права защищены &copy; Ковчин Павел</footer>
+    </body>
+</html>

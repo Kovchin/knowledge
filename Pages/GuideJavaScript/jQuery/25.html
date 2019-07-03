@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/25.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/25.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Пользовательская анимация</h1>
+        <h2>Теория</h2>
+            <p>В jQuery есть свойство animate которое позволяет создать пользовательскую анимацию</p>
+            <p class="read"><b>animate</b>(<br>
+                {<br>
+                'свойство CSS1': значение1,<br>
+                'свойство CSS2: значение2'<br>
+                } <br>
+                ,задержка исполнения<br>
+                );</p>
+        <h2>Задание</h2>
+        <ul>
+            <li>Создать 3 изображения на странице шириной 100px.</li>
+            <li>Сделать изображения едва заметными (то есть поставить соответствующее значение у свойства opacity).</li>
+            <li>При наведении курсора мыши оно должен стать полностью НЕ прозрачным, причём это должно быть плавно
+                сделано.</li>
+            <li>При клике по изображению оно должно плавно переместиться в центр экрана и увеличиться до ширины в 500px.
+            </li>
+        </ul>
+        <h2>Реализация</h2>
+        <p>
+            <img src="../../../Images/Slider/iconfinder_A_Young_Leo_73340.png" alt="картинка">
+        </p>
+        <p><img src="../../../Images/Slider/iconfinder_Cap-Shield_73355.png" alt="картинка"></p>
+        <p><img src="../../../Images/Slider/iconfinder_Ironman_Hand_73383.png" alt="картинка"></p>
+        <h2>Код</h2>
+        <div class="code">
+            $('img').on('click', increase); <br>
+            $('img').on('mouseenter', opacity1); <br>
+            <br>
+            function increase(event){ <br>
+            $($(event.target).parent()).css('text-align', 'center'); <br>
+            <br>
+            $(event.target).animate( <br>
+            { <br>
+            opacity: 1, <br>
+            height: 500, <br>
+            },1000); <br>
+            } <br>
+            <br>
+            function opacity1(event){ <br>
+            $(event.target).animate( <br>
+            { <br>
+            opacity: 1, <br>
+            }, <br>
+            1000); <br>
+            }
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+p
+{
+	margin: 0;
+}
+.mm
+{
+	font-size: 20mm;
+}
+.cm
+{
+	font-size: 2cm;
+}
+.in
+{
+	font-size:2in;
+}
+
+.pt
+{
+	font-size: 12pt;
+}
+.px
+{
+	font-size: 20px;
+}
+.em
+{
+	font-size: 2em;
+}
+.percent
+{
+	font-size: 150%;
+}
+.vw
+{
+	font-size: 2vw;
+}
+.vh
+{
+	font-size: 2vh;
+}
+	

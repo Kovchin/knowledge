@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../CSS/GuideJavaScript/Luschenko/19.css">
+	<link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+	<script src="../../../JS/GuideJavaScript/Lushenko/19.js" defer></script>
+	<title>Выводим товар на страницу</title>
+</head>
+
+<body>
+	<nav>nav</nav>
+	<header>header</header>
+	<aside>
+		<a href="../../../index.html">Вернуться на главную</a>
+		<a href="../../JavaScript.html">Обучение Java Script</a>
+	</aside>
+	<footer>Все права защищены &copy; Ковчин П.В.</footer>
+	<main>
+		<h1>Выводим товар на страницу</h1>
+		<hr>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/WeVQwPBsZJY?start=795" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<hr>
+		<p><b>Задание 4.</b> Создайте массив, ключами которого служат артикулы товара (любое пятизначное число), а
+			значениями – ассоциативный массив, который содержит название товара, стоимость, вес единицы товара, ссылку
+			на изображение, отметку о доступности товара на складе. Выведите массив в консоль. Выведите на страницу HTML
+			описание первого товара.</p>
+		<hr>
+		<h3>Код</h3>
+		<div class="code">
+			var m = { <br>
+			"00001": { <br>
+			"name": "Банан", <br>
+			"cost": 30, <br>
+			"img": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_banana-512.png", <br>
+			"sklad": "да" <br>
+			}, <br>
+			"00002": { <br>
+			"name": "Помидор", <br>
+			"cost": 40, <br>
+			"img": "https://cdn0.iconfinder.com/data/icons/fruits/512/Tomato.png", <br>
+			"sklad": "нет" <br>
+			}, <br>
+			"00003": { <br>
+			"name": "Клубника", <br>
+			"cost": 60, <br>
+			"img": "https://cdn4.iconfinder.com/data/icons/fruits-and-vegetables-21/64/Strawbery-512.png", <br>
+			"sklad": "да" <br>
+			} <br>
+			}; <br>
+			var out = ''; <br>
+			for (var key in m) { <br>
+			out += 'Название товара: ' + m[key].name + '&lt;br&gt;'; <br>
+			out += 'Цена: ' + m[key].cost + '&lt;br&gt;'; <br>
+			out += 'Наличие на складе: ' + m[key].sklad + '&lt;br&gt;'; <br>
+			out += '&lt;img src="' + m[key].img + '"&gt; &lt;br&gt; &lt;hr&gt;'; <br>
+			<br>
+			} <br>
+			<br>
+			console.log(m); <br>
+			<br>
+			document.getElementById('out').innerHTML = out; <br>
+		</div>
+		<h3>Результат</h3>
+		<p id="out"></p>
+	</main>
+</body>
+
+</html>

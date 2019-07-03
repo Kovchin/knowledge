@@ -1,0 +1,18 @@
+h1, h2{
+	text-align: center;
+}
+
+button{
+	width: 100px;
+	height: 30px;
+}
+
+li{
+	margin-left: 40px;
+}
+
+code{
+	font-style: italic;
+	margin-left: 60px;
+	color: rgb(42, 42, 126);
+}

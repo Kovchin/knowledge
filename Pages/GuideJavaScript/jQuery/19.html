@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/19.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/19.js" defer></script>
+    <title>Создание новых элементов</title>
+</head>
+
+<body>
+    <main>
+        <h1>Создание новых элементов</h1>
+        <h2>Теория</h2>
+        <ul>
+            <li>
+                <p>$("&lt;<b>p</b>&gt;Новый абзац&lt;<b>/p</b>&gt;.<span class='red'>insertAfter</span>('<b>div</b>')")
+                    - Добавление нового абзаца <b>p</b> после блока <b>div</b></p>
+            </li>
+            <li>
+                <p>$("&lt;<b>p</b>&gt;Новый абзац&lt;<b>/p</b>&gt;.<span class='red'>insertBefore</span>('<b>div</b>')")
+                    - Добавление нового абзаца <b>p</b> до блока <b>div</b></p>
+            </li>
+            <li>
+                <p>$(<b>"div"</b>).<span class="red">after</span>("<b>&lt;p&gt;</b>Новый абзац<b>&lt;/p&gt;</b>") -
+                    Добавление нового абзаца <b>p</b> после блока <b>div</b></p>
+            </li>
+            <li>
+                <p>$(<b>"div"</b>).<span class="red">before</span>("<b>&lt;p&gt;</b>Новый абзац<b>&lt;/p&gt;</b>") -
+                    Добавление нового абзаца <b>p</b> до блока <b>div</b></p>
+            </li>
+        </ul>
+        <p>И из предыдущих курсов</p>
+        <ul>
+            <li>$('div').<span class="red">append</span>('&lt;p&gt;Привет мир!&lt;/p&gt;') - добавить ко всем блокам
+                <b>div</b> параграф <b>p</b> <i>в конец</i>.</li>
+            <li>$('img').<span class='red'>appendTo</span>('#images') - переносит все <b>img</b> со страницы в блок с
+                <b>ID='images'</b><i>в конец</i>.</li>
+            <li><span class='red'>prepend</span> - то же самое что и append только в начало блока</li>
+            <li><span class='red'>prependTo</span> - то же самое что и appendTo только в начало блока</li>
+            <li>$('a').<span class="red">wrap</span>('&lt;p class="link"&gt;&lt;/p&gt;') - оборачивает все теги <b>a</b>
+                в параграфы с классом link</li>
+        </ul>
+        <h2>Задание</h2>
+        <ul>
+            <li>Сделайте форму с текстовыми полями, отвечающими за ширину, высоту будущего div и его цвет фона (формат
+                ввода: #aabbcc).</li>
+            <li>Добавьте в форму кнопку «Добавить».</li>
+            <li>После нажатия на кнопку «Добавить» на странице должен появиться ниже всех остальных блоков (если таковые
+                были) новый блок с заданной шириной и высотой, а также цветом.</li>
+            <li>Причём больше 5-ти блоков на странице быть не должно. Если вдруг пользователь просит добавить 6-й блок,
+                то вывести ему через тег <p> рядом с формой уведомление: «5 – это максимум!». Безусловно, вывод так же
+                    на jQuery.</li>
+        </ul>
+        <h2>Реализация</h2>
+        <div class='example'>
+            <p>Ширина: <input type="text" name="" id="height"></p>
+            <p>Высота: <input type="text" name="" id="width"></p>
+            <p>Цвет фона: <input type="text" name="" id=""></p>
+            <button id="button">Добавить</button>
+        </div>
+        <h2>Код</h2>
+        <div class="code">
+            $('#button').on('click', insertP); <br>
+            var w, h, c, inp; <br>
+            <br>
+            function insertP() { <br>
+            inp = $('.example input'); <br>
+            w = inp[0].value; <br>
+            h = inp[1].value; <br>
+            c = inp[2].value; <br>
+            if (checkInputValues(w, h)) { <br>
+            var p = $('&lt;p class="new"&gt; Новый абзац! &lt;/p&gt;') <br>
+            p.css('width', w + 'px'); <br>
+            p.css('height', h + 'px'); <br>
+            p.css('background-color', c); <br>
+            $(p.insertAfter('.example')); <br>
+            } <br>
+            } <br>
+            <br>
+            function checkInputValues(w, h) { <br>
+            if (w &lt; 150) { <br>
+            alert('ширина блока должна быть больше 150'); <br>
+            return false; <br>
+            } <br>
+            else if (h &lt; 50) { <br>
+            alert('Высота блока должна быть больше 50'); <br>
+            return false; <br>
+            } <br>
+            else if ($('.new').length &gt; 4){ <br>
+            alert('Не более 5-ти блоков') <br>
+            return false; <br>
+            } <br>
+            <br>
+            else return true; <br>
+            }
+        </div>
+    </main>
+</body>
+
+</html>

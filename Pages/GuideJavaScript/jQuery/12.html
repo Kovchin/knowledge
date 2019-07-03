@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/Assignment/Lessons.css">
+    <link rel="stylesheet" href="../../../CSS/GuideJavaScript/jQuery/12.css">
+    <link rel="shortcut icon" href="../../../Images/favicon.ico" type="image/x-icon">
+    <script src="../../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../../JS/jQuery/body.js" defer></script>
+    <script src="../../../JS/jQuery/12.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Манипулирование атрибутами</title>
+</head>
+<body>
+    <main>
+        <h1></h1>
+        <h2>Задание</h2>
+        <ul>
+            <li>Добавьте ко всем ссылкам, у которых есть атрибут rel="external", атрибут target="_blank".</li>
+            <li>Проверьте работу скрипта.</li>
+        </ul>
+        <p>Примечание: Это практическая задача, цель которой сделать возможность открытия ссылок в новом окне, а также сохранения валидности кода, поскольку атрибут target не поддерживается в XHTML и HTML5.</p>
+        <h3>Реализация</h3>
+        <div class="example">
+            <a href="#" alt="Ссылка 1" rel="external">1</a>
+            <a href="#" alt="Ссылка 2">2</a>
+            <a href="#" alt="Ссылка 3" rel="external">3</a>
+            <a href="#" alt="Ссылка 4" rel="internal">4</a>
+        </div>
+    <h3>Код</h3>
+    <div class="code">
+        $(".example a[rel='external']").attr("target", "_blank");
+    </div>
+    </main>
+</body>
+</html>

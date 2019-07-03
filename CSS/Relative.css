@@ -1,0 +1,32 @@
+.relative{
+	height: 800px;
+	width: 800px;
+	background: #777;
+}
+
+.relative1{
+	height: 200px;
+	width: 200px;
+	background: #0FF;
+}
+
+.relative2{
+	height: 200px;
+	width: 200px;
+	background: #F0F;
+	position: relative; 
+	top: 10px;
+	left: 10px;
+}
+
+.relative3{
+	height: 200px;
+	width: 200px;
+	background: #FF0;
+}
+
+.relative4{
+	height: 200px;
+	width: 200px;
+	background: #F00;
+}
