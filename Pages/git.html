@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git</title>
+</head>
+
+<body>
+    <aside>
+
+    </aside>
+    <main>
+    <h1>Git</h1>
+    <a href="https://github.com/" target="_blank">github</a>
+    <h2>Помощь</h2>
+    <code>$ git help <команда><br />
+        $ git <команда> --help<br />
+        $ man git-<команда>
+    </code>
+    <p>Например, так можно открыть руководство по команде <code>config</code></p>
+    <code>$ git help config</code>
+    <h2>Настройки git</h2>
+    <p>git config - есть 3 файла настроек git</p>
+    <ul>
+        <li><code>/etc/gitconfig</code> - содержит значения, общие для всех пользователей системы и для всех их
+            репозиториев. Если при запуске <code>git config</code> указать параметр <code>--system</code>, то параметры
+            будут читаться и сохраняться именно в этот файл.</li>
+        <li><code>~/.gitconfig</code> или <code>~/.config/git/config</code> - хранит настройки конкретного пользователя.
+            Этот файл используется при указании параметра <code>--global</code>.</li>
+        <li><code>config</code> - в каталоге Git (т.е. <code>.git/config</code>) репозитория, который вы используете в
+            данный момент, хранит настройки конкретного репозитория.</li>
+    </ul>
+    <p>Настройки на каждом следующем уровне подменяют настройки из предыдущих уровней, то есть значения в
+        <code>.git/config</code> перекрывают соответствующие значения в <code>/etc/gitconfig</code>.</p>
+    <h3>Имя пользователя</h3>
+    <p>Первое, что вам следует сделать после установки Git — указать ваше имя и адрес электронной почты. Это важно,
+        потому что каждый коммит в Git содержит эту информацию, и она включена в коммиты, передаваемые вами, и не может
+        быть далее изменена:</p>
+    <code>
+        $ git config --global user.name "John Doe"<br />
+        $ git config --global user.email johndoe@example.com
+    </code>
+    <p>Опять же, если указана опция <code>--global</code>, то эти настройки достаточно сделать только один раз,
+        поскольку в этом
+        случае Git будет использовать эти данные для всего, что вы делаете в этой системе. Если для каких-то отдельных
+        проектов вы хотите указать другое имя или электронную почту, можно выполнить эту же команду без параметра
+        <code>--global</code> в каталоге с нужным проектом.</p>
+    <h3>Проверка настроек</h3>
+    <code>git config --list</code>
+    <h2>Регистрация на GitHub и наш первый онлайн репозиторий</h2>
+    <a href="https://www.youtube.com/watch?v=9dkzbSnN2FQ" target="_blank">youtube</a>
+    <p>git init</p>
+    <p>git add .</p>
+    <p>git commit -m 'комментарий'</p>
+</main>
+<footer>
+    <p>Все права защищены &copy; Ковчин П.В.</p>
+</footer>
+</body>
+
+</html>

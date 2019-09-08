@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Домашнее задание</h2>
+
+    <div><b>Task</b> 1. <p>Создайте переменную a = 4. Используя конструкцию if проверьте что a == 4. Выведите
+            сообщение
+            в консоль.</p>
+    </div>
+    <hr>
+    <div><b>Task</b> 2. <p>Создайте b = 8 и с = 10. С помощью if, else выведите в консоль сообщение о том, какая из
+            переменных больше.</p>
+    </div>
+    <hr>
+    <div><b>Task</b> 3. <p>Используя else if добавьте в предыдущую задачу проверку на равенство.</p>
+    </div>
+    <hr>
+    <div class='task4'><b>Task</b> 4. <p>Создайте на странице 2 input, куда пользователь может вводить числа.
+            Добавьте
+            кнопку. При
+            нажатии кнопки выполняйте функцию, которая сравнит два числа и выведет большее на страницу. Если
+            числа равны
+            - выводится строка "равны".</p>
+        <div class='execute'>
+            <label for="a">a = </label>
+            <input type="number" name='a' class="a" placeholder="введите число">
+            <label for="b">b = </label>
+            <input type="number" name='b' class="b" placeholder="введите число">
+            <button>Сравнить</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class='task5'><b>Task</b> 5. <p>Создайте на странице input, куда пользователь может вводить год рождения.
+            Добавьте кнопку. При нажатии кнопки выполняйте функцию, которая если год рождения меньше 2000
+            выводит на
+            страницу
+            возраст пользователя (2019 - введенный год рождения), если год рождения больше или равен 2000 -
+            выводит в
+            консоль
+            возраст пользователя. </p>
+        <div class="execute">
+            <label for="birthday">Введите дату рождения: </label>
+            <input type="date" name="birthday">
+            <button>Рассчитать возраст</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class='task6'><b>Task</b> 6. <p>Создайте input куда пользователь может ввести номер квартиры. Если квартира
+            от 1 до 32 -
+            то
+            выводите сообщение, о том, что такая квартира есть,если другое число - сообщение о том, что
+            квартира не
+            существует.</p>
+        <div class="execute">
+            <label for="apartment_number">Введите номер квартиры</label>
+            <input type="number" name="apartment_number" placeholder="Число от 1 до 32">
+            <button>Проверить</button>
+            <div class='out'></div>
+        </div>
+    </div>
+    <hr>
+    <div class="task7"><b>Task</b> 7. <p>Создайте input куда пользователь может ввести число. После нажатия кнопки -
+            на страницу
+            должно выводиться сообщение - большие или меньше нуля это число. </p>
+        <div class="execute">
+            <input type="number" placeholder="Введите любое число">
+            <button>Проверить</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class='task8'><b>Task</b> 8. <p>Создайте input куда пользователь может ввести число. После нажатия кнопки -
+            на страницу
+            должно выводиться сообщение - четное или нет это число. Определить четное или нет число в JS
+            очень просто.
+            Нужно получить целый остаток от деления (<a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#%D0%9E%D1%81%D1%82%D0%B0%D1%82%D0%BE%D0%BA_%D0%BE%D1%82_%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_()"
+                target="_blank">читать за оператор</a>), для этого используется оператор % . И
+            проверить. Если остаток
+            от деления 0 - то число четное, если нет - не четное.</p>
+        <div class="execute">
+            <input type="number" placeholder="Введите любое число">
+            <button>Проверить на четность</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class='task9'><b>Task</b> 9. <p>Создайте 2 инпута. Если оба инпута заполнены (не равны пустой строке), то
+            по нажатию
+            кнопки
+            число из первого инпута возведите в степень из второго input. Результат выведите на страницу.
+            Как возвести в
+            степень? <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#%D0%92%D0%BE%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D1%8C_(**)"
+                target="_blank">Читаем!</a></p>
+        <div class="execute">
+            <input type="number" class='x' placeholder="Число">
+            <input type="number" class='y' placeholder="Степень">
+            <button>Посчитать</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class='task10'><b>Task</b> 10. <p>Есть поле input куда пользователь может ввести свое имя. Нужно при
+            нажатии кнопки -
+            сказать
+            с помощью alert('Hello имя_пользователя'), но хитрые пользователи часто нажимают несколько раз
+            пробел. Вроде
+            ничего и не ввел, но программа считывает пробелы и пытается работать. Напишите проверку, которая
+            выводит
+            предупреждение если пользователь ничего не ввел, или ввел один пробел. В остальных случаях -
+            Hello... </p>
+        <div class="execute">
+            <label for='name'>Введите Ваше имя: </label>
+            <input type="text" class='name' placeholder='Имя'>
+            <button>Приветствие</button>
+        </div>
+    </div>
+    <hr>
+    <div class='task11'><b>Task</b> 11. <p>Хитрый пользователь научился обходить нашу предыдущую задачу, и начал
+            вводить где 3, а
+            где и
+            5 пробелов. Напишите программу, которая проверяет пробелы или нет введены в строку. Как
+            защититься от
+            пробелов? Обрезать их. Допустим вы получили значение из input в переменную a. Теперь напишите a
+            = a.trim();
+            - это обрежет пробелы и результат запишет в переменную a. Теперь просто сравните переменную a c
+            пустой
+            строкой. Если она равна - выведите ошибку, если нет - сообщение с содержимым input. </p>
+        <div class="execute">
+            <label for="name11">Введите Ваше имя: </label>
+            <input type="text" class="name11" placeholder="Имя">
+            <button>Приветствие</button>
+        </div>
+    </div>
+    <hr>
+    <div class='task12'><b>Task</b> 12. <p>Пользователь может ввести число от 1 до 3. Если пользователь ввел 1 - то
+            в консоль
+            выведите
+            слово "один" и т.д. Для решения используйте switch.</p>
+        <div class="execute">
+            <label for="number12">Введите число</label>
+            <input type="number" name="number12" placeholder="Число 1-3">
+            <button>Проверка</button>
+        </div>
+    </div>
+    <hr>
+    <div class='task13'><b>Task</b> 13. <p>Пользователь может ввести номер дома. Если дом от 1 до 5 - то улица 1,
+            если от 6 до 11 -
+            улица 2, если от 11 до 20 - улица 3. Используя if, elseif - реализуйте программу, которая будет
+            указывать
+            улицу в зависимости от введенного дома.</p>
+        <div class="execute">
+            <label for="input13">Введите номер дома</label>
+            <input type="text" name="input13" class="input13" placeholder="1-20">
+            <button>Узнать улицу</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class='task14'><b>Task</b> 14. <p>Создайте input куда пользователь может ввести количество рентген. Это число
+            от 0 и до
+            1000.
+            С помощью if, else if реализуйте вывод по таблице:
+            от 0 до 25 - не обнаруживается
+            до 50 - снижение числа лимфоцитов
+            до 100 - вялость, рвота,
+            до 150 - смертность 5%,
+            до 350 - смертность 50% за 30 суток,
+            до 600 - 90% смертность за 2 недели.
+            Вывод результатов сделайте на страницу.
+        </p>
+        <div class="execute">
+            <label for="rad">Полученная радиация: </label>
+            <input type="number" name="rad" placeholder="1-1000">
+            <button>Последствия</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div><b>Task</b> 15. <p>Создайте переменные x = 1, y = 0. Выведите в консоль результат операции x &amp;&amp; y,
+            а
+            затем x || y. Изучите результат.</p>
+    </div>
+    <hr>
+    <div class='task16'><b>Task</b> 16. <p>В Казахстане, налог на объем двигателя объемом 500 куб составляет 2525 тенге,
+            1200 куб -
+            5050 тенге, 1600 - 8275 тенге, 1900 куб - 9675 тенге, 2000 - 11075 тенге. Напишите программу,
+            где
+            пользователь может ввести в input объем двигателя до 2000 куб включительно и получить налог на
+            данный
+            двигатель.</p>
+        <div class="execute">
+            <label for="input16">Введите объем двигателя Вашего автомобиля</label>
+            <input type="number" name="input16" placeholder="кубических сантиметров">
+            <button>Рассчитать пошлину</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="task17"><b>Task</b> 17. <p>Создайте 2 инпута. В первый пользователь может ввести число денег в долларах.
+            Во второй
+            -
+            строку euro, rub, uah. Используя if, elseif сделайте по нажатию кнопки пересчет в ту валюту,
+            которую ввел
+            пользователь. Коэффициенты - найдите в сети интернет.</p>
+        <div class="execute">
+            <label for="input1">Введите число денег что желаете перевести из долларов: </label>
+            <input type="number" name="valute" class="input1" placeholder="Положительное число">
+            <label for="kurs">Курс</label>
+            <input type="text" name="kurs" class="input2" placeholder="euro/rub/uah">
+            <button>Узнать курс</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="task18"><b>Task</b> 18. <p>Проделайте предыдущую задачу с помощью switch case.</p>
+        <div class="execute">
+            <label for="input1">Введите число денег что желаете перевести из долларов: </label>
+            <input type="number" name="valute" class="input1" placeholder="Положительное число">
+            <label for="kurs">Курс</label>
+            <input type="text" name="kurs" class="input2" placeholder="euro/rub/uah">
+            <button>Узнать курс</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="task19"><b>Task</b> 19. <p>Создайте 2 input куда пользователь может ввести числа. В третий input - может
+            ввести
+            знак -
+            минус, плюс, умножить, поделить. С помощью if, else if по нажатию кнопки выводите результат
+            выбранной
+            операции на страницу.</p>
+        <div class="execute">
+            <label for="x">Число 1: </label>
+            <input type="number" name="x" class="input1" placeholder="Число">
+            <label for="y">Число 2: </label>
+            <input type="number" name="y" class="input2" placeholder="Число">
+            <label for="znak">Число 2: </label>
+            <input type="text" name="znak" class="znak" placeholder="+/-/*/:">
+            <button>Посчитать</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="task20"><b>Task</b> 20. <p>Проделайте предыдущую задачу с помощью switch case.</p>
+        <div class="execute">
+            <label for="x">Число 1: </label>
+            <input type="number" name="x" class="input1" placeholder="Число">
+            <label for="y">Число 2: </label>
+            <input type="number" name="y" class="input2" placeholder="Число">
+            <label for="znak">Число 2: </label>
+            <input type="text" name="znak" class="znak" placeholder="+/-/*/:">
+            <button>Посчитать</button>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <script src="./app.js"></script>
+</body>
+
+</html>
