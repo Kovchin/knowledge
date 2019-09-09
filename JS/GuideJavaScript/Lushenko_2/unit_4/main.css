@@ -18,3 +18,23 @@ button{
     padding: 5px;
     border-radius: 5px;
 }
+
+#task15 .execute{
+    display: flex;
+    flex-direction: column;
+}
+
+#task15 .execute input{
+    margin: 10px;
+}
+
+#task15 .execute textarea{
+    margin: 10px;
+    disabled: disabled;
+}
+
+#task15 .execute button{
+    margin: 0 auto;
+    height: 50px;
+    width: 150px;
+}
