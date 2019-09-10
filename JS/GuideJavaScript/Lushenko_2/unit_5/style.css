@@ -1,0 +1,28 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+}
+#task-6 .out{
+    font-size: 20px;
+    line-height: 10px;
+}
+.out{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.execute{
+    border: 2px solid darkred;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+    padding: 10px;
+}
+
+.one{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
