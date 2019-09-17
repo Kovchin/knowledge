@@ -77,6 +77,24 @@ for (let i = 3; i > 0; i--) {
 }
 
 //task 8 --------------------
+let out_8 = document.querySelector('#task-8 .execute .out pre');
+
+for (let i = 1; i < 6; i++) {
+    let l = '';
+
+    if (i == 1 || i == 5)
+        l = 1;
+    else if (i % 2 == 0)
+        l = 2;
+    else l = 3;
+
+    for (let j = 0; j < l; j++) {
+        out_8.innerHTML += `*`;
+    }
+    out_8.innerHTML += `<br>`;
+}
+
+console.log('Hello-8');
 //task 9 --------------------
 //task 10 -------------------
 //task 11 -------------------
