@@ -1,14 +1,28 @@
-html, body {
+html,
+body {
     font-family: serif;
 }
+
 body {
     margin: 20px;
 }
 
-.execute{
+.execute {
     border: 2px solid darkred;
     box-shadow: 5px 5px 5px 5px black;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+}
+
+#task-15 .execute .out,
+#task-18 .execute .out {
+    font-family: monospace;
+}
+
+#task-19 .execute .out,
+#task-20 .execute .out {
+    display: block;
+    width: 150px;
+    text-align: center
 }

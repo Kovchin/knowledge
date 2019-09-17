@@ -94,18 +94,184 @@ for (let i = 1; i < 6; i++) {
     out_8.innerHTML += `<br>`;
 }
 
-console.log('Hello-8');
 //task 9 --------------------
-//task 10 -------------------
-//task 11 -------------------
-//task 12 -------------------
-//task 13 -------------------
-//task 14 -------------------
-//task 15 -------------------
-//task 16 -------------------
-//task 17 -------------------
-//task 18 -------------------
-//task 19 -------------------
-//task 20 -------------------
+let out_9 = document.querySelector('#task-9 .execute .out pre');
 
+for (let i = 0; i < 5; i++) {
+
+    if (i == 0 || i == 4) {
+        for (let j = 0; j < 6; j++) {
+            out_9.innerHTML += `*`;
+        }
+    }
+    else {
+        out_9.innerHTML += `*`;
+        for (let j = 0; j < 4; j++)
+            out_9.innerHTML += ` `;
+        out_9.innerHTML += `*`;
+    }
+    out_9.innerHTML += `<br>`;
+}
+
+//task 10 -------------------
+
+let out_10 = document.querySelector('#task-10 .execute .out pre');
+let inp_10 = document.querySelector('#task-10 .execute input');
+
+inp_10.onchange = () => {
+
+    let v = inp_10.value.trim();
+
+    out_10.innerHTML = '';
+
+    if (v.length > 0) {
+        v = v[0];
+    }
+    else
+        alert('Введите символ!');
+
+    inp_10.value = v;
+
+    for (let i = 0; i < 5; i++) {
+
+        if (i == 0 || i == 4) {
+            for (let j = 0; j < 6; j++) {
+                out_10.innerHTML += `${v}`;
+            }
+        }
+        else {
+            out_10.innerHTML += `${v}`;
+            for (let j = 0; j < 4; j++)
+                out_10.innerHTML += ` `;
+            out_10.innerHTML += `${v}`;
+        }
+        out_10.innerHTML += `<br>`;
+    }
+}
+
+//task 11 -------------------
+
+let out_11 = document.querySelector('#task-11 .execute .out');
+
+for (let i = 6; i < 8; i++) {
+    out_11.innerHTML += `<h3>Таблица умножения на ${i}</h3>`;
+    for (let j = 1; j < 10; j++) {
+        out_11.innerHTML += `${i} * ${j} = (${i * j}) <br>`;
+    }
+}
+
+//task 12 -------------------
+
+let out_12 = document.querySelector('#task-12 .out');
+
+for (let i = 1; i < 6; i++) {
+    for (let j = 1; j <= i; j++)
+        out_12.innerHTML += `${j} `;
+    out_12.innerHTML += `<br>`;
+}
+
+//task 13 -------------------
+
+let out_13 = document.querySelector('#task-13 .execute .out');
+
+for (let i = 1; i <= 50; i++) {
+    if (i < 10)
+        out_13.innerHTML += `0${i} `;
+    else
+        out_13.innerHTML += `${i} `;
+
+    if (i % 10 == 0)
+        out_13.innerHTML += `<br>`;
+}
+//task 14 -------------------
+
+let out_14 = document.querySelector('#task-14 .execute .out');
+
+for (let i = 5; i > 0; i--) {
+    for (let j = i; j > 0; j--) {
+        out_14.innerHTML += `${j} `;
+    }
+    out_14.innerHTML += `<br>`;
+}
+
+//task 15 -------------------
+
+let out_15 = document.querySelector('#task-15 .execute .out');
+
+for (let i = 1; i < 6; i++) {
+    for (let j = 5; j > 0; j--) {
+        if (j > i)
+            out_15.innerHTML += `X `;
+        else
+            out_15.innerHTML += `${j} `;
+    }
+    out_15.innerHTML += `<br>`;
+}
+
+//task 16 -------------------
+
+let out_16 = document.querySelector('#task-16 .execute .out');
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 0; j < i; j++) {
+        out_16.innerHTML += `${i} `;
+    }
+    out_16.innerHTML += `<br>`;
+}
+
+//task 17 -------------------
+
+let out_17 = document.querySelector('#task-17 .execute .out');
+
+for (let i = 5; i > 0; i--) {
+    for (let j = 5; j >= i; j--) {
+        out_17.innerHTML += `${i} `;
+    }
+    out_17.innerHTML += `<br>`;
+}
+
+//task 18 -------------------
+
+let out_18 = document.querySelector('#task-18 .execute .out');
+
+for (let i = 5; i > 0; i--) {
+    for (let j = 5; j >= i; j--) {
+        if (i % 2 == 0)
+            out_18.innerHTML += `X `;
+        else
+            out_18.innerHTML += `${i} `;
+    }
+    out_18.innerHTML += `<br>`;
+}
+
+//task 19 -------------------
+
+let out_19 = document.querySelector('#task-19 .execute .out');
+
+for (let i = 5; i <= 9; i = i + 2) {
+    for (let j = 0; j < i; j++) {
+        out_19.innerHTML += `* `;
+    }
+    out_19.innerHTML += `<br>`;
+}
+//task 20 -------------------
+let out_20 = document.querySelector('#task-20 .execute .out');
+
+for (let i = 1; i < 6; i++) {
+
+    let l = '';
+
+    if (i == 1 || i == 5)
+        l = 2;
+    else if (i % 2 == 0)
+        l = 4;
+    else
+        l = 6;
+
+    for (let j = 0; j < l; j++) {
+        out_20.innerHTML += `* `;
+    }
+
+    out_20.innerHTML += `<br>`;
+}
 
