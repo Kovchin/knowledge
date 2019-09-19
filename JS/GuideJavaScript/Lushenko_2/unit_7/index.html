@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h2>Домашнее задание</h2>
+
+    <div id="task-7-1">
+        <b><a href="#task-7-1">Task 1</a></b>.
+        <p>Создайте функцию (именнованную), которая при клике на кнопке выводит в консоль ваше имя.</p>
+        <div class="execute">
+            <button>Push</button>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-2">
+        <b><a href="#task-7-2">Task 2</a></b>.
+        <p>Создайте функцию (именованную). Функция должна примать один параметр - имя (например Ivan) и выводить имя
+            переданное ей в консоль. Запустите функцию и передайте в качестве имени Sergey.</p>
+    </div>
+    <hr>
+
+    <div id="task-7-3">
+        <b><a href="#task-7-3">Task 3</a></b>.
+        <p>Создайте именнованную функцию, которая принимает параметр число и выводит его значение умноженное на 10 в
+            консоль. Запустите выполнение функции. Убедитесь, что она работает. Теперь создайте кнопку и добавьте на нее
+            событие onclick которое вызывает данную функцию с параметром. </p>
+        <p>Если вы напишите, подобный синтаксис elem.onclick = myFunc(11), то увидите, что данная функция - выполняется
+            сразу при загрузке страницы! Действительно, ведь мы поставили скобки. Как передать параметр и не запустить
+            функцию сразу? Довольно хитро: </p>
+        <pre>elem.onclick = function(){
+myFunc(22);
+}
+</pre>
+        <p>Т.е. использовать обертку из анонимной функции.</p>
+        <div class="execute">
+            <button>Push</button>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-4">
+        <b><a href="#task-7-4">Task 4</a></b>.
+        <p>Создайте кнопку и функцию. При нажатии кнопки, функция окрашивает данную кнопку в background: red.</p>
+        <div class="execute">
+            <button>Push</button>
+        </div>
+    </div>
+    <hr>
+    <div id="task-7-5">
+        <b><a href="#task-7-5">Task 5</a></b>.
+        <p>Создайте функцию, которая возвращает ваше имя. Имя вводится с input</p>
+        <div class="execute">
+            <input type="text" placeholder="Введите Ваше имя">
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-6">
+        <b><a href="#task-7-6">Task 6</a></b>.
+        <p>Создайте функцию, которая принимает 2 числа и возвращает большее число из двух, либо любое из них если они
+            равны.</p>
+        <div class="execute">
+            <form action="">
+                <label for="inp_6_1">Число 1</label>
+                <input required type="number" id="inp_6_1" placeholder="X">
+                <label for="inp_6_2">Число 2</label>
+                <input required type="number" id="inp_6_2" placeholder="Y">
+                <input type="submit" value="Push">
+            </form>
+            <div class=" out">
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-7">
+        <b><a href="#task-7-7">Task 7</a></b>.
+        <p>Создайте функцию, которая принимает год рождения и возвращает ваш возраст. Текущий год задавать как 2019.</p>
+        <div class="execute">
+            <label for="inp_7">Введите Ваш год рожедения</label>
+            <input type="number" id="inp_7">
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-8">
+        <b><a href="#task-7-8">Task 8</a></b>.
+        <p>Создайте функцию, которая возвращает случайное число от 1 до 10. По случайным числам читаем все <a
+                href="https://learn.javascript.ru/task/random-int-min-max" target="_blank">здесь</a> и задаем вопросы в
+            чате.</p>
+        <div class="execute">
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-9">
+        <b><a href="#task-7-9">Task 9</a></b>.
+        <p>Создайте функцию, которая возвращает случайное число в указанном диапазоне. Диапазон указывает пользователь с
+            помощью двух переменных, которые передаются функции в качестве параметров.</p>
+        <div class="execute">
+            <form action="">
+                <label for="inp_9_1">Минимальное значение случайного числа</label>
+                <input type="number" id="inp_9_1" placeholder="min" required>
+                <label for="inp_9_2">Максимальное значение случайного числа</label>
+                <input type="number" id="inp_9_2" placeholder="max" required>
+                <input type="submit" value="Сгенерировать случайное число в указанном диапазоне">
+            </form>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-10">
+        <b><a href="#task-7-10">Task 10</a></b>.
+        <p>Создайте функцию, которая возвращает случайный цвет. Напомню - цвет это строка rgb(0..255, 0..255, 0..255) -
+            которая содержит 3 числа от нуля до 255 включительно, разделенных запятыми. Т.е. вам нужно три раза создать
+            случайное число от 0 до 255.</p>
+        <div class="execute">
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-11">
+        <b><a href="#task-7-11">Task 11</a></b>.
+        <p>Создайте функцию f11, которая возвращает число 5. Создайте функцию которая принимает 2 параметра и
+            перемножает их между собой. В качестве первого параметра передайте f11().</p>
+    </div>
+    <hr>
+
+    <div id="task-7-12">
+        <b><a href="#task-7-12">Task 12</a></b>.
+        <p>Создайте функцию toNum, которая принимает 1 параметр - объект input, и возвращает введенное в него значение
+            преобразованное в число.</p>
+        <div class="execute">
+            <label for="inp_12">Введите число</label>
+            <input type="text" id="inp_12" placeholder="Число">
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-13">
+        <b><a href="#task-7-13">Task 13</a></b>.
+        <p>Создайте функцию emptyInput - которая принимает в качестве параметра input, удаляет все пробелы введенные до
+            и после значения (trim), и проверяет - если результат равен пустой строке - то возвращает false, если нет -
+            то сам результат с обрезанными пробелами.</p>
+        <div class="execute">
+            <label for="inp_13">Input: </label>
+            <input type="text" placeholder="Ввыдете данные" id="inp_13">
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-14">
+        <b><a href="#task-7-14">Task 14</a></b>.
+        <p>Создайте функцию, которая принимает параметр число и возвращает true если число четное и false если нечетное.
+        </p>
+        <div class="execute">
+            <label for="inp_14">Введите число</label>
+            <input type="number" id="inp_14" placeholder="Введите число">
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-15">
+        <b><a href="#task-7-15">Task 15</a></b>.
+        <p>Создайте div, задайте ему ширину и высоту в CSS, границу. Добавьте на div событие onmousemove - и стрелочную
+            функцию срабатывающую при этом событии. Стрелочная функция должна выводить move в консоль.</p>
+        <div class="execute">
+            <div></div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="task-7-16">
+        <b><a href="#task-7-16">Task 16</a></b>.
+        <p>Создайте div, задайте ему ширину и высоту в CSS, границу. Добавьте на div событие onmouseenter - и стрелочную
+            функцию срабатывающую при этом событии. Стрелочная функция должна выводить enter в консоль.</p>
+    </div>
+    <hr>
+
+    <div id="task-7-17">
+        <b><a href="#task-7-17">Task 17</a></b>.
+        <p>Создайте div, задайте ему ширину и высоту в CSS, границу. Добавьте на div событие onmouseleave- и стрелочную
+            функцию срабатывающую при этом событии. Стрелочная функция должна выводить leave в консоль.</p>
+    </div>
+    <hr>
+
+    <div id="task-7-18">
+        <b><a href="#task-7-18">Task 18</a></b>.
+        <p>Создате div задайте ему ширину и высоту в CSS, границу. Добавьте на div событие onclick и анонимную ( не
+            стрелочную) функцию, внутрь которой запишите this.style.background = 'red'; В этом случае this указывает на
+            объект, на котором приозошло событие.</p>
+    </div>
+    <hr>
+
+    <div id="task-7-19">
+        <b><a href="#task-7-19">Task 19</a></b>.
+        <p>Создате div задайте ему ширину и высоту в CSS, границу. Добавьте на div событие onclick и стрелочную функцию,
+            внутрь которой запишите this.style.background = 'red'; Увы, в данном случае (особенность стрелочных функций)
+            не указывает на объект где произошло событие.</p>
+    </div>
+    <hr>
+
+    <div id="task-7-20">
+        <b><a href="#task-7-20">Task 20</a></b>.
+        <p>Создайте 5 div.go с текстом. C помощью цикла повесьте на них событие клик и анонимную (не стрелочную)
+            функцию. Внутри функции укажите this.style.background = 'red'; Кликайте по div, изучите результат.</p>
+        <div class="execute">
+            <div class='go'></div>
+            <div class='go'></div>
+            <div class='go'></div>
+            <div class='go'></div>
+            <div class='go'></div>
+        </div>
+    </div>
+    <hr>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
