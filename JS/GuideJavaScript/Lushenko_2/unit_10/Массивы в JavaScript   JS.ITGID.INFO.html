@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/bootstrap.css">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">-->
+    <link href="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/style.css">
+    <link rel="shortcut icon" href="https://js2.itgid.info/favicon.png" type="image/png">
+    <meta name="description" content="Изучаем массивы в javascript. Задачи на массивы">
+    <title>Массивы в JavaScript | JS.ITGID.INFO</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-3 position-fixed left-panel">
+            <p class="site-description">Лущенко Александр</p>
+            <h1 class="site-title">
+                <a href="https://js2.itgid.info/"><span>[ _JS_ ]</span><br>JavaScript v2.0</a>
+            </h1>
+
+            <div class="row">
+                <div class="col-sm-3 col-3">
+                    <div class="d-block d-sm-block d-md-none burger-button">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-9">
+                    <div class="d-block d-sm-block d-md-none">
+                        <div class="login-button text-right">
+                            <span>Welcome, kovchin@mail.ru</span> <span><a href="https://js2.itgid.info/logout" class="black-btn black-btn-sm logout-button">Выйти</a></span>                         </div>
+                    </div>
+                </div>
+            </div>
+<nav class="d-none d-sm-none d-xs-none d-md-block d-lg-block d-xl-block main-navigation">
+    <ul>
+        <li class="nav-active"><a href="https://js2.itgid.info/">Главная</a></li><li><a href="https://js2.itgid.info/lessons">Уроки</a></li><li><a href="https://js2.itgid.info/articles">Статьи</a></li><li><a href="https://js2.itgid.info/pay">Покупка и оплата</a></li><li><a href="https://js2.itgid.info/dz">Проверенные ДЗ</a></li><li><a href="https://js2.itgid.info/how-to-write-code">Правила оформления работ</a></li><li><a href="https://js2.itgid.info/certification">Сертификат о прохождении</a></li><li><a href="https://js2.itgid.info/rules">Правила курса</a></li><li><a href="https://js2.itgid.info/about">Об авторе</a></li>    </ul>
+</nav>
+
+<div class="login-button text-center d-none d-sm-none d-xs-none d-md-block d-lg-block d-xl-block">
+    <p>Welcome, kovchin@mail.ru</p><p><a href="https://js2.itgid.info/logout" class="black-btn black-btn-sm logout-button">Выйти</a></p></div>
+
+
+</div>
+<div class="col-xl-10 offset-xl-2 col-lg-9 offset-lg-3 col-md-9 offset-md-3">
+    <div class="row">
+        <div class="col-lg-12 base-panel">    <article>
+    <h1>Unit 10. Массивы в JavaScript (часть 1)</h1>
+    <p class="description">Изучаем массивы в javascript. Задачи на массивы</p>
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="thumb-wrap">
+                <iframe src="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/lhM19KI45y4.html" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+            </div>
+            <div class="unit-text">
+                            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="text-center card-title">Перейти к</h5>
+                    <a href="#anchor-dz" class="black-btn black-btn-sm btn-nav">Домашнему заданию</a>
+                    <a href="#anchor-dz" class="black-btn black-btn-sm btn-nav">Задачи на прокачку</a>
+					
+
+                    <a href="https://js2.itgid.info/download/array-1.zip" class="btn-green black-btn-sm btn-nav">Скачать код</a><a href="https://js2.itgid.info/download/unit_blank.zip" class="black-btn black-btn-sm btn-nav">Скачать шаблон</a>
+                    <a href="https://js2.itgid.info/pay" class="btn btn-green btn-nav">Купить JavaScript 2.0</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row divider"></div>
+    <div class="dz" id="anchor-dz">
+        <h2>Домашнее задание</h2>
+        <form class="send-dz" action="/load-dz">
+            <div class="form-group row">
+                <input type="hidden" value="10" name="unit">
+                <label for="inputEmail3" class="col-sm-12 col-md-6 col-form-label">Отправить <b>задание на проверку</b></label>
+                <div class="col-sm-12 text-right col-md-6">
+                    <button type="submit" class="black-btn">Отправить</button>
+                </div>
+            </div>
+        </form>
+        
+        <div id="task-10-1"><b><a href="#task-10-1">Task 1</a></b>. <p>Создайте массив содержащий строки, числа, булевы значения. Выведите его в консоль.</p></div><hr><div id="task-10-2"><b><a href="#task-10-2">Task 2</a></b>. <p>Создайте
+ массив содержащий строки, числа, булевы значения. Выведите его в div. 
+Совет. Попробуйте синтаксиc elem.innerHTML = ваш_массив.</p></div><hr><div id="task-10-3"><b><a href="#task-10-3">Task 3</a></b>. <p>Создайте массив a. Выведите длину массива a.</p>
+<pre>const a = [2, 'hello', 17, 34, 'privet']
+</pre></div><hr><div id="task-10-4"><b><a href="#task-10-4">Task 4</a></b>. <p>Создайте массив a. Выведите нулевой, третий, восьмой элемент массива a в консоль. Сделайте вывод о 8-м элементе.</p>
+<pre>const a = [2, 'hello', 17, 34, 'privet']
+</pre></div><hr><div id="task-10-5"><b><a href="#task-10-5">Task 5</a></b>. <p>Создайте массив a. Выведите сумму нулевого, второго и третьего элементов массива.</p>
+<pre>const a = [2, 'hello', 17, 34, 'privet']
+</pre></div><hr><div id="task-10-6"><b><a href="#task-10-6">Task 6</a></b>. <p>Создайте массив, который содержит ваше имя, знак зодиака, день рождения и месяц рождения. Выведите массив на страницу в div. </p></div><hr><div id="task-10-7"><b><a href="#task-10-7">Task 7</a></b>. <p>Создайте массив b. Добавьте в него значения 'hi', 'foo', 'bar'. Вывести массив на страницу в элемент div.</p>
+<pre>let b = ['one', 1, 2, 'two'];
+</pre></div><hr><div id="task-10-8"><b><a href="#task-10-8">Task 8</a></b>. <p>Создайте
+ массив b. Добавьте в него третий элемент равный 3.14, 4 элемент равный 
+17, 6 элемент равный 5. Выведите массив и в консоль и на страницу. 
+Обратите внимание, как выводятся элементы значения которых не заданы. 
+Также выведите значение длины массива.</p>
+<pre>let b = ['one', 1, 2, 'two'];
+</pre></div><hr><div id="task-10-9"><b><a href="#task-10-9">Task 9</a></b>. <p>Создайте массив, который содержит 10 значений. Выведите 3-й и 7-й элемент. Выведите весь массив в консоль.</p></div><hr><div id="task-10-10"><b><a href="#task-10-10">Task 10</a></b>. <p>Создайте массив содержащий <b>только</b> 1-й, 5-й и 10 элемент. Выведите его в консоль. Выведите его в div. Выведите длину данного массива.</p></div><hr><div id="task-10-11"><b><a href="#task-10-11">Task 11</a></b>. <p>Создайте
+ массив с, напишите функцию которая по клику на кнопке меняет первый и 
+третий элемент местами. Под сменой мест понимается, что данные элементы 
+поменяют значения - первый станет равный третьему, а третий - первому.</p>
+<pre>const c = [77, 88, 99, 66];
+</pre></div><hr><div id="task-10-12"><b><a href="#task-10-12">Task 12</a></b>. <p>Напишите
+ функцию, которая получает в качестве аргумента массив, и меняет нулевой
+ и последний элемент массива местами. После чего выводит массив в 
+консоль. Длина переданного массива может меняться. Небольшая подсказка -
+ нам не нужно знать длину массива, поскольку мы можем ее посчитать через
+ length. </p></div><hr><div id="task-10-13"><b><a href="#task-10-13">Task 13</a></b>. <p>Используя цикл выведите элемента массива d на страницу. Разделитель - пробел.</p>
+<pre>d = ['y', 4, 22, 'o'];
+</pre></div><hr><div id="task-10-14"><b><a href="#task-10-14">Task 14</a></b>. <p>Используя цикл выведите на страницу массив e в обратном порядке. Разделитель - пробел.</p>
+<pre>e = [1, 2, 3, 'hello', 66];
+</pre></div><hr><div id="task-10-15"><b><a href="#task-10-15">Task 15</a></b>. <p>Используя цикл выведите на страницу элементы массива d, которые больше нуля. Разделитель - пробел.</p>
+<pre>d = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78]
+</pre></div><hr><div id="task-10-16"><b><a href="#task-10-16">Task 16</a></b>. <p>Выполните
+ перебор массива d из предыдущей задачи. Четные элементы добавьте в 
+массив a1, нечетные в a2. Выведите полученные массивы  a1 и a2 на 
+страницу.</p></div><hr><div id="task-10-17"><b><a href="#task-10-17">Task 17</a></b>. <p>Создайте массив e. Используя цикл и переменную счетчик - выведите количество элементов массива равных нулю.</p>
+<pre>let e = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
+</pre></div><hr><div id="task-10-18"><b><a href="#task-10-18">Task 18</a></b>. <p>Используя предыдущий массив e и цикл - выведите максимальное значение из массива. </p></div><hr><div id="task-10-19"><b><a href="#task-10-19">Task 19</a></b>. <p>Создайте массив f. С помощью цикла найдите индекс элемента с максимальным значением.</p>
+<pre>let f = [-3, 0, 45, 22, 123, -485, 98, 34];
+</pre></div><hr><div id="task-10-20"><b><a href="#task-10-20">Task 20</a></b>. <p>Используйте массив f. Используя цикл, посчитайте сумму элементов массива.</p></div><hr>    </div>
+    <div class="row divider"></div>
+
+    <div id="prokachka">
+        <h2>Задачи на прокачку</h2>
+                    </div>
+ </article></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/jquery-3.js"></script>
+<script src="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/popper.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/bootstrap.js"></script>
+<script src="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/023513c830.js"></script><link rel="stylesheet" href="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/free-v4-shims.css" media="all"><link rel="stylesheet" href="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/free-v4-font-face.css" media="all"><link rel="stylesheet" href="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/free.css" media="all">
+
+ <script src="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/script.js"></script>
+<script src="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/login.js"></script>
+ <script src="%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20%D0%B2%20JavaScript%20%20%20JS.ITGID.INFO_files/jquery.js"></script>
+ <script>
+     $(".spincrement").spincrement();
+     $(function () {
+         $('[data-toggle="tooltip"]').tooltip()
+     })
+ </script>
+
+</body></html>

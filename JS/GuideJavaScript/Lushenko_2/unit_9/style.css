@@ -1,0 +1,43 @@
+html,
+body {
+    font-family: serif;
+}
+
+body {
+    margin: 20px auto;
+}
+
+.css-1 {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid darkred;
+    background-color: green;
+}
+
+.css-2 {
+    background: #c0c0c0;
+}
+
+.css-3 {
+    background: yellow;
+}
+
+.css-4 {
+    background: orange;
+}
+
+.css-5 {
+    background: red;
+}
+
+.active {
+    border: 2px solid black;
+}
+
+.u-1{
+    border: 1px solid darkred;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+}
