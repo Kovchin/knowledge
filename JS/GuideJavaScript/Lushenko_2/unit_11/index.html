@@ -10,10 +10,233 @@
 </head>
 
 <body>
-    <div>
-        <p>Task 1. Создайте переменную a = 4. Используя конструкцию if проверьте то a == 4. Выведите сообщение в
-            консоль.</p>
-        <button class="task-1">button</button>
+
+    <h2>Домашнее задание</h2>
+
+    <div id="task-11-1">
+        <b><a href="#task-11-1">Task 1</a></b>.
+        <p>Создайте
+            пустой массив arr1, input.u-1, кнопку button.u-2__push. При нажатии
+            кнопки, функция читает содержимое input и добавляет содержимое в массив,
+            после чего выводит содержимое массива в div.out-1.</p>
+        <div class="execute">
+            <label for="inp11">Новый элемент массива</label>
+            <input class='u-1' name='inp11' type="text" placeholder='Введите значение'>
+            <button class='u-2__push'>Push+</button>
+            <button class='u-2__pop'>Pop-</button>
+            <button class='u-3__shift'>-Shift</button>
+            <button class='u-4__unshift'>+UnShift</button>
+            <div class="out-1"></div>
+        </div>
+    </div>
+    <hr>
+    <div id="task-11-2"><b><a href="#task-11-2">Task 2</a></b>. <p>Добавьте
+            к предыдущему заданию кнопку button.u-2__pop, при нажатии которой, к
+            массиву arr1 применяется метод pop, после чего массив выводится в
+            div.out-1</p>
+    </div>
+    <hr>
+    <div id="task-11-3"><b><a href="#task-11-3">Task 3</a></b>. <p>Добавьте к заданию 1 кнопку button.u-3__shift,
+            которая применяет к массиву arr1 метод shift ( <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/shift"
+                target="_blank">читать за метод shift</a>). После применения shift, массив arr1 выподится в div.out-1.
+        </p>
+    </div>
+    <hr>
+    <div id="task-11-4"><b><a href="#task-11-4">Task 4</a></b>. <p>Добавьте к заданию 1 кнопку button.u-4__unshift,
+            которая применяет к массиву arr1 метод unshift ( <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"
+                target="_blank">читать за метод unshift</a>).
+            После применения unshift, массив arr1 выподится в div.out-1. Надеюсь,
+            вы догадаетесь проверять input на пустоту перед применением unshift.
+            Надеюсь, вы это сделали и в первой задаче? </p>
+    </div>
+    <hr>
+    <div id="task-11-5"><b><a href="#task-11-5">Task 5</a></b>. <p>Обьявите
+            массив arr5, добате два элемента input, в первый пользователь может
+            ввести индекс элемента, во второй - количество. Добавьте кнопку, по
+            нажатию на которую к массиву arr5 применяется метод splice. Результат
+            применения выводите в div.out-5.</p>
+        <pre>let arr5 = [3,14, 15, 92, 6, 54, 123, 87, 66, 43, 12, 90, 'hello'];
+</pre>
+        <div class="execute">
+            <form action="">
+                <label for="inp-5-1">Стартовая позиция удаления</label>
+                <input id='inp-5-1' type="number" required placeholder='Введите число'>
+                <label for="inp-5-2">Количество элементов для удаления</label>
+                <input id='inp-5-2' type="number" required placeholder='Введите число'>
+                <input type="submit" value="Remove">
+            </form>
+            <div class="out"></div>
+        </div>
+    </div>
+    <hr>
+    <div id="task-11-6"><b><a href="#task-11-6">Task 6</a></b>. <p>Напишите функцию funcPush, которая эмулирует работу
+            метода push, функция, по нажатию кнопки:</p>
+        <ol>
+            <li>читает содержимое input в переменную</li>
+            <li>вычисляет длину массива</li>
+            <li>присваивает массиву новый элемент, а в качестве индекса указывает длину массива - 1 </li>
+        </ol>
+        <p>Выводит массив на страницу</p>
+        <hr>
+        <label for="inp6">Новый элемент массива</label>
+        <input type="text" id='inp6' placeholder="Введите значение">
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-7"><b><a href="#task-11-7">Task 7</a></b>. <p>Напишите функцию funcPop, которая эмулирует работу
+            метода pop, функция, по нажатию кнопки:</p>
+        <ol>
+            <li>удаляет последний элемент массива</li>
+        </ol>
+        <p>Выводит массив на страницу</p>
+        <button>Удалить последний элемент массива</button>
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-8"><b><a href="#task-11-8">Task 8</a></b>. <p>Напишите функцию funcShift, которая эмулирует работу
+            метода shift, функция, по нажатию кнопки:</p>
+        <ol>
+            <li>Создает новый массив где нулевым элементом выступает первый элемент исходного массива</li>
+        </ol>
+        <p>Выводит массив на страницу</p>
+        <button>shift</button>
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-9"><b><a href="#task-11-9">Task 9</a></b>. <p>Напишите функцию funcUnShift, которая эмулирует
+            работу метода unshift, функция, по нажатию кнопки:</p>
+        <ol>
+            <li>читает содержимое input в переменную</li>
+            <li>создает новый массив где нулевым элементов задает считанную из input строку </li>
+            <li>дописывает остальные значения старого массива в новый</li>
+        </ol>
+        <p>Выводит массив на страницу</p>
+        <label for="inp9">Новый элемент массива</label>
+        <input type="text" id='inp9' placeholder="Введите значение">
+        <button>unShift</button>
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-10"><b><a href="#task-11-10">Task 10</a></b>. <p>Создайте массив arr10, примените к массиву метод
+            reverse ( <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"
+                target="_blank">читать за метод reverse</a>). После применения reverse, массив arr10 выподится в
+            div.out-10.</p>
+        <pre>let arr10 = [2,4, 6, 8, 10, 'hello'];
+</pre>
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-11"><b><a href="#task-11-11">Task 11</a></b>. <p>Создайте
+            input.u-11__input и кнопку button.u-11__button. Объявите массив arr11.
+            По нажатию на кнопку, читайте содержимое input.u-11__input в переменную
+            u11. Потом примените к массиву arr11 метод indexOf ( <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+                target="_blank">читать за метод indexOf</a>).
+            Результат применения indexOf выводите на страницу в div.out-11.
+            Последовательно проверьте программу вводя в input числа 1, 3, 5, 12.</p>
+        <pre>let arr11 = [0, 2, 3, 7, 8, 5, 11];
+</pre>
+        <input type="text" class='u-11__input' placeholder='Введите значение'></input>
+        <button class='u-11__button'>indexOf</button>
+        <div class="out-11"></div>
+    </div>
+    <hr>
+    <div id="task-11-12"><b><a href="#task-11-12">Task 12</a></b>. <p>Напишите функцию funcIndexOf, которая эмулирует
+            работу метода indexOf. Программа должна:</p>
+        <ol>
+            <li>читает содержимое input в переменную</li>
+            <li>Запускать цикл по массиву и сравнивать каждый элемент массива с введенным.</li>
+            <li>Если совпадение есть - останавливать цикл и выводить номер индекса на котором произошло совпадение.</li>
+            <li>Если совпадения нет выводить -1.</li>
+        </ol>
+        <p>arr12 = [0, 2, 3, 7, 8, 5, 11]</p>
+        <input type="text" placeholder='Введите значение'>
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-13"><b><a href="#task-11-13">Task 13</a></b>. <p>Напишите функцию funcReverse, которая эмулирует
+            работу метода reverse. Программа должна:</p>
+        <ol>
+            <li>Создать новый пустой массив</li>
+            <li>Перебирать старый массив с конца (массив создайте сами)</li>
+            <li>По очереди по элементу присвоить значения в новый массив.</li>
+            <li>Вывести новый массив.</li>
+        </ol>
+
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-14"><b><a href="#task-11-14">Task 14</a></b>. <p>Создайте
+            инпут, куда пользователь может ввести число элементов в массиве.
+            Создайте функцию, которая прочитает введенное число и создаст массив
+            такой длины, причем каждый элемент - это случайное число от 0 до 100.
+            Массивы выведите на страницу.</p>
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-15"><b><a href="#task-11-15">Task 15</a></b>. <p>Создайте
+            массив arr15. Напишите функцию, которая создаст новый массив, в который
+            входят только четные элементы массива arr15 (элементы с четным
+            индексом). Выведите на экран.</p>
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-16"><b><a href="#task-11-16">Task 16</a></b>. <p>Создайте button.u-16__button. Объявите массив
+            arr16_1 и arr16_2. По нажатию на кнопку примените к массивам метод concat ( <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+                target="_blank">читать за метод concat</a>). Результат применения concat выводите на страницу в
+            div.out-16.</p>
+        <pre>let arr16_1 = [3, 5, 7 ];
+let arr16_2 = [2, 4, 6 ];
+</pre>
+        <button class='u-16__button'>Push</button>
+        <div class="out-16"></div>
+    </div>
+    <hr>
+    <div id="task-11-17"><b><a href="#task-11-17">Task 17</a></b>. <p>Напишите функцию funcConcat, которая эмулирует
+            работу метода concat. Программа должна:</p>
+        <ol>
+            <li>Перебирает второй массив и его элементы добавляет в первый массив.</li>
+            <li>Выводит массив на страницу.</li>
+        </ol>
+        <div class="out"></div>
+    </div>
+    <hr>
+    <div id="task-11-18"><b><a href="#task-11-18">Task 18</a></b>. <p>Создайте
+            button.u-18__button и input.u-18__input. Объявите массив arr18 . По
+            нажатию на кнопку примените к массивам метод includes, который проверяет
+            есть ли в массиве значение введенное в input. ( <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+                target="_blank">читать за метод includes</a>). Результат применения includes выводите на страницу в
+            div.out-18.</p>
+        <pre>let arr16_1 = [3, 5, 7, 11, 12, 13, 14 ];
+</pre>
+        <input type="text" class="u-18__input" placeholder="Введите значение">
+        <button class='u-18__button'>Include</button>
+        <div class="out-18"></div>
+    </div>
+    <hr>
+    <div id="task-11-19"><b><a href="#task-11-19">Task 19</a></b>. <p>Напишите функцию funcIncludes, которая эмулирует
+            работу метода includes. Программа должна:</p>
+        <ol>
+            <li>Перебирает второй массив и сравнивать если введенный элемент совпал с текущим - прекращать работу цикла
+                и выводить true.</li>
+            <li>Если совпадений нет - false.</li>
+        </ol>
+        <div class="arr"></div>
+        <input type="text" class="u-19__input" placeholder="Искомое значение">
+    </div>
+    <hr>
+    <div id="task-11-20"><b><a href="#task-11-20">Task 20</a></b>. <p>Объявите массив arr20. Создайте кнопку, по нажатию
+            которую к массиву применяется метод join ( <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/join"
+                target="_blank">читать за метод join</a>). Результа выведите на страницу.</p>
+        <div class="out-20__array"></div>
+        <button class='u-20__button'>join</button>
+        <div class="out-20"></div>
     </div>
     <hr>
 

@@ -82,9 +82,25 @@
                             While, Do while </a></li>
                     <li><a href="../JS/GuideJavaScript/Lushenko_2/unit_9/index.html" target="_blank">Работаем с DOM</a>
                     </li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="../JS/GuideJavaScript/Lushenko_2/unit_10/index.html" target="_blank">Массивы часть
+                            первая</a></li>
+                    <li><a href="../JS/GuideJavaScript/Lushenko_2/unit_11/index.html" target="_blank">Добавление и
+                            удаление элементов в массиве, pop, push,splice</a></li>
+                    <li><a href="../JS/GuideJavaScript/Lushenko_2/unit_12/index.html" target="_blank">Двумерные
+                            массивы</a></li>
+                    <li><a href="../JS/GuideJavaScript/Lushenko_2/unit_13/index.html" target="_blank">Ассоциативный
+                            массив (объект) в JavaScript</a></li>
+                    <li><a href="../JS/GuideJavaScript/Lushenko_2/unit_15/index.html" target="_blank">Set и методы
+							работы с ним</a></li>
+							<li>
+								<a href="../JS/GuideJavaScript/Lushenko_2/unit_16/unit_16.html" target="_blank">Перебор массивов: for, for in, for of </a>
+							</li>
+							<li>
+								<a href="../JS/GuideJavaScript/Lushenko_2/unit_17/unit_17.html" target="_blank">Методы массивов: map, filter ( часть 1)</a>
+							</li>
+							<li>
+								<a href="../JS/GuideJavaScript/Lushenko_2/unit_18/unit_18.html" target="_blank">Методы массивов: join, split, forEach ( часть 2)</a>
+							</li>
                 </ul>
             </li>
             <li>
@@ -697,8 +713,10 @@
             <i>NameArray.length</i>
             выдаст значение
             <i>4</i>
-        </p>
-        <h3>Методы push, pop, shift, unshift</h3>
+		</p>
+		<hr>
+		<h3>Методы push, pop, shift, unshift</h3>
+		<hr>
         <ul>
             <li>
                 <p><b>Push</b> - добавляет элемент в конец массива</p>
@@ -712,9 +730,63 @@
             </li>
             <li>
                 <p><b>Unshift</b> - Добавляет элемент в начало массива</p>
-            </li>
-        </ul>
-        <p>Методы <i>push</i> и <i>unshift</i> могут добавлять сразу по несколько элементов</p>
+			</li>
+			<hr>
+			<li>
+			<p><b>splice(pos, deleteCount, ...items)</b> – начиная с индекса pos, удаляет deleteCount элементов и вставляет items.</p>
+		</li>
+	<li>
+			<p><b>slice(start, end)</b> – создаёт новый массив, копируя в него элементы с позиции start до end (не включая end).</p>
+		</li>
+	<li>
+			<p><b>concat(...items)</b> – возвращает новый массив: копирует все члены текущего массива и добавляет к нему items. Если какой-то из items является массивом, тогда берутся его элементы.</p>
+		</li>
+		</ul>
+		<p>Методы <i>push</i> и <i>unshift</i> могут добавлять сразу по несколько элементов</p>
+		<hr>
+		<h4>Для поиска среди элементов:</h4>
+		<hr>
+		<ul>
+	<li>
+		<p><b>indexOf/lastIndexOf(item, pos)</b> – ищет item, начиная с позиции pos, и возвращает его индекс или -1, если ничего не найдено.</p>
+	</li>
+	<li>
+		<p><b>includes(value)</b> – возвращает true, если в массиве имеется элемент value, в противном случае false.</p>
+	</li>
+	<li>
+		<p><b>find/filter(func)</b> – фильтрует элементы через функцию и отдаёт первое/все значения, при прохождении которых через функцию возвращается true.</p>		
+	</li>
+		<li>
+		<p><b>findIndex</b> похож на find, но возвращает индекс вместо значения.</p>
+	</li>
+	</ul>
+	<hr>
+	<h4>Для перебора элементов:</h4>
+	<hr>
+	<ul>
+		<li><p><b>forEach(func)</b> – вызывает func для каждого элемента. Ничего не возвращает.</p></li>
+	</ul>
+	<hr>
+	<h4>Для преобразования массива:</h4>
+	<hr>
+	<ul>
+		<li><p><b>map(func)</b> – создаёт новый массив из результатов вызова func для каждого элемента.</p></li>
+		<li><p><b>sort(func)</b> – сортирует массив «на месте», а потом возвращает его.</p></li>
+		<li><p><b>reverse()</b> – «на месте» меняет порядок следования элементов на противоположный и возвращает изменённый массив.</p></li>
+		<li><p><b>split/join</b> – преобразует строку в массив и обратно.</p></li>
+		<li><p><b>reduce(func, initial)</b> – вычисляет одно значение на основе всего массива, вызывая func для каждого элемента и передавая промежуточный результат между вызовами.</p></li>
+	</ul>
+	<hr>
+	<h4>Дополнительно:</h4>
+	<hr>
+	<ul>
+		<li>
+			<p><b>Array.isArray(arr)</b> проверяет, является ли arr массивом.</p>
+		</li>
+	</ul>
+	<hr>
+<p>Обратите внимание, что методы sort, reverse и splice изменяют исходный массив.</p>
+<hr>
 
 
         <h3>Вывод массива для анализа данных</h3>

@@ -2,22 +2,277 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Task 13</title>
 </head>
 
 <body>
-    <div>
-        <p>Task 1. Создайте переменную a = 4. Используя конструкцию if проверьте то a == 4. Выведите сообщение в
-            консоль.</p>
-        <button class="task-1">button</button>
-    </div>
-    <hr>
+  <div id="task-13-1">
+    <b><a href="#task-13-1">Task 1</a></b>.
+    <p>Выведите массив a1 на страницу.</p>
+    <pre>
+a1 = {
+3 : 'hello',
+'one' : 'hi'
+};
+</pre>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-2">
+    <b><a href="#task-13-2">Task 2</a></b>.
+    <p>
+      Выведите на страницу элементы из масиива a2 у которых символов больше 4.
+    </p>
+    <pre>
+a2 = {
+3 : 'hello',
+'one' : 'hi',
+'testt' : 'vodoley',
+'ivan' : 'ivanov'
+};
+</pre>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-3">
+    <b><a href="#task-13-3">Task 3</a></b>.
+    <p>
+      Выведите на страницу элементы из масиива a3 у которых ключ содержит
+      больше 4 символов.
+    </p>
+    <pre>
+a3 = {
+3 : 'hello',
+'one' : 'hi',
+'testt' : 'vodoley',
+'ivan' : 'ivanov'
+};
+</pre>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-4">
+    <b><a href="#task-13-4">Task 4</a></b>.
+    <p>
+      Выведите на страницу элементы из масиива a4 у которых значение - число.
+    </p>
+    <pre>
+a4 = {
+3 : 'hello',
+'one' : 4,
+'testt' : 'vodoley',
+'ivan' : 6
+};
+</pre>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-5">
+    <b><a href="#task-13-5">Task 5</a></b>.
+    <p>
+      Дан ассоциативный массив a5. Найдите сумму элементов находящихся в нем.
+    </p>
+    <pre>
+a5 = {
+a : 7,
+z : 4,
+45 : 12,
+f : 6
+};
+</pre>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-6">
+    <b><a href="#task-13-6">Task 6</a></b>.
+    <p>
+      Создайте ассоциативный массив a6, который содержит ключи name, age, sex,
+      height и значения любого персонажа. Выведите массив на страницу.
+    </p>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-7">
+    <b><a href="#task-13-7">Task 7</a></b>.
+    <p>
+      Создайте ассоциативный массив a7, два input (u7-key__input,
+      u7-value__input) и кнопку. При нажатии кнопки добавляйте в массив новое
+      значение с соответствующим ключем. Выводите массив на страницу.
+    </p>
+    <form action="#" class="u7__form">
+      <label for="u7-key__input">Ключ</label><input class="u7-key__input" type="text" placeholder="Введите значение"
+        required />
+      <label for="u7-value__input">Значение</label>
+      <input class="u7-value__input" type="text" placeholder="Введите значение" required />
+      <input type="submit" value="Добавить элемент" />
+      <button class="u8-delete-key__button">Удалить элемент по ключу</button>
+      <button class="u9-delete-value__button">Удалить элемент по значению</button>
+      <button class="u10-fund-key__button">Найти элемент по ключу</button>
+    </form>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-8">
+    <b><a href="#task-13-8">Task 8</a></b>.
+    <p>
+      Добавьте к предыдущей задачи input.u8-key__input и кнопку. При нажатии
+      кнопки - удаляйте значение с соответствующим ключем. Выводите массив на
+      страницу.
+    </p>
+  </div>
+  <hr />
+  <div id="task-13-9">
+    <b><a href="#task-13-9">Task 9</a></b>.
+    <p>
+      Добавьте к предыдущей задачи input.u9-delete-value__input и кнопку. При
+      нажатии кнопки - удаляйте записи с соответствующим значением. Выводите
+      массив на страницу.
+    </p>
+  </div>
+  <hr />
+  <div id="task-13-10">
+    <b><a href="#task-13-10">Task 10</a></b>.
+    <p>
+      Добавьте к предыдущей задачи input.u10-has-key__input и кнопку. При
+      нажатии кнопки - возвращайте true если такой ключ есть в массиве, и
+      false если нет.
+    </p>
+  </div>
+  <hr />
+  <div id="task-13-11">
+    <b><a href="#task-13-11">Task 11</a></b>.
+    <p>
+      Создайте массив, который описывает метро киевского метрополитена,
+      выведите его на страницу.
+    </p>
+    <pre>
+a11 = {
+"red" : ['Академгородок',...],
+"green" : 
+}
+</pre>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-12">
+    <b><a href="#task-13-12">Task 12</a></b>.
+    <p>
+      Добавьте к предыдущей задаче select.u12-branch и кнопку. Пользователь
+      может выбрать цвет ветки и нажать кнопку, после чего на страницу будут
+      выведены только станции данной ветки.
+    </p>
+    <select>
+      <option value=""></option>
+    </select>
+    <button>Выбрать станции</button>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-13">
+    <b><a href="#task-13-13">Task 13</a></b>.
+    <p>
+      Добавьте к предыдущей задаче кнопку button.u13-reverse которая при
+      нажатии выводит станции ветки в обратном порядке. Внимание! Все подобные
+      задачи не меняют массив, а меняют только вывод!!!
+    </p>
+    <!--
+	  <label for="test">Test</label>
+	  <input type="checkbox" id="test">
+	  -->
+  </div>
+  <hr />
+  <div id="task-13-14">
+    <b><a href="#task-13-14">Task 14</a></b>.
+    <p>
+      Добавьте к предыдущей задаче select.u14-find-station и кнопку. В select
+      - пользователь может выбрать станцию, а вы перебирая массив - вывести
+      ветку на которой эта станция находится.
+    </p>
+    <select></select>
+    <button>Найти ветку</button>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-15">
+    <b><a href="#task-13-15">Task 15</a></b>.
+    <p>
+      Добавьте к предыдущему заданию 2 select где пользователь может выбрать 2
+      станции, и если они на одной ветке - то по нажатию на кнопку будет
+      показано сколько станций между ними (сами станции не включаем. Если это
+      соседние станции - то 0).
+    </p>
+    <select id='select-15-1'></select>
+    <select id='select-15-2'></select>
+    <button>Найти расстояние между станциями</button>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-16">
+    <b><a href="#task-13-16">Task 16</a></b>.
+    <p>
+      Добавьте 3 radiobutton.u16-radio которые содержат value = red, green,
+      blue - в соотвтествии с цветом веток метро. Добавьте пустой
+      select.u16-select. При выборе radio - программа должна в select
+      добавлять option с названиями станций метро. Т.е. выбрали
+      radio(value="green") то внутрь select должны быть записаны option со
+      станциями зеленой ветки. Выбрали red - select должен быть очищен и
+      добавлены option со станциями красной ветки.
+    </p>
 
-    <script src="script.js"></script>
+    <div class="radio"></div>
+
+    <div class="out"></div>
+
+  </div>
+  <hr />
+  <div id="task-13-17">
+    <b><a href="#task-13-17">Task 17</a></b>.
+    <p>
+      Создайте массив, который описывает метро киевского метрополитена и
+      обозначаются конечные и станции перехода, выведите его на страницу.
+      Конечные - обозначать 0, перехода - 1.
+    </p>
+    <pre>
+a17 = {
+"red" : [ ['Академгородок', 0] ,...],
+"green" : 
+}
+</pre>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-18">
+    <b><a href="#task-13-18">Task 18</a></b>.
+    <p>Выведите на страницу только станции с переходами из массива a17.</p>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-19">
+    <b><a href="#task-13-19">Task 19</a></b>.
+    <p>
+      Создайте ассоциативный массив где ключами являются страны азии, а
+      вложенными массивами - ассоциативный массив содержащий название столицы,
+      количество населения, площадь. Выведите его на страницу.
+    </p>
+    <div class="out"></div>
+  </div>
+  <hr />
+  <div id="task-13-20">
+    <b><a href="#task-13-20">Task 20</a></b>.
+    <p>
+      Дополните массив из задачи 20 так, чтобы пользователь мог сам выбирать
+      страцу в select, а необходимая информация подтягивалась на страницу.
+    </p>
+    <select></select>
+    <div class="out"></div>
+  </div>
+  <hr />
+
+  <script src="script.js"></script>
 </body>
 
 </html>
